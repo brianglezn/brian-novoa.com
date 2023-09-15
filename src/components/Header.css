@@ -1,21 +1,52 @@
-.header-butons {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 10px;
-  padding: 1rem 2rem;
-  width: fit-content;
+/* .header{
+} */
+
+.header-list {
+  padding: 1rem;
   display: flex;
-  justify-content: center;
-  gap: 18px;
-  border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.155);
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-butons a {
-  font-size: 30px;
+.header-list a {
+  text-decoration: none;
 }
+
+.header-butons {
+  display: none;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  .header-list {
+    display: none;
+  }
+
+  .header-butons {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 85vh;
+    padding: 1rem 2rem;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.081);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    z-index: 50;
+  }
+
+  .header-butons a {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para tabletas */
+}
+/* ---------- FIN RESPONSIVE ---------- */
