@@ -1,0 +1,21 @@
+.header-butons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  padding: 1rem 2rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.155);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.header-butons a {
+  font-size: 30px;
+}
