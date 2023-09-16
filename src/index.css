@@ -4,7 +4,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-grey: #383d46;
-  --color-grey-sec: #c2c2c2;
+  --color-grey-sec: #d4d4d4;
   --color-bg: #f7f7f7;
   --color-primary: #206d7e;
   --color-secondary: #114855;
@@ -16,11 +16,15 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--color-primary);
+  background-image: url(assets/bg-blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--color-grey);
 }
 
 a {
-  color: var(--color-bg);
+  color: var(--color-white);
   text-decoration: inherit;
 }
 a:hover {
@@ -41,9 +45,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+  background-color: var(--color-bg);
 }
 button:hover {
   cursor: pointer;
+  background-color: var(--color-grey-sec);
 }
 button:focus,
 button:focus-visible {

@@ -6,10 +6,10 @@ function Header() {
         <header className="header">
             <div className="header-list">
                 <ul className="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Proyecto</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#projects">Proyecto</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
             <div className="header-butons">
