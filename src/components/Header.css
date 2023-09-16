@@ -1,22 +1,32 @@
-/* .header{
-} */
-
 .header-list {
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .header-list a {
   text-decoration: none;
+  color: var(--color-white);
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.menu {
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
 }
 
 .header-butons {
   display: none;
 }
 
-/* ---------- RESPONSIVE ---------- */
 @media (max-width: 767px) {
   /* Estilos para dispositivos móviles */
   .header-list {
@@ -27,7 +37,7 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 85vh;
+    margin-top: 2vh;
     padding: 1rem 2rem;
     width: fit-content;
     display: flex;
@@ -39,7 +49,6 @@
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    z-index: 50;
   }
 
   .header-butons a {
@@ -49,4 +58,3 @@
 @media (min-width: 768px) and (max-width: 991px) {
   /* Estilos para tabletas */
 }
-/* ---------- FIN RESPONSIVE ---------- */
