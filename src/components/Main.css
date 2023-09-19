@@ -1,3 +1,33 @@
 .main {
-  height: 90vh;
+  color: var(--color-white);
+  margin: 10px 60px;
+  padding: 30px;
+  height: 60vh;
+  background-image: url(../assets/bg-blur.jpg);
+  background-position: center top;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10vh;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.text {
+  margin-left: 30vh;
+}
+
+.text h2 {
+  font-size: 100px;
+  line-height: normal;
+}
+.text p {
+  font-size: 30px;
+}
+.text h2,
+p {
+  margin: 0;
 }

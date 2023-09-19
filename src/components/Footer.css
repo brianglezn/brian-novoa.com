@@ -2,16 +2,13 @@
   width: 100%;
   background: var(--color-primary);
   padding-top: 30px;
-}
-
-.footer {
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
   justify-content: space-between;
   padding: 20px 0;
   gap: 40px;
-  color: var(--color-bg);
+  color: var(--color-white);
 }
 
 .legal {
@@ -20,6 +17,12 @@
 
 .legal > a {
   margin: 0 4px;
+  color: var(--color-white);
+}
+
+.legal > a:hover {
+  margin: 0 4px;
+  color: var(--color-grey-sec);
 }
 
 .legal > span {
@@ -33,6 +36,11 @@
 
 .footer .links > a {
   font-size: 24px;
+  color: var(--color-white);
+}
+
+.footer .links > a:hover {
+  color: var(--color-grey-sec);
 }
 
 @media (width < 620px) {

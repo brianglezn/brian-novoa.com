@@ -5,9 +5,13 @@
   --color-black: #000;
   --color-grey: #383d46;
   --color-grey-sec: #d4d4d4;
-  --color-bg: #f7f7f7;
+  --color-bg: #f4f4f4;
   --color-primary: #206d7e;
   --color-secondary: #114855;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,20 +19,19 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--color-primary);
-  background-image: url(assets/bg-blur.jpg);
+  background-color: var(--color-bg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: var(--color-grey);
+  color: var(--color-secondary);
 }
 
 a {
-  color: var(--color-white);
+  color: var(--color-primary);
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--color-grey-sec);
+  color: var(--color-secondary);
   cursor: pointer;
 }
 
@@ -50,8 +53,4 @@ button {
 button:hover {
   cursor: pointer;
   background-color: var(--color-grey-sec);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
