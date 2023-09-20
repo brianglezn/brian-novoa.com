@@ -1,0 +1,71 @@
+.hero {
+  color: var(--color-white);
+  margin: 10px 60px;
+  padding: 30px;
+  height: 50vh;
+  background-image: url(../assets/bg-blur.jpg);
+  background-size: cover;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10vh;
+}
+
+.text {
+  margin-left: -5vw;
+}
+.text h2 {
+  margin: 0;
+  font-size: 100px;
+  line-height: normal;
+}
+.text p {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  .hero {
+    background-size: 300%;
+    border-radius: 0 0 40px 40px;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+  }
+
+  .text {
+    margin-left: 0;
+  }
+  .text h2 {
+    font-size: 70px;
+  }
+  .text p {
+    font-size: 30px;
+  }
+
+  .img3d {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* Estilos para tabletas */
+  .hero {
+    margin: 5px 30px;
+    padding: 10px;
+    height: 35vh;
+  }
+
+  .text {
+    margin-left: 0;
+  }
+
+  .img3d {
+    display: none;
+  }
+}
+/* ---------- FIN RESPONSIVE ---------- */

@@ -1,10 +1,16 @@
 [
-    {
-      "id": 1,
-      "name": "Profit & Lost",
-      "description": "WebApp de gestión de finanzas personales.",
-      "link": "mockups\ferrosurbanrestaurant.es.jpg",
-      "photo":""
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Profit & Lost",
+    "photo": "/mockups/web-app/profit-lost.com.jpg",
+    "tec": ["fa-brands fa-react","fa-brands fa-node-js","fa-solid fa-database"],
+    "link": "https://profit-lost.com/"
+  },
+  {
+    "id": 2,
+    "name": "Wordpress Webs",
+    "photo": "/mockups/web-wordpress/globalthermo.es.jpg",
+    "tec": ["fa-brands fa-wordpress-simple"],
+    "link": "https://www.pinterest.es/brianglezn/webs/"
+  }
+]

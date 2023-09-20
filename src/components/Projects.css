@@ -1,8 +1,59 @@
 .projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.project {
+  min-height: 32rem;
+  min-width: 30rem;
+  margin: 4rem 1rem;
   background-color: var(--color-bg);
+  border-radius: 3rem;
+  box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #eae9e9;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+.project:hover {
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.project img {
   border-radius: 3rem 3rem 0 0;
+  width: 30rem;
   -webkit-border-radius: 3rem 3rem 0 0;
   -moz-border-radius: 3rem 3rem 0 0;
   -ms-border-radius: 3rem 3rem 0 0;
   -o-border-radius: 3rem 3rem 0 0;
 }
+
+.project p {
+  max-width: 30rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.tech i {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para tabletas */
+}
+/* ---------- FIN RESPONSIVE ---------- */
