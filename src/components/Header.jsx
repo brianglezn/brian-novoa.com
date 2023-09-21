@@ -24,8 +24,9 @@ function Header() {
 
     return (
         <header className='header'>
-            <div className='header-list'>
-                <ul className='menu'>
+
+            <div className='header__navbar'>
+                <ul className='header__navbar-list'>
                     <li><a href='#projects'>Proyectos</a></li>
                     <li><a href='#services'>Servicios</a></li>
                     <li><a href='#contact'>Contacto</a></li>

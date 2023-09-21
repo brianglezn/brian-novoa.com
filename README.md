@@ -1,2 +1,2 @@
 # brian-novoa.com
- prototipo-portafolio
+ Portafolio de Brian González Novoa

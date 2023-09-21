@@ -2,10 +2,10 @@
   font-family: rubik, sans-serif;
 
   --color-white: #fff;
-  --color-black: #000;
-  --color-grey: #383d46;
-  --color-grey-sec: #d4d4d4;
   --color-bg: #f1f1f1;
+  --color-grey: #e1e1e1;
+  --color-grey-sec: #d4d4d4;
+  --color-black: #000;
   --color-primary: #206d7e;
   --color-secondary: #114855;
 }
@@ -53,4 +53,8 @@ button {
 button:hover {
   cursor: pointer;
   background-color: var(--color-grey-sec);
+}
+
+.section__title {
+	text-align: center;
 }

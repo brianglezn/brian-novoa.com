@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.header-list a {
+.header__navbar a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -15,21 +15,21 @@
   text-transform: uppercase;
 }
 
-.menu {
+.header__navbar-list {
   padding: 0;
 }
-.menu li {
+.header__navbar-list li {
   display: inline-block;
 }
-.menu li a {
+.header__navbar-list li a {
   transition: letter-spacing 0.3s ease;
   letter-spacing: normal;
 }
-.menu li a:hover {
+.header__navbar-list li a:hover {
   letter-spacing: 2px;
 }
 
-.header-butons {
+.header__navbar-burguer{
   display: none;
 }
 
@@ -52,28 +52,8 @@
   .header {
     padding: 0;
   }
-  .header-list {
+  .header__navbar {
     display: none;
-  }
-  .header-butons {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 2vh;
-    padding: 1rem 2rem;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.081);
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-  }
-  .header-butons a {
-    font-size: 30px;
   }
 }
 

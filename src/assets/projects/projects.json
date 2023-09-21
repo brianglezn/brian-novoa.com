@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Profit & Lost",
     "photo": "/mockups/web-app/profit-lost.com.jpg",
+    "description":"In progress...",
     "tec": ["fa-brands fa-react","fa-brands fa-node-js","fa-solid fa-database"],
     "link": "https://profit-lost.com/"
   },
@@ -10,7 +11,8 @@
     "id": 2,
     "name": "Wordpress Webs",
     "photo": "/mockups/web-wordpress/globalthermo.es.jpg",
+    "description":"Few WP websites I made",
     "tec": ["fa-brands fa-wordpress-simple"],
-    "link": "https://www.pinterest.es/brianglezn/webs/"
+    "link": "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS/"
   }
 ]

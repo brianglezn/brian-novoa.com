@@ -11,35 +11,30 @@
   color: var(--color-white);
 }
 
-.legal {
+.footer__legal {
   font-size: 12px;
 }
-
-.legal > a {
+.footer__legal a {
   margin: 0 4px;
   color: var(--color-white);
 }
-
-.legal > a:hover {
+.footer__legal a:hover {
   margin: 0 4px;
   color: var(--color-grey-sec);
 }
-
-.legal > span {
+.footer__legal span {
   margin-right: 10px;
 }
 
-.footer .links {
+.footer__links {
   display: flex;
   gap: 18px;
 }
-
-.footer .links > a {
+.footer__links a {
   font-size: 24px;
   color: var(--color-white);
 }
-
-.footer .links > a:hover {
+.footer__links a:hover {
   color: var(--color-grey-sec);
 }
 
@@ -56,7 +51,7 @@
     text-align: center;
   }
 
-  .legal > span {
+  .footer__legal span {
     display: block;
     margin-right: 0;
     margin-bottom: 2px;

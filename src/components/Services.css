@@ -1,5 +1,57 @@
-.services{}
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
 
+.services__service {
+  background-color: var(--color-white);
+  border-radius: 3rem;
+  min-height: 23rem;
+  min-width: 16rem;
+  box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #eae9e9;
+}
+.services__service p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.services__service-cont1 {
+  background-color: var(--color-primary);
+  border-radius: 3rem 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  max-width: 16rem;
+}
+.services__service-cont1 p {
+  color: var(--color-white);
+}
+.services__service-cont1 span {
+  margin: 0;
+  color: var(--color-grey);
+}
+
+.services__service-cont2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  max-width: 16rem;
+}
+.services__service-cont2 p {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+.services__service-cont2 span {
+  padding: 0.5rem 0;
+}
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 767px) {
@@ -9,56 +61,3 @@
   /* Estilos para tabletas */
 }
 /* ---------- FIN RESPONSIVE ---------- */
-
-
-/* 
-.box {
-  width: 200px; height: 300px;
-  position: relative;
-  border: 1px solid #BBB;
-  background: #EEE;
-}
-.ribbon {
-  position: absolute;
-  right: -5px; top: -5px;
-  z-index: 1;
-  overflow: hidden;
-  width: 75px; height: 75px;
-  text-align: right;
-}
-.ribbon span {
-  font-size: 10px;
-  font-weight: bold;
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 20px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  width: 100px;
-  display: block;
-  background: #79A70A;
-  background: linear-gradient(#9BC90D 0%, #79A70A 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 19px; right: -21px;
-}
-.ribbon span::before {
-  content: "";
-  position: absolute; left: 0px; top: 100%;
-  z-index: -1;
-  border-left: 3px solid #79A70A;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #79A70A;
-}
-.ribbon span::after {
-  content: "";
-  position: absolute; right: 0px; top: 100%;
-  z-index: -1;
-  border-left: 3px solid transparent;
-  border-right: 3px solid #79A70A;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #79A70A;
-}
- */

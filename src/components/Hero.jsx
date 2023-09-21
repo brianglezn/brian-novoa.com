@@ -3,12 +3,12 @@ import './Hero.css';
 function Hero() {
     return (
         <main className='hero' >
-            <div className='text'>
+            <div className='hero__text'>
                 <p>Hi, mi name is</p>
-                <h2>BRIAN </h2>
+                <h1>BRIAN </h1>
                 <p>Freelance Web Developer</p>
             </div>
-            <div className='img3d'>
+            <div className='hero__img3D'>
             </div>
         </main>
     );
