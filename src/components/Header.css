@@ -29,11 +29,8 @@
   letter-spacing: 2px;
 }
 
-.header__navbar-burguer{
-  display: none;
-}
-
 #scrollToTopButton {
+  color: var(--color-secondary);
   position: fixed;
   font-size: 30px;
   bottom: 20px;

@@ -1,19 +1,14 @@
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
-import Projects from './components/Projects'
-import Services from './components/Services'
-import Contact from './components/Contact'
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Cookies from './pages/Cookies';
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Projects />
-      <Services />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/cookies' element={<Cookies />}></Route>
+      </Routes>
     </>
   )
 }
