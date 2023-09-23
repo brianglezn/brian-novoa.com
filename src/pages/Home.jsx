@@ -3,7 +3,6 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Services from '../components/Services'
-import Contact from '../components/Contact'
 
 function Home() {
     return (
@@ -12,7 +11,6 @@ function Home() {
             <Hero />
             <Projects />
             <Services />
-            <Contact />
             <Footer />
         </>
     );

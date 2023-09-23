@@ -21,6 +21,7 @@
 }
 .projects__project img {
   border-radius: 3rem 3rem 0 0;
+  background-size: cover;
   width: 30rem;
 }
 .projects__project p {

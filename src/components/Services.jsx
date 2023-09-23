@@ -26,7 +26,6 @@ function Services() {
         <>
             <h2 className='section__title' id='services'>SERVICES</h2>
             <section className='services'>
-
                 {services}
             </section>
         </>
