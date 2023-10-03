@@ -1,9 +1,16 @@
-.services {
+.services {  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.services_container {
   display: flex;
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
 }
 
 .services__service {

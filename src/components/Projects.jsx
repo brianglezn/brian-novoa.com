@@ -1,6 +1,3 @@
-// import globalthermo from '../assets/projects/mockups/globalthermo.es.jpg';
-/* <img src={globalthermo} /> */
-
 import './Projects.css';
 
 import projectsData from '../assets/projects/projects.json';

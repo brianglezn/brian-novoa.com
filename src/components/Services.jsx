@@ -26,7 +26,11 @@ function Services() {
         <>
             <h2 className='section__title' id='services'>SERVICES</h2>
             <section className='services'>
-                {services}
+                <div className='services_container'>
+                    {services}
+                </div>
+                <p>If the project requires it, a budget according to the project will be added.</p>
+                <p>*PRICES WITHOUT VAT</p>
             </section>
         </>
 
@@ -34,8 +38,3 @@ function Services() {
 }
 
 export default Services;
-
-
-// <div class='box'>
-//    <div class='ribbon'><span>POPULAR</span></div>
-// </div>

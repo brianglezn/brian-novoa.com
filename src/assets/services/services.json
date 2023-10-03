@@ -17,7 +17,7 @@
     "id": 3,
     "name": "HOOLIV",
     "description": "Maintenance",
-    "price": "25€/m",
+    "price": "25€/month",
     "more": ["Daily backups", "Modifications (4h/week)", "24/7 monitoring", "Personalized support"]
   }
 ]
