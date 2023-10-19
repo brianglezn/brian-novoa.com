@@ -29,8 +29,7 @@ function Services() {
                 <div className='services_container'>
                     {services}
                 </div>
-                <p>If the project requires it, a budget according to the project will be added.</p>
-                <p>*PRICES WITHOUT VAT</p>
+                <p className='services_text'>If the project requires it, a budget according to the project will be added.<br />*PRICES WITHOUT VAT</p>
             </section>
         </>
 

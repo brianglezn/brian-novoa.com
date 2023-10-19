@@ -17,7 +17,7 @@
 .projects__project:hover {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 .projects__project img {
   border-radius: 3rem 3rem 0 0;
@@ -45,7 +45,7 @@
 .projects__tech i {
   margin: 1rem 0 2rem 0;
   font-size: 3rem;
-  color: var(--color-primary);
+  color: var(--color-bri-600);
 }
 
 /* ---------- RESPONSIVE ---------- */

@@ -8,8 +8,7 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className='footer__legal'>
-                <span> © {currentYear} All rights reserved </span>
-                <Link to='/cookies' >Cookies</Link>
+                <span> © {currentYear} All rights reserved</span>-<Link to='/cookies' > Cookies</Link>
             </div>
             <div className='footer__links'>
                 <a className='fa-brands fa-github' target='_blank' rel='noreferrer' href='https://github.com/brianglezn'></a>

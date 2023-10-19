@@ -30,7 +30,7 @@
 }
 
 #scrollToTopButton {
-  color: var(--color-secondary);
+  color: var(--color-bri-950);
   position: fixed;
   font-size: 30px;
   bottom: 20px;

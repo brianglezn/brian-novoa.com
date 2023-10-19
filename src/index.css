@@ -3,11 +3,24 @@
 
   --color-white: #fff;
   --color-bg: #f1f1f1;
-  --color-grey: #e1e1e1;
-  --color-grey-sec: #d4d4d4;
+  --color-grey: #d4d4d4;
   --color-black: #000;
-  --color-primary: #206d7e;
-  --color-secondary: #114855;
+
+  --color-bri-50: #effcfc;
+  --color-bri-100: #d6f6f7;
+  --color-bri-200: #b1ebf0;
+  --color-bri-300: #7bdce5;
+  --color-bri-400: #3ec3d2;
+  --color-bri-500: #23a7b7;
+  --color-bri-600: #20879a;
+  --color-bri-700: #206d7e;
+  --color-bri-800: #225968;
+  --color-bri-900: #214b58;
+  --color-bri-950: #10313c;
+}
+
+::selection {
+  background: #7bdce579;
 }
 
 html {
@@ -23,28 +36,40 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: var(--color-secondary);
+  color: var(--color-bri-700);
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-bri-600);
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--color-secondary);
+  color: var(--color-bri-800);
   cursor: pointer;
 }
 
-h1,
+h1 {
+  font-size: 3.2em;
+  line-height: 1.5;
+}
 h2 {
   font-size: 3.2em;
   line-height: 1.5;
+  color: var(--color-bri-700);
+  font-weight: 800;
 }
 
 button {
   border: transparent;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-bri-800);
+  cursor: pointer;
 }
 
 .section__title {
-	text-align: center;
+  text-align: center;
 }

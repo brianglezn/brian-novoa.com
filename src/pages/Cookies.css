@@ -19,6 +19,7 @@
 
 .legal {
   margin: 5vh 15vw 10vh 15vw;
+  color: var(--color-bri-900);
 }
 .legal h3 {
   margin-top: 3rem;
