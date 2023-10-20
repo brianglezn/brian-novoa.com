@@ -17,7 +17,7 @@
 .projects__project:hover {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 .projects__project img {
   border-radius: 3rem 3rem 0 0;
@@ -49,7 +49,7 @@
 }
 
 /* ---------- RESPONSIVE ---------- */
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   /* Estilos para tabletas */
   .projects__project {
     min-height: 25rem;

@@ -41,7 +41,7 @@ body {
 }
 
 a {
-  color: var(--color-bri-600);
+  color: var(--color-bri-700);
   text-decoration: inherit;
 }
 a:hover {

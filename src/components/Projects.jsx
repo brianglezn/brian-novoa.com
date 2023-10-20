@@ -6,10 +6,7 @@ function Projects() {
     const projects = projectsData.map((project) => {
 
         return (
-            <div className='projects__project' key={project.id} onClick={() => {
-                const link = project.link;
-                window.open(link, '_blank');
-            }}>
+            <a className='projects__project' href={project.link} target='_blank' key={project.id} rel="noreferrer">
                 <img src={project.photo} alt={project.name} />
                 <p>{project.name}</p>
                 <span>{project.description}</span>
@@ -18,7 +15,8 @@ function Projects() {
                         <i key={tech} className={tech}></i>
                     ))}
                 </div>
-            </div>
+            </a>
+
         );
     });
 

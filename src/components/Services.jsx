@@ -20,7 +20,6 @@ function Services() {
         );
     });
 
-
     return (
         <>
             <h2 className='section__title' id='services'>SERVICES</h2>
