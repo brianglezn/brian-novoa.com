@@ -3,21 +3,35 @@
     "id": 1,
     "name": "BASIC",
     "description": "WP Landing Page",
-    "price": "199€",
-    "more": ["Landing Page", "Personalized mailings", "Analytics", "SEO", "Web maintenance*"]
+    "more": [
+      "Landing Page",
+      "Personalized mailings",
+      "Analytics",
+      "SEO",
+      "Web maintenance*"
+    ]
   },
   {
     "id": 2,
     "name": "STANDAR",
     "description": "Full WP Web",
-    "price": "299€",
-    "more": ["Full web", "Personalized mailings", "Analytics", "SEO", "Web maintenance*"]
+    "more": [
+      "Full web",
+      "Personalized mailings",
+      "Analytics",
+      "SEO",
+      "Web maintenance*"
+    ]
   },
   {
     "id": 3,
     "name": "HOOLIV",
     "description": "Maintenance",
-    "price": "25€/month",
-    "more": ["Daily backups", "Modifications (4h/week)", "24/7 monitoring", "Personalized support"]
+    "more": [
+      "Daily backups",
+      "Modifications (4h/week)",
+      "24/7 monitoring",
+      "Personalized support"
+    ]
   }
 ]

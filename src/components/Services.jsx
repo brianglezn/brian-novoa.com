@@ -12,7 +12,6 @@ function Services() {
                     <span>{service.description}</span>
                 </div>
                 <div className='services__service-cont2'>
-                    <p>{service.price}</p>
                     {service.more.map((mores) => (
                         <span key={mores} className={mores}>{mores}</span>
                     ))}
@@ -29,7 +28,6 @@ function Services() {
                 <div className='services_container'>
                     {services}
                 </div>
-                <p className='services_text'>If the project requires it, a budget according to the project will be added.<br />*PRICES WITHOUT VAT</p>
             </section>
         </>
 

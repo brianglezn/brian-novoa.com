@@ -28,7 +28,7 @@
   max-width: 30rem;
   margin: 1rem 0 0.5rem 0;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 .projects__project span {
@@ -44,7 +44,7 @@
 }
 .projects__tech i {
   margin: 1rem 0 2rem 0;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--color-bri-600);
 }
 

@@ -16,7 +16,7 @@
 .services__service {
   background-color: var(--color-white);
   border-radius: 3rem;
-  min-height: 23rem;
+  min-height: 20rem;
   min-width: 16rem;
   box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #eae9e9;
 }
