@@ -7,8 +7,8 @@
   background-size: cover;
   border-radius: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   gap: 10vh;
 }
@@ -25,7 +25,7 @@
   margin: 0;
   font-size: 30px;
 }
-.hero__contact {
+.hero__contact button{
   display: none;
 }
 
@@ -37,7 +37,9 @@
     border-radius: 0 0 40px 40px;
     margin: 0;
     padding: 0;
-    height: 50vh;
+    height: 45vh;
+    flex-direction: column;
+    justify-content: center;
     gap: 3vh;
   }
 
@@ -50,11 +52,7 @@
   .hero__text p {
     font-size: 30px;
   }
-
-  .hero__img3D {
-    display: none;
-  }
-  .hero__contact {
+  .hero__contact button{
     display: flex;
   }
 }
@@ -69,10 +67,6 @@
 
   .hero__text {
     margin-left: 0;
-  }
-
-  .hero__img3D {
-    display: none;
   }
 }
 /* ---------- FIN RESPONSIVE ---------- */
