@@ -8,7 +8,8 @@ function Hero() {
                 <h1>BRIAN </h1>
                 <p>Freelance Web Developer</p>
             </div>
-            <div className='hero__img3D'>
+            <div className='hero__contact'>
+                <button><a href='mailto:brianglezn@gmail.com'>Contact</a></button>
             </div>
         </main>
     );

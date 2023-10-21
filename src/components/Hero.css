@@ -7,8 +7,8 @@
   background-size: cover;
   border-radius: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10vh;
 }
@@ -25,6 +25,9 @@
   margin: 0;
   font-size: 30px;
 }
+.hero__contact {
+  display: none;
+}
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 767px) {
@@ -35,6 +38,7 @@
     margin: 0;
     padding: 0;
     height: 50vh;
+    gap: 3vh;
   }
 
   .hero__text {
@@ -49,6 +53,9 @@
 
   .hero__img3D {
     display: none;
+  }
+  .hero__contact {
+    display: flex;
   }
 }
 
