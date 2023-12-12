@@ -1,4 +1,4 @@
-<h1>Brian González Novoa - Portafolio Personal</h1>
+<h1>Portafolio Personal</h1>
 Bienvenido a mi portafolio personal, un espacio donde destaco mis habilidades, proyectos y experiencia como desarrollador fullstack.
 
 <h2>Acerca de Mí</h2>
