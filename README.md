@@ -1,2 +1,15 @@
-# brian-novoa.com
- Portafolio de Brian González Novoa
+<h1>Brian González Novoa - Portafolio Personal</h1>>
+
+Bienvenido a mi portafolio personal, un espacio donde destaco mis habilidades, proyectos y experiencia como desarrollador fullstack.
+
+<h2>>Acerca de Mí</h2>>
+
+Soy Brian González Novoa, un apasionado desarrollador fullstack con experiencia en [lista de tecnologías/lenguajes que dominas]. Este portafolio es una representación de mi trayectoria profesional y mis habilidades técnicas.
+
+<h2>>Tecnologías Utilizadas</h2>>
+
+- React
+- JavaScript
+- CSS
+- HTML
+- NodeJS
