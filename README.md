@@ -11,7 +11,7 @@ Soy Brian González Novoa, un apasionado desarrollador frontend con experiencia 
 - CSS
 - HTML
 - NodeJS
-<br/><br/><br/>
+</br></br></br>
 -------------- /EN
 <h1>Personal Portfolio</h1>
 Welcome to my personal portfolio, a space where I highlight my skills, projects, and experience as a fullstack developer.
