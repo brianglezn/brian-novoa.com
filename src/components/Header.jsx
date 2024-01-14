@@ -1,8 +1,11 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import './Header.css';
 
 function Header() {
+    const { t } = useTranslation();
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -27,9 +30,9 @@ function Header() {
 
             <div className='header__navbar'>
                 <ul className='header__navbar-list'>
-                    <li><a href='#projects'>Projects</a></li>
-                    <li><a href='#services'>Services</a></li>
-                    <li><a href='mailto:brianglezn@gmail.com'>Contact</a></li>
+                    <li><a href='#projects'>{t('navProjects')}</a></li>
+                    <li><a href='#services'>{t('navServices')}</a></li>
+                    <li><a href='mailto:brianglezn@gmail.com'>{t('navContact')}</a></li>
                 </ul>
             </div>
             <button className='fa-solid fa-chevron-up' id='scrollToTopButton' onClick={scrollToTop}></button>

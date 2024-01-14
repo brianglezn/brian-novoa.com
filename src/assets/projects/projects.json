@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Profit & Lost",
     "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1695470864/brian-novoa.com/g6tdaujcobdetyicjfff.png",
-    "description": "In progress...",
+    "description": "project1Description",
     "tec": [
       "fa-brands fa-react",
       "fa-brands fa-node-js",
@@ -15,7 +15,7 @@
     "id": 2,
     "name": "Wordpress Webs",
     "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1695472009/brian-novoa.com/eaw2evllnb9nlxbwvkcu.png",
-    "description": "Few WP websites I made",
+    "description": "project2Description",
     "tec": ["fa-brands fa-wordpress-simple"],
     "link": "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS/"
   }

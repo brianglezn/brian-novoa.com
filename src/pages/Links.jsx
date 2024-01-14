@@ -1,8 +1,10 @@
-import './Links.css';
+import { useTranslation } from 'react-i18next';
 
+import './Links.css';
 import Footer from '../components/Footer';
 
-function Cookies() {
+function Links() {
+    const { t } = useTranslation();
     return (
         <>
             <section className='links'>
@@ -13,11 +15,12 @@ function Cookies() {
                     <a className='fa-brands fa-instagram' target='_blank' rel='noreferrer' href='https://www.instagram.com/brinovoa_dev/'></a>
                     <a className='fa-brands fa-linkedin' target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/brianglezn/'></a>
                 </div>
-                <button> <a href='https://www.brian-novoa.com'>Página Web</a></button>
+                <button> <a href='https://www.brian-novoa.com'>{t('websiteButton')}</a></button>
             </section>
             <Footer />
+
         </>
     );
 }
 
-export default Cookies;
+export default Links;

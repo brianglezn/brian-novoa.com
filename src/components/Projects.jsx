@@ -1,15 +1,18 @@
-import './Projects.css';
+import { useTranslation } from 'react-i18next';
 
+import './Projects.css';
 import projectsData from '../assets/projects/projects.json';
 
 function Projects() {
+    const { t } = useTranslation();
+
     const projects = projectsData.map((project) => {
 
         return (
             <a className='projects__project' href={project.link} target='_blank' key={project.id} rel="noreferrer">
                 <img src={project.photo} alt={project.name} />
                 <p>{project.name}</p>
-                <span>{project.description}</span>
+                <span>{t(project.description)}</span>
                 <div className='projects__tech'>
                     {project.tec.map((tech) => (
                         <i key={tech} className={tech}></i>
@@ -22,7 +25,7 @@ function Projects() {
 
     return (
         <>
-            <h2 className='section__title' id='projects'>PROJECTS</h2>
+            <h2 className='section__title' id='projects'>{t('title-projects')}</h2>
             <section className='projects'>
                 {projects}
             </section>

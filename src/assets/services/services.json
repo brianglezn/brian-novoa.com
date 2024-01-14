@@ -2,36 +2,36 @@
   {
     "id": 1,
     "name": "BASIC",
-    "description": "WP Landing Page",
+    "description": "service1Description",
     "more": [
-      "Landing Page",
-      "Personalized mailings",
-      "Analytics",
-      "SEO",
-      "Web maintenance*"
+      "service1Feature1",
+      "service1Feature2",
+      "service1Feature3",
+      "service1Feature4",
+      "service1Feature5"
     ]
   },
   {
     "id": 2,
     "name": "STANDAR",
-    "description": "Full WP Web",
+    "description": "service2Description",
     "more": [
-      "Full web",
-      "Personalized mailings",
-      "Analytics",
-      "SEO",
-      "Web maintenance*"
+      "service2Feature1",
+      "service2Feature2",
+      "service2Feature3",
+      "service2Feature4",
+      "service2Feature5"
     ]
   },
   {
     "id": 3,
     "name": "HOOLIV",
-    "description": "Web maintenance",
+    "description": "service3Description",
     "more": [
-      "Daily backups",
-      "Modifications (4h/week)",
-      "24/7 monitoring",
-      "Personalized support"
+      "service3Feature1",
+      "service3Feature2",
+      "service3Feature3",
+      "service3Feature4"
     ]
   }
 ]
