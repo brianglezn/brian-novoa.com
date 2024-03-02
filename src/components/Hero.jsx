@@ -13,7 +13,7 @@ function Hero() {
                 <p>{t('heroProfession')}</p>
             </div>
             <div className='hero__contact'>
-                <button><a href='mailto:brianglezn@gmail.com'>{t('heroContact')}</a></button>
+                <button><a href='mailto:hola@brian-novoa.com'>{t('heroContact')}</a></button>
             </div>
         </main>
     );
