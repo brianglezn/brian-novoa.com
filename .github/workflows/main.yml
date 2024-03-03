@@ -33,4 +33,4 @@ jobs:
         HOSTINGER_USERNAME: ${{ secrets.HOSTINGER_USERNAME }}
         HOSTINGER_HOST: ${{ secrets.HOSTINGER_HOST }}
         HOSTINGER_PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
-        HOSTINGER_PORT: 65002
+        HOSTINGER_PORT: ${{ secrets.HOSTINGER_PORT }}
