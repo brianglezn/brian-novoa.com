@@ -32,7 +32,7 @@ jobs:
         host: ${{ secrets.HOSTINGER_HOST }}
         username: ${{ secrets.HOSTINGER_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 22
+        port: 65002
         script: |
           rm -rf ~/public_html/*
           cp -r dist/* ~/public_html/
