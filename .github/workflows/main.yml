@@ -28,9 +28,8 @@ jobs:
 
       - name: Deploy to Hostinger
         run: |
-          scp -i ${{ secrets.HOSTINGER_PRIVATE_KEY }} -P ${{ secrets.HOSTINGER_PORT }} -r dist/* ${{ secrets.HOSTINGER_USERNAME }}@${{ secrets.HOSTINGER_HOST }}:~/public_html/
+          scp -i ${{ secrets.HOSTINGER_PRIVATE_KEY }} -P 65002 -r dist/* ${{ secrets.HOSTINGER_USERNAME }}@${{ secrets.HOSTINGER_HOST }}:~/public_html/
         env:
           HOSTINGER_PRIVATE_KEY: ${{ secrets.HOSTINGER_PRIVATE_KEY }}
           HOSTINGER_USERNAME: ${{ secrets.HOSTINGER_USERNAME }}
           HOSTINGER_HOST: ${{ secrets.HOSTINGER_HOST }}
-          HOSTINGER_PORT: ${{ secrets.HOSTINGER_PORT }}
