@@ -9,28 +9,28 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '18.16.1'
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18.16.1'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
       
-    - name: Copy .htaccess
-      run: cp .htaccess dist/
+      - name: Copy .htaccess
+        run: cp .htaccess dist/
 
-    - name: Deploy to Hostinger
-      run: |
-        scp -i ${{ secrets.HOSTINGER_PRIVATE_KEY }} -P ${{ secrets.HOSTINGER_PORT }} -r dist/* ${{ secrets.HOSTINGER_USERNAME }}@${{ secrets.HOSTINGER_HOST }}:~/public_html/
-      env:
-        HOSTINGER_PRIVATE_KEY: ${{ secrets.HOSTINGER_PRIVATE_KEY }}
-        HOSTINGER_USERNAME: ${{ secrets.HOSTINGER_USERNAME }}
-        HOSTINGER_HOST: ${{ secrets.HOSTINGER_HOST }}
-        HOSTINGER_PORT: ${{ secrets.HOSTINGER_PORT }}
+      - name: Deploy to Hostinger
+        run: |
+          scp -i ${{ secrets.HOSTINGER_PRIVATE_KEY }} -P ${{ secrets.HOSTINGER_PORT }} -r dist/* ${{ secrets.HOSTINGER_USERNAME }}@${{ secrets.HOSTINGER_HOST }}:~/public_html/
+        env:
+          HOSTINGER_PRIVATE_KEY: ${{ secrets.HOSTINGER_PRIVATE_KEY }}
+          HOSTINGER_USERNAME: ${{ secrets.HOSTINGER_USERNAME }}
+          HOSTINGER_HOST: ${{ secrets.HOSTINGER_HOST }}
+          HOSTINGER_PORT: ${{ secrets.HOSTINGER_PORT }}
