@@ -49,5 +49,12 @@
     "heroContact": "Contact",
     "navProjects": "Projects",
     "navServices": "Services",
-    "navContact": "Contact"
+    "navContact": "Contact",
+    "PLDescription": "\"Profit&Lost\" is a web application designed to revolutionize the way people manage their personal finances. It is proposed as an intuitive and easy-to-use solution, allowing users to have simpler and more effective control over their income, expenses, and savings.",
+    "PLfrontendDescription": "For the frontend, HTML, CSS, and TypeScript have been used within the React.js environment.",
+    "PLbackendDescription": "For the backend, the choice has been Node.js, and the database is managed with MongoDB.",
+    "PLdeploymentDescription": "Deployment is done on Hostinger, and through GitHub Actions, it is achieved that every time a code update is pushed, we have an automatic deployment so that the user has the most updated version available.",
+    "PLvisitApp": "Visit the App",
+    "WPTitle": "Wordpress Webs",
+    "WPDescription": "Websites created with Wordpress for different clients"
 }

@@ -2,21 +2,21 @@
   {
     "id": 1,
     "name": "Profit & Lost",
-    "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1695470864/brian-novoa.com/g6tdaujcobdetyicjfff.png",
+    "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1709661389/brian-novoa.com/Projects/profit-lost/portada.png",
     "description": "project1Description",
     "tec": [
       "fa-brands fa-react",
       "fa-brands fa-node-js",
       "fa-solid fa-database"
     ],
-    "link": "https://profit-lost.com"
+    "link": "http://brian-novoa.com/project/profit_lost"
   },
   {
     "id": 2,
     "name": "Wordpress Webs",
-    "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1695472009/brian-novoa.com/eaw2evllnb9nlxbwvkcu.png",
+    "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1709661556/brian-novoa.com/Projects/Wordpress/i2c.png",
     "description": "project2Description",
     "tec": ["fa-brands fa-wordpress-simple"],
-    "link": "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS/"
+    "link": "http://brian-novoa.com/project/wordpress_webs"
   }
 ]

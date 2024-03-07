@@ -9,7 +9,7 @@ function Projects() {
     const projects = projectsData.map((project) => {
 
         return (
-            <a className='projects__project' href={project.link} target='_blank' key={project.id} rel="noreferrer">
+            <a className='projects__project' href={project.link} key={project.id}>
                 <img src={project.photo} alt={project.name} />
                 <p>{project.name}</p>
                 <span>{t(project.description)}</span>
