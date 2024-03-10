@@ -18,7 +18,7 @@ const projectsData = [
     {
         "id": 2,
         "name": "Wordpress Webs",
-        "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710071865/brian-novoa.com/Projects/Wordpress/labarveria.com.png",
+        "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710074042/brian-novoa.com/Projects/Wordpress/labarveria.png",
         "description": "project2Description",
         "tec": ["fa-brands fa-wordpress-simple"],
         "link": "https://brian-novoa.com/project/wordpress_webs"

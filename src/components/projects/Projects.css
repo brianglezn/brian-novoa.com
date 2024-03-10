@@ -1,0 +1,89 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 70%;
+}
+
+.project h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.project>img {
+  border-radius: 2rem;
+  background-size: cover;
+  max-width: 70%;
+}
+
+.project p {
+  font-size: 1.9rem;
+  width: 70%;
+}
+
+.project__gallery {
+  margin: 3rem 0;
+  width: 65%;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 767px) {
+
+  /* Estilos para dispositivos móviles */
+  .project {
+    max-width: 90%;
+  }
+
+  .project h2 {
+    font-size: 2rem;
+    margin: 1rem 2rem;
+    width: 90%;
+  }
+
+  .project p {
+    font-size: 1.4rem;
+    margin: 1rem 2rem;
+    width: 90%;
+  }
+
+  .project__gallery {
+    width: 90%;
+  }
+
+  .project>img,
+  .image-gallery-slide img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Estilos para tabletas */
+  .project {
+    max-width: 80%;
+  }
+
+  .project h2 {
+    font-size: 2rem;
+    margin: 1rem 2rem;
+    width: 90%;
+  }
+
+  .project p {
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+    width: 90%;
+  }
+
+  .project__gallery {
+    width: 90%;
+  }
+
+  .project>img,
+  .image-gallery-slide img {
+    max-width: 100%;
+  }
+}
+
+/* ---------- FIN RESPONSIVE ---------- */

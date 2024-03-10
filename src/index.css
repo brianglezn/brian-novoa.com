@@ -74,3 +74,7 @@ button {
 .section__title {
   text-align: center;
 }
+
+.image-gallery-image{
+  border-radius: 15px;
+}
