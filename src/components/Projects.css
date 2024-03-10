@@ -15,16 +15,19 @@
   transition: transform 0.23s ease-in-out;
   transform: scale(1);
 }
+
 .projects__project:hover {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   transform: scale(1.02);
 }
+
 .projects__project img {
   border-radius: 3rem 3rem 0 0;
   background-size: cover;
   width: 30rem;
 }
+
 .projects__project p {
   max-width: 30rem;
   margin: 1rem 0 0.5rem 0;
@@ -32,6 +35,7 @@
   font-size: 2rem;
   font-weight: 800;
 }
+
 .projects__project span {
   display: flex;
   justify-content: center;
@@ -43,6 +47,7 @@
   justify-content: center;
   gap: 16px;
 }
+
 .projects__tech i {
   margin: 1rem 0 2rem 0;
   font-size: 2rem;
@@ -51,19 +56,17 @@
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1050px) {
+
   /* Estilos para tabletas */
   .projects__project {
     min-height: 25rem;
     min-width: 20rem;
   }
-  /* .projects__project:hover {
-    cursor: auto;
-    transition: none;
-    transform: none;
-  } */
+
   .projects__project img {
     width: 20rem;
   }
+
   .projects__project p {
     max-width: 20rem;
     margin: 1rem 0 0.5rem 0;
@@ -74,4 +77,5 @@
     font-size: 2rem;
   }
 }
+
 /* ---------- FIN RESPONSIVE ---------- */

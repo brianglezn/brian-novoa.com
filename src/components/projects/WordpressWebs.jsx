@@ -7,7 +7,7 @@ import Footer from '../Footer';
 
 import './Projects.css';
 
-function Wordpress_webs() {
+function WordpressWebs() {
   const { t } = useTranslation();
 
   const images = [
@@ -93,4 +93,4 @@ function Wordpress_webs() {
   );
 }
 
-export default Wordpress_webs;
+export default WordpressWebs;
