@@ -1,7 +1,29 @@
 import { useTranslation } from 'react-i18next';
 
 import './Projects.css';
-import projectsData from '../assets/projects/projects.json';
+
+const projectsData = [
+    {
+        "id": 1,
+        "name": "Profit & Lost",
+        "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710071745/brian-novoa.com/Projects/profit-lost/profit_lost.png",
+        "description": "project1Description",
+        "tec": [
+            "fa-brands fa-react",
+            "fa-brands fa-node-js",
+            "fa-solid fa-database"
+        ],
+        "link": "https://brian-novoa.com/project/profit-lost"
+    },
+    {
+        "id": 2,
+        "name": "Wordpress Webs",
+        "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710071865/brian-novoa.com/Projects/Wordpress/labarveria.com.png",
+        "description": "project2Description",
+        "tec": ["fa-brands fa-wordpress-simple"],
+        "link": "https://brian-novoa.com/project/wordpress_webs"
+    }
+];
 
 function Projects() {
     const { t } = useTranslation();
