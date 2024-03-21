@@ -6,7 +6,7 @@ const projectsData = [
     {
         "id": 1,
         "name": "Profit & Lost",
-        "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710071745/brian-novoa.com/Projects/profit-lost/profit_lost.png",
+        "photo": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1711033634/brian-novoa.com/Projects/profit-lost/profit_lost.png",
         "description": "project1Description",
         "tec": [
             "fa-brands fa-react",

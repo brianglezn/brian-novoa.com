@@ -14,7 +14,7 @@ function Profit_Lost() {
       <Link to='/' className='backHome'>{t('backHome')}</Link>
       <section className="project">
         <h2>PROFIT & LOST</h2>
-        <img src="https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710071745/brian-novoa.com/Projects/profit-lost/profit_lost.png" alt="profit-lost.com" />
+        <img src="https://res.cloudinary.com/dz0mwxb0v/image/upload/v1711033634/brian-novoa.com/Projects/profit-lost/profit_lost.png" alt="profit-lost.com" />
         <p>{t('PLDescription')}</p>
         <p>{t('PLfrontendDescription')}</p>
         <p>{t('PLbackendDescription')}</p>

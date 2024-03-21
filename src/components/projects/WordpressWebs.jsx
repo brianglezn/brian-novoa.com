@@ -69,7 +69,7 @@ function WordpressWebs() {
       <Link to='/' className='backHome'>{t('backHome')}</Link>
       <section className="project">
         <h2>{t('WPTitle')}</h2>
-        <img src="https://res.cloudinary.com/dz0mwxb0v/image/upload/v1709661556/brian-novoa.com/Projects/Wordpress/i2c.png" alt="WordpresWebs" />
+        <img src="https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710073695/brian-novoa.com/Projects/Wordpress/refrigeraciontransporte.png" alt="WordpresWebs" />
         <p>{t('WPDescription')}</p>
         <div className="project__gallery">
           <ImageGallery
