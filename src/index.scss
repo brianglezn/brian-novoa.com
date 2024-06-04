@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  background-color: $bg-color;
+  background-color: $primary_color-700;
   color: $text_color-grey;
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
@@ -19,7 +19,7 @@ body {
   padding: 0;
 
   a {
-    color: $primary_color-500;
+    color: $primary_color-800;
     text-decoration: none;
 
     &:hover {
@@ -27,8 +27,28 @@ body {
       cursor: pointer;
     }
   }
+
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .custom-icons svg {
+    width: 1.8rem;
+    height: 3rem;
+    fill: $primary_color-800;
+
+    &:hover {
+      fill: $primary_color-600;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .custom-icons {
+      width: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {}
 }
-
-@media (max-width: 768px) {}
-
-@media (max-width: 480px) {}

@@ -1,0 +1,68 @@
+@import '../../variables';
+
+header {
+    max-width: 1200px;
+    padding: 1rem 1rem;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .headerContainer {
+        background-color: $bg-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+
+        .headerMenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            ul {
+                display: flex;
+                gap: 3rem;
+
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .headerBtns {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: auto;
+            gap: 0.5rem;
+
+            svg {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .headerMobile {
+            cursor: pointer;
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {}
+
+    @media (max-width: 480px) {
+        .headerContainer {
+
+            .headerBtns,
+            .headerMenu {
+                display: none;
+            }
+
+            .headerMobile {
+                display: flex;
+            }
+        }
+    }
+}
