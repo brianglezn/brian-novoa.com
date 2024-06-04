@@ -22,6 +22,7 @@ header {
             margin: 0;
 
             ul {
+                padding: 0;
                 display: flex;
                 gap: 3rem;
 
@@ -50,7 +51,15 @@ header {
         }
     }
 
-    @media (max-width: 768px) {}
+    @media (max-width: 768px) {
+        .headerContainer {
+            .headerMenu {
+                ul {
+                    gap: 2rem;
+                }
+            }
+        }
+    }
 
     @media (max-width: 480px) {
         .headerContainer {

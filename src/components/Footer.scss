@@ -6,6 +6,10 @@ footer {
     justify-content: space-between;
     padding: 1.5rem 2.5rem;
 
+    p {
+        color: $text_color-grey;
+    }
+
     @media (max-width: 768px) {}
 
     @media (max-width: 480px) {
