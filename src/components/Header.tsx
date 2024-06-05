@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header>
             <div className='headerContainer'>
-                <img src="/logo.png" alt="Logo" className='logo' />
+                <a href=""><img src="/logo.png" alt="Logo" className='logo' /></a>
 
                 <nav className="headerMenu">
                     <ul>

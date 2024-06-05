@@ -9,7 +9,7 @@ header {
     z-index: 10;
 
     .headerContainer {
-        background-color: $bg-color;
+        background-color: $bg_color-white;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,6 +28,7 @@ header {
 
                 li {
                     display: inline-block;
+                    font-size: 1.1rem;
                 }
             }
         }
