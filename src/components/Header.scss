@@ -1,8 +1,8 @@
 @import '../../variables';
 
 header {
-    max-width: 1200px;
-    padding: 1rem 1rem;
+    max-width: 1300px;
+    padding: 1rem 0;
     margin: auto;
     position: sticky;
     top: 0;
@@ -14,6 +14,7 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
+        margin: 0 1rem;
         border-radius: 1rem;
 
         .headerMenu {

@@ -11,11 +11,6 @@
         &-left {
             flex: 2;
 
-            h1 {
-                font-size: 3rem;
-                margin: 0;
-            }
-
             p {
                 font-size: 1.2rem;
                 opacity: .8;
@@ -68,15 +63,22 @@
 
     .homeProjects {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         max-width: 1200px;
         margin: auto;
         padding: 5rem 1rem;
+
+        .homeProjects-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
     }
 
     .homeServices {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         max-width: 1200px;
         margin: auto;
         padding: 5rem 1rem;

@@ -1,0 +1,76 @@
+@import '../../variables';
+
+.projectItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 23rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: $bg_color-white;
+    transition: transform 0.4s ease-in-out;
+
+    img {
+        width: 4.3rem;
+        height: 4.3rem;
+        border-radius: 1rem;
+        padding: 0.2rem;
+        background-color: $primary_color-50;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            margin: 0;
+            margin-top: .2rem;
+            font-size: 1rem;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        color: $primary_color-800;
+    }
+
+    @media (max-width: 830px) {
+        width: 19rem;
+
+        img {
+            width: 3.5rem;
+        }
+
+        div {
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: .8rem;
+            }
+        }
+
+    }
+
+    @media (max-width: 480px) {
+        width: 19rem;
+
+        img {
+            width: 3.3rem;
+        }
+
+        div {
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+
+}

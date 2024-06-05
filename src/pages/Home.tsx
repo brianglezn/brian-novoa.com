@@ -1,7 +1,11 @@
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import ProjectItem from '../components/ProjectItem';
 import brianImage from '../assets/brian_blur.jpg';
-import './Home.scss'
+import logoPL from '../assets/logoPL.svg';
+import logoElearning from '../assets/logoElearning.svg';
+import logoWordpress from '../assets/logoWordpress.svg';
+import './Home.scss';
 
 export default function Home() {
     return (
@@ -29,6 +33,27 @@ export default function Home() {
 
             <section className="homeProjects">
                 <h2>Projects</h2>
+                <p>I've worked on lots of small projects over the years, here are a few of them. </p>
+                <div className="homeProjects-items">
+                    <ProjectItem
+                        imgSrc={logoPL}
+                        title="Profit & Lost"
+                        description="App for personal finance management"
+                        href="/projects/profit-and-lost"
+                    />
+                    <ProjectItem
+                        imgSrc={logoWordpress}
+                        title="Wordpress Webs"
+                        description="Some of the websites I have done in Wordpress"
+                        href="/projects/wordpress-webs"
+                    />
+                    <ProjectItem
+                        imgSrc={logoElearning}
+                        title="eLearning Platform"
+                        description="App in progress for an e-learning platform"
+                        href="/projects/elearning-platform"
+                    />
+                </div>
             </section>
 
             <section className="homeServices">
@@ -37,5 +62,5 @@ export default function Home() {
 
             <Footer />
         </section>
-    )
+    );
 }
