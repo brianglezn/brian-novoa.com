@@ -1,1 +1,23 @@
 @import '../../variables';
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 1rem;
+    min-height: 70vh;
+
+    .projectsList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2rem 2rem;
+    }
+
+    @media (max-width: 480px) {}
+}

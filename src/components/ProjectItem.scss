@@ -8,7 +8,7 @@
     padding: .8rem .5rem;
     border-radius: 1rem;
     background-color: $bg_color-white;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 
     img {
         width: 4.3rem;
@@ -32,7 +32,8 @@
     }
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
+        text-decoration: none;
         color: $primary_color-800;
     }
 
