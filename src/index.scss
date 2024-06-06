@@ -58,6 +58,22 @@ body {
     }
   }
 
+  .custom-button {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 8rem;
+    color: $primary_color-800;
+    background-color: $primary_color-200;
+    border-radius: .4rem;
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+
 
   @media (max-width: 768px) {
     .custom-icons {

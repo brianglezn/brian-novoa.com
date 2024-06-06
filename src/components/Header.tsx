@@ -1,9 +1,9 @@
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 import './Header.scss';
 
 export default function Header() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState(window.location.pathname);
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
@@ -12,6 +12,17 @@ export default function Header() {
     const closeSidebar = () => {
         setSidebarOpen(false);
     };
+
+    useEffect(() => {
+        const handleLocationChange = () => {
+            setActiveLink(window.location.pathname);
+        };
+
+        window.addEventListener('popstate', handleLocationChange);
+        return () => {
+            window.removeEventListener('popstate', handleLocationChange);
+        };
+    }, []);
 
     return (
         <>
@@ -22,16 +33,31 @@ export default function Header() {
                     <nav className="headerMenu">
                         <ul>
                             <li>
-                                <a href="/">Home</a>
+                                <a
+                                    href="/"
+                                    className={activeLink === "/" ? "active" : ""}
+                                    onClick={() => setActiveLink("/")}
+                                >
+                                    Home
+                                </a>
                             </li>
                             <li>
-                                <a href="/projects">Projects</a>
+                                <a
+                                    href="/projects"
+                                    className={activeLink === "/projects" ? "active" : ""}
+                                    onClick={() => setActiveLink("/projects")}
+                                >
+                                    Projects
+                                </a>
                             </li>
                             <li>
-                                <a href="/about">About</a>
-                            </li>
-                            <li>
-                                <a href="mailto:brianglezn@gmail.com">Contact</a>
+                                <a
+                                    href="/about"
+                                    className={activeLink === "/about" ? "active" : ""}
+                                    onClick={() => setActiveLink("/about")}
+                                >
+                                    About
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -61,16 +87,13 @@ export default function Header() {
                 <nav className="sidebarMenu">
                     <ul>
                         <li>
-                            <a href="/" onClick={closeSidebar}>Home</a>
+                            <a href="/" onClick={closeSidebar} className={activeLink === "/" ? "active" : ""}>Home</a>
                         </li>
                         <li>
-                            <a href="/projects" onClick={closeSidebar}>Projects</a>
+                            <a href="/projects" onClick={closeSidebar} className={activeLink === "/projects" ? "active" : ""}>Projects</a>
                         </li>
                         <li>
-                            <a href="/about" onClick={closeSidebar}>About</a>
-                        </li>
-                        <li>
-                            <a href="mailto:brianglezn@gmail.com" onClick={closeSidebar}>Contact</a>
+                            <a href="/about" onClick={closeSidebar} className={activeLink === "/about" ? "active" : ""}>About</a>
                         </li>
                     </ul>
 
