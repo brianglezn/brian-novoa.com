@@ -87,14 +87,15 @@
     .skillsContainer {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 1rem;
     }
 
     .skillItem {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100px;
+      width: 6.4rem;
       text-align: center;
 
       svg {
@@ -252,14 +253,19 @@
 
       .aboutMain-right {
         justify-content: left;
+        img {
+          width: 100%;
+        }
       }
     }
 
     .aboutSkills {
-      .skillItem {
-        svg {
-          width: 3.5rem;
-          height: 3.5rem;
+      .skillsContainer {
+        .skillItem {
+          svg {
+            width: 3.5rem;
+            height: 3.5rem;
+          }
         }
       }
     }
