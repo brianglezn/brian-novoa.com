@@ -4,6 +4,7 @@ import './Header.scss';
 export default function Header() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [activeLink, setActiveLink] = useState(window.location.pathname);
+    const [scrolled, setScrolled] = useState(false);
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
@@ -14,12 +15,19 @@ export default function Header() {
     };
 
     useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0);
+        };
+
         const handleLocationChange = () => {
             setActiveLink(window.location.pathname);
         };
 
+        window.addEventListener('scroll', handleScroll);
         window.addEventListener('popstate', handleLocationChange);
+
         return () => {
+            window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('popstate', handleLocationChange);
         };
     }, []);
@@ -27,7 +35,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <div className='headerContainer'>
+                <div className={`headerContainer ${scrolled ? 'scrolled' : ''}`}>
                     <a href="/"><img src="/logo.png" alt="Logo" className='logo' /></a>
 
                     <nav className="headerMenu">
