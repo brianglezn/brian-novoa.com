@@ -3,23 +3,38 @@
 .projects {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
-  margin: auto;
-  padding: 5rem 1rem;
+  align-items: center;
   min-height: 70vh;
+  padding: 5rem 0;
 
-  .projectsList {
+  div {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
+    flex-direction: column;
+    max-width: 1200px;
+
+    .projectsList {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
   }
 
   @media (max-width: 768px) {
-    padding: 2rem 2rem;
+    padding: 0 2rem;
+
+    div {
+      padding: 2rem 0;
+    }
   }
 
-  @media (max-width: 480px) {
-    padding: 0 1rem;
+  @media (max-width: 650px) {
+    padding: 0rem 1rem;
+
+    div {
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
   }
 }
