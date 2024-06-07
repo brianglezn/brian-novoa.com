@@ -1,143 +1,145 @@
-@import '../../variables';
+@import "../../variables";
 
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+
+  .homeMain {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 5rem 0;
+
+    &-left {
+      flex: 2;
+
+      p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0;
+
+        li {
+          display: inline-block;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: $text_color-white;
+            opacity: 0.8;
+
+            svg {
+              width: 15px;
+              fill: $text_color-white;
+            }
+
+            &:hover {
+              text-decoration: underline;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      flex: 1.3;
+      display: flex;
+      justify-content: right;
+
+      img {
+        width: 80%;
+        min-width: 250px;
+        height: auto;
+        min-height: 200px;
+        border-radius: 20px;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .homeProjects {
     display: flex;
     flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    max-width: 1200px;
+    padding: 5rem 0;
 
-    align-items: center;
+    .homeProjects-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
 
+    > a {
+      color: $primary_color-100;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .homeServices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    padding: 5rem 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
     .homeMain {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        max-width: 1200px;
-        padding: 5rem 1rem;
+      padding: 2rem 2rem;
 
-        &-left {
-            flex: 2;
-
-            p {
-                font-size: 1.2rem;
-                opacity: .8;
-            }
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                gap: .5rem;
-                padding: 0;
-
-                li {
-                    display: inline-block;
-
-                    a {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                        color: $text_color-white;
-                        opacity: .8;
-
-                        svg {
-                            width: 15px;
-                            fill: $text_color-white;
-                        }
-
-                        &:hover {
-                            text-decoration: underline;
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
+      .homeMain-left {
+        h1 {
+          font-size: 2.5rem;
         }
-
-        &-right {
-            flex: 1.3;
-            display: flex;
-            justify-content: right;
-
-            img {
-                width: 80%;
-                min-width: 250px;
-                height: auto;
-                min-height: 200px;
-                border-radius: 20px;
-                opacity: .9;
-            }
-        }
+      }
     }
 
     .homeProjects {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        max-width: 1200px;
-        padding: 5rem 1rem;
-
-        .homeProjects-items {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        >a {
-            color: $primary_color-100;
-            margin-top: 1.5rem;
-        }
+      padding: 2rem 2rem;
     }
 
     .homeServices {
-        display: flex;
-        flex-direction: column;
-        max-width: 1200px;
-        padding: 5rem 1rem;
+      padding: 2rem 2rem;
     }
+  }
 
-    @media (max-width: 768px) {
-        .homeMain {
-            padding: 2rem 2rem;
+  @media (max-width: 650px) {
+    padding: 0 1rem;
+    .homeMain {
+      flex-direction: column;
 
-            .homeMain-left {
-
-                h1 {
-                    font-size: 2.5rem;
-                }
-            }
+      .homeMain-left {
+        h1 {
+          font-size: 2rem;
         }
 
-        .homeProjects {
-            padding: 2rem 2rem;
+        p {
+          font-size: 1.1rem;
         }
 
-        .homeServices {
-            padding: 2rem 2rem;
+        .custom-button {
+          margin-bottom: 2rem;
         }
+      }
 
+      .homeMain-right {
+        justify-content: left;
+      }
     }
-
-    @media (max-width: 480px) {
-        .homeMain {
-            flex-direction: column;
-
-            .homeMain-left {
-
-                h1 {
-                    font-size: 2rem;
-                }
-
-                p {
-                    font-size: 1.1rem;
-                }
-
-                .custom-button {
-                    margin-bottom: 2rem;
-                }
-            }
-
-            .homeMain-right {
-                justify-content: left;
-            }
-        }
-    }
+  }
 }

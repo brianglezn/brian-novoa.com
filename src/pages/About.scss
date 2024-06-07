@@ -1,188 +1,301 @@
-@import '../../variables';
+@import "../../variables";
 
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+
+  .aboutMain {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 5rem 0;
+
+    &-left {
+      flex: 2;
+
+      p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0;
+
+        li {
+          display: inline-block;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: $text_color-white;
+            opacity: 0.8;
+
+            svg {
+              width: 15px;
+              fill: $text_color-white;
+            }
+
+            &:hover {
+              text-decoration: underline;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      flex: 1.3;
+      display: flex;
+      justify-content: right;
+
+      img {
+        width: 80%;
+        min-width: 200px;
+        height: auto;
+        min-height: 200px;
+        border-radius: 20px;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .aboutSkills {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .skillsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skillItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100px;
+      text-align: center;
+
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: $text_color-white;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .aboutExperience {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .experienceCard {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 1.5rem;
+      background: $bg_color-white;
+      opacity: 0.9;
+      border-radius: 1rem;
+
+      .experienceImage {
+        display: flex;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: $primary_color-50;
+        box-shadow: 0 4px 6px #0000001a;
+
+        img {
+          width: 4.3rem;
+          height: 4.3rem;
+        }
+      }
+
+      .experienceDetails {
+        flex: 1;
+
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $bg_color-black;
+        }
+
+        p {
+          font-size: 1rem;
+          margin: 0.2rem 0;
+          color: $text_color-grey;
+        }
+
+        time {
+          font-size: 0.875rem;
+          color: $text_color-grey;
+          text-transform: uppercase;
+        }
+
+        p.description {
+          font-size: 1rem;
+          color: $text_color-grey;
+          opacity: 0.8;
+          margin-top: 0;
+          max-height: 100px;
+          overflow: hidden;
+          transition: max-height 0.3s ease-in-out;
+
+          &.expanded {
+            max-height: none;
+          }
+        }
+
+        div + div {
+          margin-top: 1rem;
+        }
+
+        .toggleButton {
+          background: none;
+          border: none;
+          color: $primary_color-800;
+          cursor: pointer;
+          margin-top: 0.5rem;
+          padding: 0;
+          text-decoration: underline;
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
 
     .aboutMain {
-        display: flex;
-        align-items: center;
-        align-items: flex-start;
-        gap: 1rem;
-        max-width: 1200px;
-        padding: 5rem 1rem;
+      padding: 2rem 0;
 
-        &-left {
-            flex: 2;
-
-            p {
-                font-size: 1.2rem;
-                opacity: .8;
-            }
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                gap: .5rem;
-                padding: 0;
-
-                li {
-                    display: inline-block;
-
-                    a {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                        color: $text_color-white;
-                        opacity: .8;
-
-                        svg {
-                            width: 15px;
-                            fill: $text_color-white;
-                        }
-
-                        &:hover {
-                            text-decoration: underline;
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
+      .aboutMain-left {
+        h2 {
+          font-size: 2rem;
         }
 
-        &-right {
-            flex: 1.3;
-            display: flex;
-            justify-content: right;
-
-            img {
-                width: 80%;
-                min-width: 200px;
-                height: auto;
-                min-height: 200px;
-                border-radius: 20px;
-                opacity: .9;
-            }
+        .custom-button {
+          margin-bottom: 2rem;
         }
+      }
+
+      .aboutMain-right {
+        img {
+          width: 90%;
+        }
+      }
     }
 
     .aboutExperience {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        max-width: 1200px;
-        padding: 2rem 1rem;
-        margin: 2rem 0;
+      padding: 2rem 0;
+    }
+  }
 
+  @media (max-width: 650px) {
+    padding: 0 1rem;
+
+    .aboutMain {
+      flex-direction: column;
+
+      .aboutMain-left {
         h2 {
-            margin-bottom: 1rem;
+          font-size: 1.7rem;
         }
 
-        .experienceCard {
-            display: flex;
-            align-items: flex-start;
-            gap: 2rem;
-            padding: 1.5rem;
-            background: $bg_color-white;
-            opacity: .9;
-            border-radius: 1rem;
-
-            .experienceImage {
-                display: flex;
-                border-radius: 1rem;
-                overflow: hidden;
-                background: $primary_color-50;
-                box-shadow: 0 4px 6px #0000001a;
-
-                img {
-                    width: 4.3rem;
-                    height: 4.3rem;
-                }
-            }
-
-            .experienceDetails {
-                flex: 1;
-
-                h3 {
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    color: $bg_color-black;
-                }
-
-                p {
-                    font-size: 1rem;
-                    margin: .2rem 0;
-                    color: $text_color-grey;
-                }
-
-                time {
-                    font-size: 0.875rem;
-                    color: $text_color-grey;
-                    text-transform: uppercase;
-                }
-
-                p.description {
-                    font-size: 1rem;
-                    color: $text_color-grey;
-                    opacity: .75;
-                    margin-bottom: 2rem;
-                    margin-top: 0;
-                }
-
-                :last-child {
-                    margin: 1rem 0 .5rem;
-                }
-            }
+        p {
+          font-size: 1.1rem;
         }
+
+        .resume {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .aboutMain-right {
+        justify-content: left;
+      }
     }
 
-
-    @media (max-width: 768px) {
-        .aboutMain {
-            padding: 2rem 2rem;
-
-            .aboutMain-left {
-
-                h2 {
-                    font-size: 2rem;
-                }
-
-                .custom-button {
-                    margin-bottom: 2rem;
-                }
-            }
-
-            .aboutMain-right {
-                img {
-                    width: 90%;
-                }
-            }
+    .aboutSkills {
+      .skillItem {
+        svg {
+          width: 3.5rem;
+          height: 3.5rem;
         }
+      }
     }
 
-    @media (max-width: 650px) {
-        .aboutMain {
-            flex-direction: column;
+    .aboutExperience {
+      .experienceCard {
+        gap: 1rem;
+        padding: 1rem;
 
-            .aboutMain-left {
-                h2 {
-                    font-size: 1.7rem;
-                }
-
-                p {
-                    font-size: 1.1rem;
-                }
-
-                .resume {
-                    margin-bottom: 1rem;
-                }
-            }
-
-            .aboutMain-right {
-                justify-content: left;
-            }
+        .experienceImage {
+          border-radius: 0.5rem;
+          img {
+            width: 3rem;
+            height: 3rem;
+          }
         }
+
+        .experienceDetails {
+          h3 {
+            font-size: 1.3rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+
+          time {
+            font-size: 0.8rem;
+          }
+
+          p.description {
+            font-size: 0.9rem;
+          }
+        }
+      }
     }
+  }
 }
