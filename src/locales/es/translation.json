@@ -1,0 +1,88 @@
+{
+    "Header": {
+        "home": "Home",
+        "projects": "Proyectos",
+        "about": "Sobre mi"
+    },
+    "Home": {
+        "main": {
+            "title": "Desarrollador Web",
+            "description": "Soy Brian, un desarrollador frontend apasionado por el diseño web y aprender y construir nuevas experiencias.",
+            "contact": "Contacto"
+        },
+        "projects": {
+            "title": "Projects",
+            "description": "He trabajado en muchos proyectos pequeños a lo largo de los años, he aquí algunos de ellos.",
+            "all": "--Ver todos"
+        },
+        "services": {
+            "title": "Services"
+        }
+    },
+    "About": {
+        "description1": "Soy un desarrollador web, orientado especialmente en el desarrollo front-end. Mi experiencia radica en la construcción de aplicaciones web interactivas. Principalmente trabajo con tecnologías como React.js, JavaScript y TypeScript.",
+        "description2": "Creo firmemente en el aprendizaje continuo y la mejora personal, por lo que hago todo lo posible por aprender en cualquier situación posible.",
+        "resume": "Ver CV",
+        "skills": "Habilidades",
+        "experience": {
+            "title": "Experiencia",
+            "current": "Actualidad",
+            "more": "Ver más",
+            "less": "Ver menos",
+            "Accenture": {
+                "roles": [
+                    {
+                        "title": "Network & Svcs Operation",
+                        "description": "Responsable de la puesta en marcha de infraestructuras y acceso de clientes en proyectos de Grandes Cuentas de Vodafone. Configuración de routers (Cisco, Huawei, Teldat) y switches. Configuración de servicios de cliente como MPLS, VPLS, INTERNET, IPSEC, SDWAN, TRUNK, ELINE. Configuración de accesos basados en tecnologías como Radioenlaces, Fibra PaP, 3G/LTE y Orlas."
+                    },
+                    {
+                        "title": "Network & Svcs Operation",
+                        "description": "Desempeñar las funciones de Network & Svcs Operation Associate para completar el curso ASIR con formación in situ. Responsable de la puesta en servicio de infraestructuras y acceso de clientes en proyectos Vodafone Key Account. Configuración de CPEs (Cisco, Huawei). Configuración de servicios de cliente como MPLS e INTERNET. Configuración de accesos basados en tecnologías como Radioenlaces, Fibra PaP, 3G/LTE."
+                    }
+                ]
+            },
+            "BrianNovoa": {
+                "roles": [
+                    {
+                        "title": "Desarrollador web Freelance",
+                        "description": "Mi especialización abarca WordPress, CSS, HTML, JavaScript, TypeScript ampliándolo ahora con ReactJS, creando soluciones web avanzadas y dinámicas. NodeJS y MongoDB complementan mi perfil técnico. Mi foco está en la innovación, la calidad y la adaptabilidad en un entorno tecnológico en constante cambio."
+                    }
+                ]
+            },
+            "Universae": {
+                "roles": [
+                    {
+                        "title": "Desarrollador Full Stack",
+                        "description": "Desempeñando las funciones de Full Stack Developer para completar el curso DAM con Workplace Training. Durante mis prácticas desempeñé un papel activo en el desarrollo de múltiples proyectos, en los que utilicé un conjunto diverso de tecnologías y herramientas de programación, como Java, JavaScript, TypeScript, HTML, CSS, React, VSCode, NetBeans y GitHub. Mis responsabilidades iban desde escribir código limpio y eficiente hasta implementar interfaces de usuario receptivas y optimizar la funcionalidad de la aplicación para mejorar la experiencia del usuario. Colaboré estrechamente con los equipos de desarrollo para garantizar la entrega puntual de los proyectos siguiendo las mejores prácticas de codificación y diseño."
+                    }
+                ]
+            },
+            "I2C": {
+                "roles": [
+                    {
+                        "title": "Desarrollador Frontend",
+                        "description": "Desarrollando tareas de Frontend Web Developer para completar el curso DAW con la Formación en Centros de Trabajo. Durante mi contrato de prácticas en IMAGINE, tengo la oportunidad de trabajar en el desarrollo de la página web principal de la empresa y las páginas web de varios proyectos internos. Mi enfoque principal es la programación y el diseño web, asegurando su funcionalidad y usabilidad. Esta experiencia me está permitiendo adquirir nuevas habilidades y conocimientos en el campo del desarrollo web, y estoy entusiasmado por seguir aprendiendo, especialmente sobre Front End."
+                    }
+                ]
+            }
+        }
+    },
+    "Projects": {
+        "title": "Proyectos",
+        "description": "Estos son los proyectos en los que he trabajado, empecé haciendo webs en wordpress para unas cuantas empresas y ahora di el paso a hacer proyectos de código especialmente con MERN stack: Mongo, Express, React y Node.",
+        "projectItems": {
+            "ProfitLost": {
+                "title": "Profit & Lost",
+                "description": "App para la gestión de las finanzas personales"
+            },
+            "WP": {
+                "title": "Webs Wordpress",
+                "description": "Algunos de los sitios web que he hecho en Wordpress"
+            },
+            "eLearning": {
+                "title": "Plataforma de eLearning",
+                "description": "Aplicación en curso para una plataforma de e-learning"
+            }
+        }
+    }
+}

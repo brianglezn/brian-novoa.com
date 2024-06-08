@@ -1,37 +1,40 @@
+import { useTranslation } from 'react-i18next';
+
+import './Projects.scss'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ProjectItem from '../components/ProjectItem'
 import logoPL from '../assets/projects/logoPL.svg';
 import logoElearning from '../assets/projects/logoElearning.svg';
 import logoWordpress from '../assets/projects/logoWordpress.svg';
-import './Projects.scss'
 
 export default function Projects() {
+    const { t } = useTranslation();
     return (
         <>
             <Header />
             <section className='projects'>
                 <div>
-                    <h2>Projects</h2>
-                    <p>These are the projects in which I have worked, I started making wordpress websites for a few companies and now I took the step to make code projects especially with MERN stack: Mongo, Express, React and Node.</p>
+                    <h2>{t('Projects.title')}</h2>
+                    <p>{t('Projects.description')}</p>
 
                     <section className="projectsList">
                         <ProjectItem
                             imgSrc={logoPL}
-                            title="Profit & Lost"
-                            description="App for personal finance management"
+                            title={t('Projects.projectItems.ProfitLost.title')}
+                            description={t('Projects.projectItems.ProfitLost.description')}
                             href="/projects/profit-and-lost"
                         />
                         <ProjectItem
                             imgSrc={logoWordpress}
-                            title="Wordpress Webs"
-                            description="Some of the websites I have done in Wordpress"
+                            title={t('Projects.projectItems.WP.title')}
+                            description={t('Projects.projectItems.WP.description')}
                             href="/projects/wordpress-webs"
                         />
                         <ProjectItem
                             imgSrc={logoElearning}
-                            title="eLearning Platform"
-                            description="App in progress for an e-learning platform"
+                            title={t('Projects.projectItems.eLearning.title')}
+                            description={t('Projects.projectItems.eLearning.description')}
                             href="/projects/elearning-platform"
                         />
                     </section>

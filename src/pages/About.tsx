@@ -1,94 +1,15 @@
-import { useState, useEffect, useRef } from 'react';
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
+
+import './About.scss';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import brianAbout from '../assets/img/brian_about.jpg';
-import brianResume from '../assets/CV Brian Gonzalez Novoa.pdf';
+import brianResumeEN from '../assets/CV/[EN] Brian Gonzalez Novoa.pdf';
+import brianResumeES from '../assets/CV/[ES] Brian Gonzalez Novoa.pdf';
 import logoAccenture from '../assets/experience/accenture_logo.jpg';
 import logoUniversae from '../assets/experience/universae_logo.png';
 import logoI2C from '../assets/experience/i2c_logo.png';
-import { calculateDuration } from '../helpers/utils';
-import './About.scss'
-
-const experiences = [
-  {
-    company: "Accenture España",
-    roles: [
-      {
-        title: "Network & Svcs Operation Associate",
-        startDate: "2021-06-01",
-        endDate: "actualidad",
-        description: `
-          - Responsible for the commissioning of infrastructure and customer access in Vodafone Key Account projects.
-          - Router (Cisco, Huawei, Teldat) and Switch Configuration.
-          - Configuration of customer services such as MPLS, VPLS, INTERNET, IPSEC, SDWAN, TRUNK, ELINE. TRUNK, PRIMARY...
-          - Configuration of accesses based on technologies such as Radio links, PaP Fiber, 3G/LTE and Orlas.
-        `
-      },
-      {
-        title: "Formación en Centro de Trabajo (ASIR)",
-        startDate: "2021-04-01",
-        endDate: "2021-06-30",
-        description: `
-          Performing the duties of Network & Svcs Operation Associate to complete the ASIR course with on-site training.
-          - Responsible for infrastructure commissioning and customer access in Vodafone Key Account projects.
-          - Configuration of CPEs (Cisco, Huawei).
-          - Configuration of customer services such as MPLS and INTERNET.
-          - Configuration of accesses based on technologies such as Radio links, PaP Fiber, 3G/LTE.
-        `
-      }
-    ],
-    image: logoAccenture,
-    link: "https://es.linkedin.com/company/accenture-espana"
-  },
-  {
-    company: "brian-novoa.com",
-    roles: [
-      {
-        title: "Freelance Web Developer",
-        startDate: "2020-09-01",
-        endDate: "actualidad",
-        description: `
-          As a Freelance Frontend Developer, my specialization covers WordPress, CSS, HTML, JavaScript, TypeScript extending it now with ReactJS, creating advanced and dynamic web solutions, NodeJS and MongoDB complement my technical profile.
-          My focus is on innovation, quality, and adaptability in a constantly changing technological environment.
-        `
-      }
-    ],
-    image: '/logo.png',
-    link: "https://brian-novoa.com"
-  },
-  {
-    company: "Universae",
-    roles: [
-      {
-        title: "Full Stack Developer",
-        startDate: "2024-04-01",
-        endDate: "2024-06-30",
-        description: `
-          Performing the duties of Full Stack Developer to complete the DAM course with Workplace Training.
-          During my internship I played an active role in the development of multiple projects, where I used a diverse set of technologies and programming tools, including Java, JavaScript, TypeScript, HTML, CSS, React, VSCode, NetBeans and GitHub. My responsibilities ranged from writing clean and efficient code to implementing responsive user interfaces and optimizing application functionality to enhance the user experience. I collaborated closely with development teams to ensure timely delivery of projects following coding and design best practices.
-        `
-      }
-    ],
-    image: logoUniversae,
-    link: "https://www.linkedin.com/school/universae/"
-  },
-  {
-    company: "Imagine to Create Blockchain Tech",
-    roles: [
-      {
-        title: "Frontend Developer",
-        startDate: "2023-10-01",
-        endDate: "2024-01-31",
-        description: `
-          Developing Frontend Web Developer tasks to complete the DAW course with the Workplace Training.
-          During my internship contract at IMAGINE, I have the opportunity to work on the development of the company's main website and the websites of various internal projects. My main focus is programming and web design, ensuring its functionality and usability. This experience is allowing me to acquire new skills and knowledge in the field of web development, and I am excited to continue learning, especially about Front End.
-        `
-      }
-    ],
-    image: logoI2C,
-    link: "https://www.linkedin.com/company/i2c-bt/"
-  }
-];
 
 const skills = [
   {
@@ -178,9 +99,73 @@ const skills = [
 ];
 
 export default function About() {
-  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const { t, i18n } = useTranslation();
 
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const descriptionRefs = useRef<Record<string, HTMLParagraphElement | null>>({});
+
+  const getExperiences = useCallback(() => [
+    {
+      company: "Accenture España",
+      roles: [
+        {
+          title: t('About.experience.Accenture.roles.0.title'),
+          startDate: "2021-06-01",
+          endDate: t('About.experience.current'),
+          description: t('About.experience.Accenture.roles.0.description')
+        },
+        {
+          title: t('About.experience.Accenture.roles.1.title'),
+          startDate: "2021-04-01",
+          endDate: "2021-06-30",
+          description: t('About.experience.Accenture.roles.1.description')
+        }
+      ],
+      image: logoAccenture,
+      link: "https://es.linkedin.com/company/accenture-espana"
+    },
+    {
+      company: "brian-novoa.com",
+      roles: [
+        {
+          title: t('About.experience.BrianNovoa.roles.0.title'),
+          startDate: "2020-09-01",
+          endDate: t('About.experience.current'),
+          description: t('About.experience.BrianNovoa.roles.0.description')
+        }
+      ],
+      image: '/logo.png',
+      link: "https://brian-novoa.com"
+    },
+    {
+      company: "Universae",
+      roles: [
+        {
+          title: t('About.experience.Universae.roles.0.title'),
+          startDate: "2024-04-01",
+          endDate: "2024-06-30",
+          description: t('About.experience.Universae.roles.0.description')
+        }
+      ],
+      image: logoUniversae,
+      link: "https://www.linkedin.com/school/universae/"
+    },
+    {
+      company: "Imagine to Create Blockchain Tech",
+      roles: [
+        {
+          title: t('About.experience.I2C.roles.0.title'),
+          startDate: "2023-10-01",
+          endDate: "2024-01-31",
+          description: t('About.experience.I2C.roles.0.description')
+        }
+      ],
+      image: logoI2C,
+      link: "https://www.linkedin.com/company/i2c-bt/"
+    }
+  ], [t]);
+
+  const experiences = getExperiences();
 
   useEffect(() => {
     experiences.forEach((exp, expIndex) => {
@@ -195,7 +180,7 @@ export default function About() {
         }
       });
     });
-  }, []);
+  }, [experiences]);
 
   const toggleExpand = (expIndex: number, roleIndex: number) => {
     setExpanded((prev) => ({
@@ -211,6 +196,8 @@ export default function About() {
     return text.slice(0, maxLength) + '...';
   };
 
+  const brianResume = i18n.language === 'en' ? brianResumeEN : brianResumeES;
+
   return (
     <>
       <Header />
@@ -219,8 +206,8 @@ export default function About() {
           <div className='aboutMain-left'>
             <div>
               <h2>Brian González Novoa</h2>
-              <p>I'm a web developer, oriented especially in front-end development. My expertise lies in building interactive web applications. I mainly work with technologies like React.js, JavaScript and TypeScript.</p>
-              <p>I strongly believe in continuous learning and self-improvement, so I do my best to learn in any possible situation.</p>
+              <p>{t('About.description1')}</p>
+              <p>{t('About.description2')}</p>
             </div>
             <div>
               <ul>
@@ -230,7 +217,7 @@ export default function About() {
                 <li><a href="mailto:brianglezn@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" /></svg> Email</a></li>
               </ul>
             </div>
-            <a href={brianResume} className='custom-button' target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href={brianResume} className='custom-button' target="_blank" rel="noopener noreferrer">{t('About.resume')}</a>
           </div>
           <div className='aboutMain-right'>
             <img src={brianAbout} alt="Brian G. Novoa" />
@@ -238,7 +225,7 @@ export default function About() {
         </section>
 
         <section className='aboutSkills'>
-          <h2>Skills</h2>
+          <h2>{t('About.skills')}</h2>
           <div className='skillsContainer'>
             {skills.map((skill, index) => (
               <div className='skillItem' key={index}>
@@ -250,7 +237,7 @@ export default function About() {
         </section>
 
         <section className="aboutExperience">
-          <h2>Experiencia</h2>
+          <h2>{t('About.experience.title')}</h2>
           {experiences.map((exp, index) => (
             <div className="experienceCard" key={index}>
               <a href={exp.link} target="_blank" rel="noopener noreferrer" className="experienceImage">
@@ -264,8 +251,15 @@ export default function About() {
                     <div key={roleIndex}>
                       <p>{role.title}</p>
                       <time>
-                        {new Date(role.startDate).toLocaleString('default', { month: 'short' })}. {new Date(role.startDate).getFullYear()} -{' '}
-                        {role.endDate.toLowerCase() === 'actualidad' ? 'Actualidad' : `${new Date(role.endDate).toLocaleString('default', { month: 'short' })}. ${new Date(role.endDate).getFullYear()}`} | {calculateDuration(role.startDate, role.endDate)}
+                        {i18n.language === 'en'
+                          ? `${new Date(role.startDate).toLocaleString('en-US', { month: 'short' })}. ${new Date(role.startDate).getFullYear()} - ${role.endDate === t('About.experience.current')
+                            ? t('About.experience.current')
+                            : `${new Date(role.endDate).toLocaleString('en-US', { month: 'short' })}. ${new Date(role.endDate).getFullYear()}`
+                          }`
+                          : `${new Date(role.startDate).toLocaleString('default', { month: 'short' })}. ${new Date(role.startDate).getFullYear()} - ${role.endDate === t('About.experience.current')
+                            ? t('About.experience.current')
+                            : `${new Date(role.endDate).toLocaleString('default', { month: 'short' })}. ${new Date(role.endDate).getFullYear()}`
+                          }`}
                       </time>
                       <p
                         ref={(el) => descriptionRefs.current[key] = el}
@@ -279,8 +273,8 @@ export default function About() {
                       )}
                     </div>
                   );
-
                 })}
+
               </div>
             </div>
           ))}

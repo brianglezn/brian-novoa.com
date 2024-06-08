@@ -12,6 +12,11 @@
     flex-direction: column;
     max-width: 1200px;
 
+    p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
     .projectsList {
       display: flex;
       flex-wrap: wrap;
@@ -23,7 +28,7 @@
   @media (max-width: 768px) {
     padding: 0 2rem;
 
-    > div {
+    >div {
       padding: 2rem 0;
     }
   }
@@ -31,7 +36,7 @@
   @media (max-width: 650px) {
     padding: 0rem 1rem;
 
-    > div {
+    >div {
       h2 {
         font-size: 1.7rem;
       }
