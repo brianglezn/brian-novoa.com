@@ -33,11 +33,11 @@
                 "roles": [
                     {
                         "title": "Network & Svcs Operation",
-                        "description": "Responsable de la puesta en marcha de infraestructuras y acceso de clientes en proyectos de Grandes Cuentas de Vodafone. Configuración de routers (Cisco, Huawei, Teldat) y switches. Configuración de servicios de cliente como MPLS, VPLS, INTERNET, IPSEC, SDWAN, TRUNK, ELINE. Configuración de accesos basados en tecnologías como Radioenlaces, Fibra PaP, 3G/LTE y Orlas."
+                        "description": "Responsable de la puesta en marcha de infraestructuras y acceso de clientes en proyectos de Grandes Cuentas de Vodafone.<br/> -Configuración de routers (Cisco, Huawei, Teldat) y switches.<br/> -Configuración de servicios de cliente como MPLS, VPLS, INTERNET, IPSEC, SDWAN, TRUNK, ELINE.<br/> -Configuración de accesos basados en tecnologías como Radioenlaces, Fibra PaP, 3G/LTE y Orlas."
                     },
                     {
                         "title": "Network & Svcs Operation",
-                        "description": "Desempeñar las funciones de Network & Svcs Operation Associate para completar el curso ASIR con formación in situ. Responsable de la puesta en servicio de infraestructuras y acceso de clientes en proyectos Vodafone Key Account. Configuración de CPEs (Cisco, Huawei). Configuración de servicios de cliente como MPLS e INTERNET. Configuración de accesos basados en tecnologías como Radioenlaces, Fibra PaP, 3G/LTE."
+                        "description": "Desempeñando las funciones de Network & Svcs Operation para completar el curso ASIR con formación en centros de trabajo.<br/> -Responsable de la puesta en servicio de infraestructuras y acceso de clientes en proyectos de Grandes cuentas de Vodafone. <br/> -Configuración de CPEs (Cisco, Huawei). <br/> -Configuración de servicios de cliente como MPLS e INTERNET. <br/> -Configuración de accesos basados en tecnologías como Radioenlaces, Fibra PaP, 3G/LTE."
                     }
                 ]
             },
@@ -45,7 +45,7 @@
                 "roles": [
                     {
                         "title": "Desarrollador web Freelance",
-                        "description": "Mi especialización abarca WordPress, CSS, HTML, JavaScript, TypeScript ampliándolo ahora con ReactJS, creando soluciones web avanzadas y dinámicas. NodeJS y MongoDB complementan mi perfil técnico. Mi foco está en la innovación, la calidad y la adaptabilidad en un entorno tecnológico en constante cambio."
+                        "description": "Mi especialización abarca WordPress, CSS, HTML, JavaScript, TypeScript ampliándolo ahora con ReactJS, creando soluciones web avanzadas y dinámicas. NodeJS y MongoDB complementan mi perfil técnico.<br/> Mi foco está en la innovación, la calidad y la adaptabilidad en un entorno tecnológico en constante cambio."
                     }
                 ]
             },
@@ -53,7 +53,7 @@
                 "roles": [
                     {
                         "title": "Desarrollador Full Stack",
-                        "description": "Desempeñando las funciones de Full Stack Developer para completar el curso DAM con Workplace Training. Durante mis prácticas desempeñé un papel activo en el desarrollo de múltiples proyectos, en los que utilicé un conjunto diverso de tecnologías y herramientas de programación, como Java, JavaScript, TypeScript, HTML, CSS, React, VSCode, NetBeans y GitHub. Mis responsabilidades iban desde escribir código limpio y eficiente hasta implementar interfaces de usuario receptivas y optimizar la funcionalidad de la aplicación para mejorar la experiencia del usuario. Colaboré estrechamente con los equipos de desarrollo para garantizar la entrega puntual de los proyectos siguiendo las mejores prácticas de codificación y diseño."
+                        "description": "Desempeñando las funciones de Full Stack Developer para completar el curso DAM con la formación en centros de trabajo. <br/>Durante mis prácticas desempeñé un papel activo en el desarrollo de múltiples proyectos, en los que utilicé un conjunto diverso de tecnologías y herramientas de programación, como Java, JavaScript, TypeScript, HTML, CSS, React, VSCode, NetBeans y GitHub. <br/>-Mis responsabilidades iban desde escribir código limpio y eficiente hasta implementar interfaces de usuario receptivas y optimizar la funcionalidad de la aplicación para mejorar la experiencia del usuario. <br/>-Colaboré estrechamente con los equipos de desarrollo para garantizar la entrega puntual de los proyectos siguiendo las mejores prácticas de codificación y diseño."
                     }
                 ]
             },
@@ -61,7 +61,7 @@
                 "roles": [
                     {
                         "title": "Desarrollador Frontend",
-                        "description": "Desarrollando tareas de Frontend Web Developer para completar el curso DAW con la Formación en Centros de Trabajo. Durante mi contrato de prácticas en IMAGINE, tengo la oportunidad de trabajar en el desarrollo de la página web principal de la empresa y las páginas web de varios proyectos internos. Mi enfoque principal es la programación y el diseño web, asegurando su funcionalidad y usabilidad. Esta experiencia me está permitiendo adquirir nuevas habilidades y conocimientos en el campo del desarrollo web, y estoy entusiasmado por seguir aprendiendo, especialmente sobre Front End."
+                        "description": "Desarrollando tareas de Frontend Web Developer para completar el curso DAW con la Formación en Centros de Trabajo. Durante mi contrato de prácticas en I2C, tengo la oportunidad de trabajar en el desarrollo de la página web principal de la empresa y las páginas web de varios proyectos internos. <br/>Mi enfoque principal es la programación y el diseño web, asegurando su funcionalidad y usabilidad. <br/>Esta experiencia me está permitiendo adquirir nuevas habilidades y conocimientos en el campo del desarrollo web, y estoy entusiasmado por seguir aprendiendo, especialmente sobre Front End."
                     }
                 ]
             }

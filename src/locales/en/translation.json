@@ -33,11 +33,11 @@
                 "roles": [
                     {
                         "title": "Network & Svcs Operation",
-                        "description": "Responsible for the commissioning of infrastructure and customer access in Vodafone Key Account projects. Router (Cisco, Huawei, Teldat) and Switch Configuration. Configuration of customer services such as MPLS, VPLS, INTERNET, IPSEC, SDWAN, TRUNK, ELINE. Configuration of accesses based on technologies such as Radio links, PaP Fiber, 3G/LTE and Orlas."
+                        "description": "Responsible for the commissioning of infrastructure and customer access in Vodafone Key Account projects.<br/> -Router (Cisco, Huawei, Teldat) and Switch Configuration.<br/> -Configuration of customer services such as MPLS, VPLS, INTERNET, IPSEC, SDWAN, TRUNK, ELINE.<br/> -Configuration of accesses based on technologies such as Radio links, PaP Fiber, 3G/LTE and Orlas."
                     },
                     {
                         "title": "Network & Svcs Operation",
-                        "description": "Performing the duties of Network & Svcs Operation Associate to complete the ASIR course with on-site training. Responsible for infrastructure commissioning and customer access in Vodafone Key Account projects. Configuration of CPEs (Cisco, Huawei). Configuration of customer services such as MPLS and INTERNET. Configuration of accesses based on technologies such as Radio links, PaP Fiber, 3G/LTE."
+                        "description": "Performing the duties of Network & Svcs Operation Associate to complete the ASIR course with on-site training. Responsible for infrastructure commissioning and customer access in Vodafone Key Account projects. <br/> -Configuration of CPEs (Cisco, Huawei). <br/> -Configuration of customer services such as MPLS and INTERNET. <br/> -Configuration of accesses based on technologies such as Radio links, PaP Fiber, 3G/LTE."
                     }
                 ]
             },
@@ -45,7 +45,7 @@
                 "roles": [
                     {
                         "title": "Freelance Web Developer",
-                        "description": "My specialization covers WordPress, CSS, HTML, JavaScript, TypeScript extending it now with ReactJS, creating advanced and dynamic web solutions. NodeJS and MongoDB complement my technical profile. My focus is on innovation, quality, and adaptability in a constantly changing technological environment."
+                        "description": "My specialization covers WordPress, CSS, HTML, JavaScript, TypeScript extending it now with ReactJS, creating advanced and dynamic web solutions. NodeJS and MongoDB complement my technical profile. <br/>My focus is on innovation, quality, and adaptability in a constantly changing technological environment."
                     }
                 ]
             },
@@ -53,7 +53,7 @@
                 "roles": [
                     {
                         "title": "Full Stack Developer",
-                        "description": "Performing the duties of Full Stack Developer to complete the DAM course with Workplace Training. During my internship I played an active role in the development of multiple projects, where I used a diverse set of technologies and programming tools, including Java, JavaScript, TypeScript, HTML, CSS, React, VSCode, NetBeans and GitHub. My responsibilities ranged from writing clean and efficient code to implementing responsive user interfaces and optimizing application functionality to enhance the user experience. I collaborated closely with development teams to ensure timely delivery of projects following coding and design best practices."
+                        "description": "Performing the duties of Full Stack Developer to complete the DAM course with Workplace Training. During my internship I played an active role in the development of multiple projects, where I used a diverse set of technologies and programming tools, including Java, JavaScript, TypeScript, HTML, CSS, React, VSCode, NetBeans and GitHub. <br/> -My responsibilities ranged from writing clean and efficient code to implementing responsive user interfaces and optimizing application functionality to enhance the user experience. <br/> -I collaborated closely with development teams to ensure timely delivery of projects following coding and design best practices."
                     }
                 ]
             },
@@ -61,7 +61,7 @@
                 "roles": [
                     {
                         "title": "Frontend Developer",
-                        "description": "Developing Frontend Web Developer tasks to complete the DAW course with the Workplace Training. During my internship contract at IMAGINE, I have the opportunity to work on the development of the company's main website and the websites of various internal projects. My main focus is programming and web design, ensuring its functionality and usability. This experience is allowing me to acquire new skills and knowledge in the field of web development, and I am excited to continue learning, especially about Front End."
+                        "description": "Developing Frontend Web Developer tasks to complete the DAW course with the Workplace Training. During my internship contract at I2C, I have the opportunity to work on the development of the company's main website and the websites of various internal projects.<br/> My main focus is programming and web design, ensuring its functionality and usability. <br/>This experience is allowing me to acquire new skills and knowledge in the field of web development, and I am excited to continue learning, especially about Front End."
                     }
                 ]
             }

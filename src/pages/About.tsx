@@ -172,7 +172,7 @@ export default function About() {
       exp.roles.forEach((_, roleIndex) => {
         const key = `${expIndex}-${roleIndex}`;
         const element = descriptionRefs.current[key];
-        if (element && element.scrollHeight > 100) {
+        if (element && element.scrollHeight > element.clientHeight) {
           setExpanded((prev) => ({
             ...prev,
             [key]: false

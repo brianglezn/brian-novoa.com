@@ -61,7 +61,7 @@ export default function Home() {
                             href="/projects/elearning-platform"
                         />
                     </div>
-                    <a href="/projects" className=''>{t('Home.projects.title')}</a>
+                    <a href="/projects" className=''>{t('Home.projects.all')}</a>
                 </section>
 
                 <section className="homeServices">
