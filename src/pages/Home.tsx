@@ -68,9 +68,9 @@ export default function Home() {
                     <a href="/projects" className=''>{t('Home.projects.all')}</a>
                 </section>
 
-                <section className="homeServices">
+                {/* <section className="homeServices">
                     <h2>{t('Home.services.title')}</h2>
-                </section>
+                </section> */}
 
             </section>
             <Footer />
