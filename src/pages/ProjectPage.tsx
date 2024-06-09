@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './ProjectPage.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import MainProfitLost from '../assets/projects/PL/profit-lost.com.png';
+import MainProfitLost from '../assets/projects/PL/profit-lost.com.jpg';
 import MainWP from '../assets/projects/WP/labarveria.com.png';
 import MainELearning from '../assets/projects/eLearning/elearning.com.png';
 import LogoProfitLost from '../assets/projects/PL/logoPL.svg';
