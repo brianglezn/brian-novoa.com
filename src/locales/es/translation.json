@@ -2,7 +2,7 @@
     "Header": {
         "home": "Home",
         "projects": "Proyectos",
-        "about": "Sobre mi"
+        "about": "Sobre mí"
     },
     "Home": {
         "main": {
@@ -70,18 +70,22 @@
     "Projects": {
         "title": "Proyectos",
         "description": "Estos son los proyectos en los que he trabajado, empecé haciendo webs en wordpress para unas cuantas empresas y ahora di el paso a hacer proyectos de código especialmente con MERN stack: Mongo, Express, React y Node.",
+        "visit": "Visitar",
         "projectItems": {
             "ProfitLost": {
                 "title": "Profit & Lost",
-                "description": "App para la gestión de las finanzas personales"
+                "description": "App para la gestión de las finanzas personales",
+                "description2": "Con Profit&Lost, puedes gestionar sus finanzas personales con facilidad y eficacia. Nuestra intuitiva plataforma te ayudará a controlar ingresos, gastos y ahorros, todo en un mismo lugar. ¡Empieza a tomar decisiones financieras más inteligentes hoy mismo! Organiza tus finanzas, planifica tus objetivos y monitorea tu progreso con nuestras herramientas avanzadas de análisis financiero. Profit&Lost te proporciona todo lo que necesitas para mantener tus finanzas en orden y alcanzar tus metas económicas."
             },
             "WP": {
                 "title": "Webs Wordpress",
-                "description": "Algunos de los sitios web que he hecho en Wordpress"
+                "description": "Algunos de los sitios web que he hecho en Wordpress",
+                "description2": "Conjunto de webs que hice para diversos clientes en Wordpress. Cada proyecto fue diseñado y desarrollado a medida, teniendo en cuenta las necesidades específicas de cada cliente. Desde blogs personales hasta sitios corporativos, he trabajado en una variedad de proyectos que me han permitido perfeccionar mis habilidades en diseño web y desarrollo en la plataforma Wordpress. Mi enfoque ha sido siempre crear sitios web funcionales, atractivos y fáciles de navegar, asegurando la satisfacción del cliente en cada entrega."
             },
-            "eLearning": {
+            "ELearning": {
                 "title": "Plataforma de eLearning",
-                "description": "Aplicación en curso para una plataforma de e-learning"
+                "description": "Aplicación en curso para una plataforma de e-learning",
+                "description2": "Plataforma de e-learning diseñada para ofrecer una experiencia educativa integral y accesible. Esta aplicación permite a los usuarios acceder a una amplia gama de cursos y materiales educativos en línea. Con un enfoque en la interactividad y la facilidad de uso, la plataforma eLearning está equipada con herramientas para seguimiento del progreso, evaluaciones y foros de discusión para enriquecer la experiencia de aprendizaje. Ideal para estudiantes y profesionales que buscan ampliar sus conocimientos y habilidades desde la comodidad de sus hogares."
             }
         }
     }

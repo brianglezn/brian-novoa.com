@@ -70,18 +70,22 @@
     "Projects": {
         "title": "Projects",
         "description": "These are the projects in which I have worked, I started making wordpress websites for a few companies and now I took the step to make code projects especially with MERN stack: Mongo, Express, React and Node.",
+        "visit": "Visit",
         "projectItems": {
             "ProfitLost": {
                 "title": "Profit & Lost",
-                "description": "App for personal finance management"
+                "description": "App for personal finance management",
+                "description2": "With Profit&Lost, you can manage your personal finances with ease and efficiency. Our intuitive platform will help you track income, expenses and savings all in one place - start making smarter financial decisions today! Organize your finances, plan your goals and monitor your progress with our advanced financial analysis tools. Profit&Lost provides you with everything you need to keep your finances in order and reach your financial goals."
             },
             "WP": {
                 "title": "Wordpress Webs",
-                "description": "Some of the websites I have done in Wordpress"
+                "description": "Some of the websites I have done in Wordpress",
+                "description2": "Set of websites I made for several clients in Wordpress. Each project was custom designed and developed, taking into account the specific needs of each client. From personal blogs to corporate sites, I have worked on a variety of projects that have allowed me to hone my skills in web design and development on the Wordpress platform. My focus has always been to create functional, attractive and easy to navigate websites, ensuring client satisfaction with every delivery."
             },
-            "eLearning": {
+            "ELearning": {
                 "title": "eLearning Platform",
-                "description": "App in progress for an e-learning platform"
+                "description": "App in progress for an e-learning platform",
+                "description2": "E-learning platform designed to offer a comprehensive and accessible educational experience. This application allows users to access a wide range of online courses and educational materials. With a focus on interactivity and ease of use, the eLearning platform is equipped with progress tracking tools, assessments and discussion forums to enrich the learning experience. Ideal for students and professionals looking to expand their knowledge and skills from the comfort of their homes."
             }
         }
     }

@@ -4,9 +4,9 @@ import './Projects.scss'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ProjectItem from '../components/ProjectItem'
-import logoPL from '../assets/projects/logoPL.svg';
-import logoElearning from '../assets/projects/logoElearning.svg';
-import logoWordpress from '../assets/projects/logoWordpress.svg';
+import logoPL from '../assets/projects/PL/logoPL.svg';
+import logoElearning from '../assets/projects/eLearning/logoElearning.svg';
+import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
 
 export default function Projects() {
     const { t } = useTranslation();
@@ -23,19 +23,20 @@ export default function Projects() {
                             imgSrc={logoPL}
                             title={t('Projects.projectItems.ProfitLost.title')}
                             description={t('Projects.projectItems.ProfitLost.description')}
-                            href="/projects/profit-and-lost"
+                            href="/projects/ProfitLost"
                         />
                         <ProjectItem
                             imgSrc={logoWordpress}
                             title={t('Projects.projectItems.WP.title')}
                             description={t('Projects.projectItems.WP.description')}
-                            href="/projects/wordpress-webs"
+                            href="/projects/WP"
                         />
                         <ProjectItem
                             imgSrc={logoElearning}
-                            title={t('Projects.projectItems.eLearning.title')}
-                            description={t('Projects.projectItems.eLearning.description')}
-                            href="/projects/elearning-platform"
+                            title={t('Projects.projectItems.ELearning.title')}
+                            description={t('Projects.projectItems.ELearning.description')}
+                            // href="/projects/ELearning"
+                            href=""
                         />
                     </section>
                 </div>
