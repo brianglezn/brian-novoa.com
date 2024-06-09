@@ -11,7 +11,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ imgSrc, title, description, h
     return (
         <a className="projectItem" href={href}>
             <img src={imgSrc} alt={title} />
-            <div>
+            <div className='projectItem-container'>
                 <h3>{title}</h3>
                 <p>{description}</p>
             </div>
