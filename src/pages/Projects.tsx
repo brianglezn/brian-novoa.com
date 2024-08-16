@@ -7,6 +7,7 @@ import ProjectItem from '../components/ProjectItem'
 import logoPL from '../assets/projects/PL/logoPL.svg';
 import logoElearning from '../assets/projects/eLearning/logoElearning.svg';
 import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
+import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
 
 export default function Projects() {
     const { t } = useTranslation();
@@ -26,6 +27,12 @@ export default function Projects() {
                             href="/projects/ProfitLost"
                         />
                         <ProjectItem
+                            imgSrc={logoCalenbry}
+                            title={t('Projects.projectItems.Calenbry.title')}
+                            description={t('Projects.projectItems.Calenbry.description')}
+                            href="/projects/Calenbry"
+                        />
+                        <ProjectItem
                             imgSrc={logoWordpress}
                             title={t('Projects.projectItems.WP.title')}
                             description={t('Projects.projectItems.WP.description')}
@@ -35,8 +42,7 @@ export default function Projects() {
                             imgSrc={logoElearning}
                             title={t('Projects.projectItems.ELearning.title')}
                             description={t('Projects.projectItems.ELearning.description')}
-                            // href="/projects/ELearning"
-                            href=""
+                            href="/projects/ELearning"
                         />
                     </section>
                 </div>

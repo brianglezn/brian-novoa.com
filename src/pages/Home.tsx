@@ -8,9 +8,10 @@ import IconLinkedin from '../components/icons/IconLinkedin';
 import IconGitHub from '../components/icons/IconGitHub';
 import IconInstagram from '../components/icons/IconInstagram';
 import brianHome from '../assets/img/brian_home.jpg';
-import logoPLAzul from '../assets/projects/PL/logoPL-azul.svg';
-import logoWordpressAzul from '../assets/projects/WP/logoWordpress-azul.svg';
-import logoElearningAzul from '../assets/projects/eLearning/logoElearning-azul.svg';
+import logoPL from '../assets/projects/PL/logoPL.svg';
+import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
+import logoElearning from '../assets/projects/eLearning/logoElearning.svg';
+import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
 
 export default function Home() {
     const { t } = useTranslation();
@@ -46,23 +47,28 @@ export default function Home() {
 
                     <div className="homeProjects-items">
                         <ProjectItem
-                            imgSrc={logoPLAzul}
+                            imgSrc={logoPL}
                             title={t('Projects.projectItems.ProfitLost.title')}
                             description={t('Projects.projectItems.ProfitLost.description')}
                             href="/projects/ProfitLost"
                         />
                         <ProjectItem
-                            imgSrc={logoWordpressAzul}
+                            imgSrc={logoCalenbry}
+                            title={t('Projects.projectItems.Calenbry.title')}
+                            description={t('Projects.projectItems.Calenbry.description')}
+                            href="/projects/Calenbry"
+                        />
+                        <ProjectItem
+                            imgSrc={logoWordpress}
                             title={t('Projects.projectItems.WP.title')}
                             description={t('Projects.projectItems.WP.description')}
                             href="/projects/WP"
                         />
                         <ProjectItem
-                            imgSrc={logoElearningAzul}
+                            imgSrc={logoElearning}
                             title={t('Projects.projectItems.ELearning.title')}
                             description={t('Projects.projectItems.ELearning.description')}
-                            // href="/projects/ELearning"
-                            href=""
+                            href="/projects/ELearning"
                         />
                     </div>
                     <a href="/projects" className=''>{t('Home.projects.all')}</a>

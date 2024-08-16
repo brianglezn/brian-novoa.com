@@ -86,6 +86,11 @@
                 "title": "eLearning Platform",
                 "description": "App in progress for an e-learning platform",
                 "description2": "E-learning platform designed to offer a comprehensive and accessible educational experience. This application allows users to access a wide range of online courses and educational materials. With a focus on interactivity and ease of use, the eLearning platform is equipped with progress tracking tools, assessments and discussion forums to enrich the learning experience. Ideal for students and professionals looking to expand their knowledge and skills from the comfort of their homes."
+            },
+            "Calenbry": {
+                "title": "Calenbry",
+                "description": "App in progress for appointment management",
+                "description2": "Calenbry is an innovative appointment management platform designed to streamline and automate meeting and event scheduling. With a focus on ease of use and efficiency, Calenbry allows users to create custom scheduling links, manage availability, and easily coordinate meetings. Equipped with team integration tools and advanced security features, Calenbry is ideal for professionals and businesses looking to simplify the organization of their daily activities, improve team collaboration, and offer a seamless experience for both organizers and participants."
             }
         }
     }

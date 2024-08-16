@@ -86,6 +86,11 @@
                 "title": "Plataforma de eLearning",
                 "description": "Aplicación en curso para una plataforma de e-learning",
                 "description2": "Plataforma de e-learning diseñada para ofrecer una experiencia educativa integral y accesible. Esta aplicación permite a los usuarios acceder a una amplia gama de cursos y materiales educativos en línea. Con un enfoque en la interactividad y la facilidad de uso, la plataforma eLearning está equipada con herramientas para seguimiento del progreso, evaluaciones y foros de discusión para enriquecer la experiencia de aprendizaje. Ideal para estudiantes y profesionales que buscan ampliar sus conocimientos y habilidades desde la comodidad de sus hogares."
+            },
+            "Calenbry": {
+                "title": "Calenbry",
+                "description": "Aplicación en curso para gestion de citas",
+                "description2": "Calenbry es una plataforma innovadora de gestión de citas diseñada para optimizar y automatizar la programación de reuniones y eventos. Con un enfoque en la facilidad de uso y la eficiencia, Calenbry permite a los usuarios crear enlaces de programación personalizados, gestionar la disponibilidad y coordinar reuniones de manera sencilla. Equipada con herramientas de integración para equipos y funciones avanzadas de seguridad, Calenbry es ideal para profesionales y empresas que buscan simplificar la organización de sus actividades diarias, mejorar la colaboración en equipo y ofrecer una experiencia fluida tanto para los organizadores como para los participantes."
             }
         }
     }

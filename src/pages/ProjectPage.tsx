@@ -7,9 +7,11 @@ import Header from '../components/Header';
 import MainProfitLost from '../assets/projects/PL/profit-lost.com.jpg';
 import MainWP from '../assets/projects/WP/labarveria.com.png';
 import MainELearning from '../assets/projects/eLearning/elearning.com.png';
+import MainCalenbry from '../assets/projects/calenbry/calenbry.com.png';
 import LogoProfitLost from '../assets/projects/PL/logoPL.svg';
 import LogoWP from '../assets/projects/WP/logoWordpress.svg';
 import logoElearning from '../assets/projects/eLearning/logoElearning.svg';
+import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
 import IconReact from '../components/icons/IconReact';
 import IconTypescript from '../components/icons/IconTypescript';
 import IconNode from '../components/icons/IconNode';
@@ -22,18 +24,27 @@ const projectImages: { [key: string]: string } = {
     ProfitLost: MainProfitLost,
     WP: MainWP,
     ELearning: MainELearning,
+    Calenbry: MainCalenbry,
 };
 
 const projectLogos: { [key: string]: string } = {
     ProfitLost: LogoProfitLost,
     WP: LogoWP,
     ELearning: logoElearning,
+    Calenbry: logoCalenbry,
 };
 
 const projectURLs: { [key: string]: string } = {
     ProfitLost: "https://profit-lost.com/",
     WP: "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS",
     ELearning: "https://elearning-frontend-r489.onrender.com/",
+    Calenbry: "https://calenbry-frontend.onrender.com/",
+};
+
+const gitURLs: { [key: string]: string } = {
+    ProfitLost: "https://github.com/brianglezn/profit-lost.com_FrontEnd",
+    ELearning: "https://github.com/brianglezn/eLearning",
+    Calenbry: "https://github.com/brianglezn/calenbry_Frontend",
 };
 
 const projectTechnologies: { [key: string]: { name: string; icon: JSX.Element }[] } = {
@@ -91,6 +102,28 @@ const projectTechnologies: { [key: string]: { name: string; icon: JSX.Element }[
             icon: <IconSass />
         }
     ],
+    Calenbry: [
+        {
+            name: "React",
+            icon: <IconReact />
+        },
+        {
+            name: "TypeScript",
+            icon: <IconTypescript />
+        },
+        {
+            name: "NodeJS",
+            icon: <IconNode />
+        },
+        {
+            name: "MongoDB",
+            icon: <IconMongo />
+        },
+        {
+            name: "Sass",
+            icon: <IconSass />
+        }
+    ]
 }
 
 export default function ProjectPage() {
@@ -105,6 +138,7 @@ export default function ProjectPage() {
     const projectImage = projectImages[normalizedProjectId];
     const projectLogo = projectLogos[normalizedProjectId];
     const projectURL = projectURLs[normalizedProjectId];
+    const gitURL = gitURLs[normalizedProjectId];
 
     return (
         <>
@@ -128,7 +162,7 @@ export default function ProjectPage() {
                             <div className='projectsPageMain-left--links'>
                                 <a href={projectURL} className='custom-button' target="_blank" rel="noopener noreferrer">{t('Projects.visit')}</a>
                                 {normalizedProjectId !== 'WP' && (
-                                    <a href="https://github.com/brianglezn?tab=repositories" className='custom-button-sec' target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    <a href={gitURL} className='custom-button-sec' target="_blank" rel="noopener noreferrer">GitHub</a>
                                 )}
                             </div>
 
