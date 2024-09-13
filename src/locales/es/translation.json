@@ -20,7 +20,7 @@
         }
     },
     "About": {
-        "description1": "Soy un desarrollador web, orientado especialmente en el desarrollo front-end. Mi experiencia radica en la construcción de aplicaciones web interactivas. Principalmente trabajo con tecnologías como React.js, JavaScript y TypeScript.",
+        "description1": "Soy un desarrollador web, orientado especialmente en el desarrollo front-end. Mi experiencia radica en la construcción de aplicaciones web interactivas. Principalmente trabajo con tecnologías como React.js, JavaScript, TypeScript y Node.js",
         "description2": "Creo firmemente en el aprendizaje continuo y la mejora personal, por lo que hago todo lo posible por aprender en cualquier situación posible.",
         "resume": "Ver CV",
         "skills": "Habilidades",
@@ -74,23 +74,23 @@
         "projectItems": {
             "ProfitLost": {
                 "title": "Profit & Lost",
-                "description": "App para la gestión de las finanzas personales",
-                "description2": "Con Profit&Lost, puedes gestionar tus finanzas personales con facilidad y eficacia. Nuestra intuitiva plataforma te ayudará a controlar ingresos, gastos y ahorros, todo en un mismo lugar. ¡Empieza a tomar decisiones financieras más inteligentes hoy mismo! Organiza tus finanzas, planifica tus objetivos y monitorea tu progreso con nuestras herramientas avanzadas de análisis financiero. Profit&Lost te proporciona todo lo que necesitas para mantener tus finanzas en orden y alcanzar tus metas económicas. (en desarrollo)"
+                "description": "Aplicación en desarrollo para la gestión de las finanzas personales.",
+                "description2": "Profit&Lost es una aplicación web desarrollada con tecnologías modernas como React, TypeScript, Node.js, Express, SASS, y MongoDB, diseñada para ayudar a los usuarios a gestionar sus finanzas personales de manera eficiente. La plataforma permite a los usuarios realizar un seguimiento detallado de sus cuentas, movimientos financieros, categorías de gastos e ingresos, y generar informes anuales para un análisis completo."
             },
             "WP": {
                 "title": "Webs Wordpress",
-                "description": "Algunos de los sitios web que he hecho en Wordpress",
+                "description": "Algunos de los sitios web que he hecho en Wordpress.",
                 "description2": "Conjunto de webs que hice para diversos clientes en Wordpress. Cada proyecto fue diseñado y desarrollado a medida, teniendo en cuenta las necesidades específicas de cada cliente. Desde blogs personales hasta sitios corporativos, he trabajado en una variedad de proyectos que me han permitido perfeccionar mis habilidades en diseño web y desarrollo en la plataforma Wordpress. Mi enfoque ha sido siempre crear sitios web funcionales, atractivos y fáciles de navegar, asegurando la satisfacción del cliente en cada entrega."
             },
             "ELearning": {
                 "title": "Plataforma de eLearning",
-                "description": "Aplicación en curso para una plataforma de e-learning",
-                "description2": "Plataforma de e-learning diseñada para ofrecer una experiencia educativa integral y accesible. Esta aplicación permite a los usuarios acceder a una amplia gama de cursos y materiales educativos en línea. Con un enfoque en la interactividad y la facilidad de uso, la plataforma eLearning está equipada con herramientas para seguimiento del progreso, evaluaciones y foros de discusión para enriquecer la experiencia de aprendizaje. Ideal para estudiantes y profesionales que buscan ampliar sus conocimientos y habilidades desde la comodidad de sus hogares."
+                "description": "Aplicación en desarrollo para una plataforma de e-learning.",
+                "description2": "El eLearning platform es una aplicación web diseñada para mejorar la experiencia de aprendizaje en línea ofreciendo una interfaz de usuario fluida para que los estudiantes y usuarios gestionen sus cursos, notificaciones, mensajes y compras. Construida utilizando modernas tecnologías React, TypeScript, Node.js, Express, SASS, MongoDB..."
             },
             "Calenbry": {
                 "title": "Calenbry",
-                "description": "Aplicación en curso para gestion de citas",
-                "description2": "Calenbry es una plataforma innovadora de gestión de citas diseñada para optimizar y automatizar la programación de reuniones y eventos. Con un enfoque en la facilidad de uso y la eficiencia, Calenbry permite a los usuarios crear enlaces de programación personalizados, gestionar la disponibilidad y coordinar reuniones de manera sencilla. Equipada con herramientas de integración para equipos y funciones avanzadas de seguridad, Calenbry es ideal para profesionales y empresas que buscan simplificar la organización de sus actividades diarias, mejorar la colaboración en equipo y ofrecer una experiencia fluida tanto para los organizadores como para los participantes."
+                "description": "Aplicación en desarrollo para la gestion de citas.",
+                "description2": "Calenbry es una aplicación web desarrollada con tecnologías como React, TypeScript, Node.js, Express, SASS y MongoDB, diseñada para agilizar la programación y gestión de citas para profesionales y empresas. La plataforma ofrece una variedad de características, como enlaces de programación personalizados, gestión de disponibilidad en tiempo real e integraciones con herramientas de terceros como videoconferencias y sistemas CRM. Calenbry es compatible con la colaboración en equipo, lo que permite una coordinación perfecta de las reuniones entre varios miembros del equipo y departamentos."
             }
         }
     }

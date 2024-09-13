@@ -20,7 +20,7 @@
         }
     },
     "About": {
-        "description1": "I'm a web developer, oriented especially in front-end development. My expertise lies in building interactive web applications. I mainly work with technologies like React.js, JavaScript and TypeScript.",
+        "description1": "I'm a web developer, oriented especially in front-end development. My expertise lies in building interactive web applications. I mainly work with technologies like React.js, JavaScript, TypeScript and Node.js",
         "description2": "I strongly believe in continuous learning and self-improvement, so I do my best to learn in any possible situation.",
         "resume": "View Resume",
         "skills": "Skills",
@@ -74,23 +74,23 @@
         "projectItems": {
             "ProfitLost": {
                 "title": "Profit & Lost",
-                "description": "App for personal finance management",
-                "description2": "With Profit&Lost, you can manage your personal finances with ease and efficiency. Our intuitive platform will help you track income, expenses and savings all in one place - start making smarter financial decisions today! Organize your finances, plan your goals and monitor your progress with our advanced financial analysis tools. Profit&Lost provides you with everything you need to keep your finances in order and reach your financial goals. (in development)"
+                "description": "Application under development for the management of personal finances.",
+                "description2": "Profit&Lost is a web application developed with modern technologies such as React, TypeScript, Node.js, Express, SASS, and MongoDB, designed to help users manage their personal finances efficiently. The platform allows users to keep detailed track of their accounts, financial movements, expense and income categories, and generate annual reports for comprehensive analysis."
             },
             "WP": {
                 "title": "Wordpress Webs",
-                "description": "Some of the websites I have done in Wordpress",
+                "description": "Some of the websites I have done in Wordpress.",
                 "description2": "Set of websites I made for several clients in Wordpress. Each project was custom designed and developed, taking into account the specific needs of each client. From personal blogs to corporate sites, I have worked on a variety of projects that have allowed me to hone my skills in web design and development on the Wordpress platform. My focus has always been to create functional, attractive and easy to navigate websites, ensuring client satisfaction with every delivery."
             },
             "ELearning": {
                 "title": "eLearning Platform",
-                "description": "App in progress for an e-learning platform",
-                "description2": "E-learning platform designed to offer a comprehensive and accessible educational experience. This application allows users to access a wide range of online courses and educational materials. With a focus on interactivity and ease of use, the eLearning platform is equipped with progress tracking tools, assessments and discussion forums to enrich the learning experience. Ideal for students and professionals looking to expand their knowledge and skills from the comfort of their homes."
+                "description": "Application under development for an e-learning platform.",
+                "description2": "The eLearning platform is a web application designed to enhance the online learning experience by providing a seamless user interface for students and users to manage their courses, notifications, messages and purchases. Built using modern technologies React, TypeScript, Node.js, Express, SASS, MongoDB,..."
             },
             "Calenbry": {
                 "title": "Calenbry",
-                "description": "App in progress for appointment management",
-                "description2": "Calenbry is an innovative appointment management platform designed to streamline and automate meeting and event scheduling. With a focus on ease of use and efficiency, Calenbry allows users to create custom scheduling links, manage availability, and easily coordinate meetings. Equipped with team integration tools and advanced security features, Calenbry is ideal for professionals and businesses looking to simplify the organization of their daily activities, improve team collaboration, and offer a seamless experience for both organizers and participants."
+                "description": "Application under development for appointment management.",
+                "description2": "Calenbry is a web application developed with technologies such as React, TypeScript, Node.js, Express, SASS and MongoDB, designed to streamline scheduling and appointment management for professionals and businesses. The platform offers a variety of features, such as custom scheduling links, real-time availability management and integrations with third-party tools such as video conferencing and CRM systems. Calenbry supports team collaboration, enabling seamless coordination of meetings across multiple team members and departments."
             }
         }
     }

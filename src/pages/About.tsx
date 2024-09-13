@@ -11,6 +11,7 @@ import IconSass from '../components/icons/IconSass';
 import IconMongo from '../components/icons/IconMongo';
 import IconHTML from '../components/icons/IconHTML';
 import IconCSS from '../components/icons/IconCSS';
+import IconNode from '../components/icons/IconNode';
 import IconLinkedin from '../components/icons/IconLinkedin';
 import IconGitHub from '../components/icons/IconGitHub';
 import IconInstagram from '../components/icons/IconInstagram';
@@ -28,6 +29,10 @@ const skills = [
     icon: <IconReact />
   },
   {
+    name: "NodeJS",
+    icon: <IconNode />
+  },
+  {
     name: "JavaScript",
     icon: <IconJavaScript />
   },
@@ -36,16 +41,16 @@ const skills = [
     icon: <IconTypescript />
   },
   {
-    name: "Sass",
-    icon: <IconSass />
-  },
-  {
     name: "MongoDB",
     icon: <IconMongo />
   },
   {
     name: "HTML",
     icon: <IconHTML />
+  },
+  {
+    name: "Sass",
+    icon: <IconSass />
   },
   {
     name: "CSS",
