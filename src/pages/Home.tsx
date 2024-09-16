@@ -10,7 +10,6 @@ import IconInstagram from '../components/icons/IconInstagram';
 import brianHome from '../assets/img/brian_home.jpg';
 import logoPL from '../assets/projects/PL/logoPL.svg';
 import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
-import logoElearning from '../assets/projects/eLearning/logoElearning.svg';
 import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
 
 export default function Home() {
@@ -64,19 +63,9 @@ export default function Home() {
                             description={t('Projects.projectItems.WP.description')}
                             href="/projects/WP"
                         />
-                        <ProjectItem
-                            imgSrc={logoElearning}
-                            title={t('Projects.projectItems.ELearning.title')}
-                            description={t('Projects.projectItems.ELearning.description')}
-                            href="/projects/ELearning"
-                        />
                     </div>
                     <a href="/projects" className=''>{t('Home.projects.all')}</a>
                 </section>
-
-                {/* <section className="homeServices">
-                    <h2>{t('Home.services.title')}</h2>
-                </section> */}
 
             </section>
             <Footer />

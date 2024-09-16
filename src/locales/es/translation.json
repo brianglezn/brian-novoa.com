@@ -82,11 +82,6 @@
                 "description": "Algunos de los sitios web que he hecho en Wordpress.",
                 "description2": "Conjunto de webs que hice para diversos clientes en Wordpress. Cada proyecto fue diseñado y desarrollado a medida, teniendo en cuenta las necesidades específicas de cada cliente. Desde blogs personales hasta sitios corporativos, he trabajado en una variedad de proyectos que me han permitido perfeccionar mis habilidades en diseño web y desarrollo en la plataforma Wordpress. Mi enfoque ha sido siempre crear sitios web funcionales, atractivos y fáciles de navegar, asegurando la satisfacción del cliente en cada entrega."
             },
-            "ELearning": {
-                "title": "Plataforma de eLearning",
-                "description": "Aplicación en desarrollo para una plataforma de e-learning.",
-                "description2": "El eLearning platform es una aplicación web diseñada para mejorar la experiencia de aprendizaje en línea ofreciendo una interfaz de usuario fluida para que los estudiantes y usuarios gestionen sus cursos, notificaciones, mensajes y compras. Construida utilizando modernas tecnologías React, TypeScript, Node.js, Express, SASS, MongoDB..."
-            },
             "Calenbry": {
                 "title": "Calenbry",
                 "description": "Aplicación en desarrollo para la gestion de citas.",

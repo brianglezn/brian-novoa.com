@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import MainProfitLost from '../assets/projects/PL/profit-lost.com.jpg';
 import MainWP from '../assets/projects/WP/labarveria.com.png';
-import MainELearning from '../assets/projects/eLearning/elearning.com.png';
 import MainCalenbry from '../assets/projects/calenbry/calenbry.com.png';
 import LogoProfitLost from '../assets/projects/PL/logoPL.svg';
 import LogoWP from '../assets/projects/WP/logoWordpress.svg';
@@ -23,7 +22,6 @@ import IconWordpress from '../components/icons/IconWordpress';
 const projectImages: { [key: string]: string } = {
     ProfitLost: MainProfitLost,
     WP: MainWP,
-    ELearning: MainELearning,
     Calenbry: MainCalenbry,
 };
 
@@ -37,13 +35,11 @@ const projectLogos: { [key: string]: string } = {
 const projectURLs: { [key: string]: string } = {
     ProfitLost: "https://profit-lost.com/",
     WP: "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS",
-    ELearning: "https://elearning-frontend-r489.onrender.com/",
     Calenbry: "https://calenbry-frontend.onrender.com/",
 };
 
 const gitURLs: { [key: string]: string } = {
     ProfitLost: "https://github.com/brianglezn/profit-lost.com_FrontEnd",
-    ELearning: "https://github.com/brianglezn/eLearning",
     Calenbry: "https://github.com/brianglezn/calenbry_Frontend",
 };
 
@@ -78,28 +74,6 @@ const projectTechnologies: { [key: string]: { name: string; icon: JSX.Element }[
         {
             name: "Wordpress",
             icon: <IconWordpress />
-        }
-    ],
-    ELearning: [
-        {
-            name: "React",
-            icon: <IconReact />
-        },
-        {
-            name: "TypeScript",
-            icon: <IconTypescript />
-        },
-        {
-            name: "NodeJS",
-            icon: <IconNode />
-        },
-        {
-            name: "MongoDB",
-            icon: <IconMongo />
-        },
-        {
-            name: "Sass",
-            icon: <IconSass />
         }
     ],
     Calenbry: [

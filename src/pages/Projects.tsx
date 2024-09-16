@@ -5,7 +5,6 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ProjectItem from '../components/ProjectItem'
 import logoPL from '../assets/projects/PL/logoPL.svg';
-import logoElearning from '../assets/projects/eLearning/logoElearning.svg';
 import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
 import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
 
@@ -37,12 +36,6 @@ export default function Projects() {
                             title={t('Projects.projectItems.WP.title')}
                             description={t('Projects.projectItems.WP.description')}
                             href="/projects/WP"
-                        />
-                        <ProjectItem
-                            imgSrc={logoElearning}
-                            title={t('Projects.projectItems.ELearning.title')}
-                            description={t('Projects.projectItems.ELearning.description')}
-                            href="/projects/ELearning"
                         />
                     </section>
                 </div>
