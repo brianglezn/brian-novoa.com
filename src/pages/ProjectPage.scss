@@ -9,7 +9,6 @@
 
     .projectsPageMain {
         display: flex;
-        align-items: center;
         gap: 1rem;
         width: 100%;
         max-width: 1200px;
@@ -75,6 +74,7 @@
             flex: 1.5;
             display: flex;
             justify-content: right;
+            height: 100%;
 
             img {
                 width: 100%;

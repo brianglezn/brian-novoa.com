@@ -4,13 +4,16 @@ import { useTranslation } from 'react-i18next';
 import './ProjectPage.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+
 import MainProfitLost from '../assets/projects/PL/profit-lost.com.jpg';
-import MainWP from '../assets/projects/WP/labarveria.com.png';
-import MainCalenbry from '../assets/projects/calenbry/calenbry.com.png';
 import LogoProfitLost from '../assets/projects/PL/logoPL.svg';
+import MainWP from '../assets/projects/WP/labarveria.com.png';
 import LogoWP from '../assets/projects/WP/logoWordpress.svg';
-import logoElearning from '../assets/projects/eLearning/logoElearning.svg';
-import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
+// import MainCalenbry from '../assets/projects/calenbry/calenbry.com.png';
+// import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
+import MainTHCR from '../assets/projects/TalentControlHR/talentControlHR.brian-novoa.com.png';
+import logoTHCR from '../assets/projects/TalentControlHR/logoTCHR.png';
+
 import IconReact from '../components/icons/IconReact';
 import IconTypescript from '../components/icons/IconTypescript';
 import IconNode from '../components/icons/IconNode';
@@ -22,25 +25,28 @@ import IconWordpress from '../components/icons/IconWordpress';
 const projectImages: { [key: string]: string } = {
     ProfitLost: MainProfitLost,
     WP: MainWP,
-    Calenbry: MainCalenbry,
+    TalentControlHR: MainTHCR,
+    // Calenbry: MainCalenbry,
 };
 
 const projectLogos: { [key: string]: string } = {
     ProfitLost: LogoProfitLost,
     WP: LogoWP,
-    ELearning: logoElearning,
-    Calenbry: logoCalenbry,
+    TalentControlHR: logoTHCR,
+    // Calenbry: logoCalenbry,
 };
 
 const projectURLs: { [key: string]: string } = {
     ProfitLost: "https://profit-lost.com/",
     WP: "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS",
-    Calenbry: "https://calenbry-frontend.onrender.com/",
+    TalentControlHR: "https://talentcontrolhr.brian-novoa.com/",
+    // Calenbry: "https://calenbry-frontend.onrender.com/",
 };
 
 const gitURLs: { [key: string]: string } = {
     ProfitLost: "https://github.com/brianglezn/profit-lost.com_FrontEnd",
-    Calenbry: "https://github.com/brianglezn/calenbry_Frontend",
+    TalentControlHR: "https://github.com/brianglezn/TalentControlHR_frontend",
+    // Calenbry: "https://github.com/brianglezn/calenbry_Frontend",
 };
 
 const projectTechnologies: { [key: string]: { name: string; icon: JSX.Element }[] } = {
@@ -74,6 +80,32 @@ const projectTechnologies: { [key: string]: { name: string; icon: JSX.Element }[
         {
             name: "Wordpress",
             icon: <IconWordpress />
+        }
+    ],
+    TalentControlHR: [
+        {
+            name: "React",
+            icon: <IconReact />
+        },
+        {
+            name: "TypeScript",
+            icon: <IconTypescript />
+        },
+        {
+            name: "NodeJS",
+            icon: <IconNode />
+        },
+        {
+            name: "MongoDB",
+            icon: <IconMongo />
+        },
+        {
+            name: "Express",
+            icon: <IconExpress />
+        },
+        {
+            name: "Sass",
+            icon: <IconSass />
         }
     ],
     Calenbry: [

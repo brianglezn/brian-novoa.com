@@ -3,14 +3,17 @@ import { useTranslation } from 'react-i18next';
 import './Home.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+
 import ProjectItem from '../components/ProjectItem';
 import IconLinkedin from '../components/icons/IconLinkedin';
 import IconGitHub from '../components/icons/IconGitHub';
 import IconInstagram from '../components/icons/IconInstagram';
+
 import brianHome from '../assets/img/brian_home.jpg';
 import logoPL from '../assets/projects/PL/logoPL.svg';
 import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
-import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
+import logoTCHR from '../assets/projects/TalentControlHR/logoTCHR.png';
+// import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
 
 export default function Home() {
     const { t } = useTranslation();
@@ -52,11 +55,17 @@ export default function Home() {
                             href="/projects/ProfitLost"
                         />
                         <ProjectItem
+                            imgSrc={logoTCHR}
+                            title={t('Projects.projectItems.TalentControlHR.title')}
+                            description={t('Projects.projectItems.TalentControlHR.description')}
+                            href="/projects/TalentControlHR"
+                        />
+                        {/* <ProjectItem
                             imgSrc={logoCalenbry}
                             title={t('Projects.projectItems.Calenbry.title')}
                             description={t('Projects.projectItems.Calenbry.description')}
                             href="/projects/Calenbry"
-                        />
+                        /> */}
                         <ProjectItem
                             imgSrc={logoWordpress}
                             title={t('Projects.projectItems.WP.title')}

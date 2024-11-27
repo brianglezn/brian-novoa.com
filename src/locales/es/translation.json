@@ -12,7 +12,7 @@
         },
         "projects": {
             "title": "Projects",
-            "description": "He trabajado en muchos proyectos pequeños a lo largo de los años, he aquí algunos de ellos.",
+            "description": "He trabajado en muchos proyectos a lo largo de los años, he aquí algunos de ellos.",
             "all": "--Ver todos"
         },
         "services": {
@@ -86,6 +86,11 @@
                 "title": "Calenbry",
                 "description": "Aplicación en desarrollo para la gestion de citas.",
                 "description2": "Calenbry es una aplicación web desarrollada con tecnologías como React, TypeScript, Node.js, Express, SASS y MongoDB, diseñada para agilizar la programación y gestión de citas para profesionales y empresas. La plataforma ofrece una variedad de características, como enlaces de programación personalizados, gestión de disponibilidad en tiempo real e integraciones con herramientas de terceros como videoconferencias y sistemas CRM. Calenbry es compatible con la colaboración en equipo, lo que permite una coordinación perfecta de las reuniones entre varios miembros del equipo y departamentos."
+            },
+            "TalentControlHR": {
+                "title": "TalentControl HR",
+                "description": "Aplicación en desarrollo para la gestión de recursos humanos.",
+                "description2": "TalentControlHR es una aplicación web diseñada con tecnologías modernas como React, Next.js, TypeScript, Node.js, MongoDB y SASS, enfocada en optimizar la gestión de recursos humanos en empresas de todos los tamaños. La plataforma incluye funcionalidades clave como la creación y asignación de equipos, manejo de turnos, registro de asistencia, gestión de ausencias y solicitudes de permisos. Además, TalentControlHR permite la integración con herramientas de terceros y está preparada para facilitar la colaboración entre departamentos. Su interfaz intuitiva y funcionalidades avanzadas la convierten en una solución ideal para centralizar y simplificar las operaciones de recursos humanos."
             }
         }
     }

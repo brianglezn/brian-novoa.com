@@ -12,7 +12,7 @@
         },
         "projects": {
             "title": "Projects",
-            "description": "I've worked on lots of small projects over the years, here are a few of them.",
+            "description": "I've worked on lots of projects over the years, here are a few of them.",
             "all": "--View all"
         },
         "services": {
@@ -86,6 +86,11 @@
                 "title": "Calenbry",
                 "description": "Application under development for appointment management.",
                 "description2": "Calenbry is a web application developed with technologies such as React, TypeScript, Node.js, Express, SASS and MongoDB, designed to streamline scheduling and appointment management for professionals and businesses. The platform offers a variety of features, such as custom scheduling links, real-time availability management and integrations with third-party tools such as video conferencing and CRM systems. Calenbry supports team collaboration, enabling seamless coordination of meetings across multiple team members and departments."
+            },
+            "TalentControlHR": {
+                "title": "TalentControl HR",
+                "description": "An application under development for human resources management.",
+                "description2": "TalentControlHR is a web application built with modern technologies like React, Next.js, TypeScript, Node.js, MongoDB, and SASS, aimed at optimizing human resources management for companies of all sizes. The platform features key functionalities such as team creation and assignment, shift management, attendance tracking, absence management, and leave request handling. Additionally, TalentControlHR integrates with third-party tools and is designed to facilitate collaboration across departments. Its intuitive interface and advanced features make it an ideal solution for centralizing and simplifying human resources operations."
             }
         }
     }
