@@ -12,7 +12,7 @@ import IconInstagram from '../components/icons/IconInstagram';
 import brianHome from '../assets/img/brian_home.jpg';
 import logoPL from '../assets/projects/PL/logoPL.svg';
 import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
-import logoTCHR from '../assets/projects/TalentControlHR/logoTCHR.png';
+// import logoTCHR from '../assets/projects/TalentControlHR/logoTCHR.png';
 // import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
 
 export default function Home() {
@@ -54,12 +54,12 @@ export default function Home() {
                             description={t('Projects.projectItems.ProfitLost.description')}
                             href="/projects/ProfitLost"
                         />
-                        <ProjectItem
+                        {/* <ProjectItem
                             imgSrc={logoTCHR}
                             title={t('Projects.projectItems.TalentControlHR.title')}
                             description={t('Projects.projectItems.TalentControlHR.description')}
                             href="/projects/TalentControlHR"
-                        />
+                        /> */}
                         {/* <ProjectItem
                             imgSrc={logoCalenbry}
                             title={t('Projects.projectItems.Calenbry.title')}
