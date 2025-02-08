@@ -75,7 +75,7 @@
             "ProfitLost": {
                 "title": "Profit & Lost",
                 "description": "Application for the management of personal finances.",
-                "description2": "Profit&Lost is a fullstack web application developed with modern technologies such as React, TypeScript, Node.js, Express, SASS, and MongoDB, designed to help users manage their personal finances efficiently. The platform allows users to keep detailed track of their accounts, financial movements, expense and income categories, and generate annual reports for comprehensive analysis."
+                "description2": "Profit&Lost is a fullstack application developed with React, TypeScript, Node.js, Express, SASS, and MongoDB, designed to help users manage their personal finances efficiently. The platform allows users to keep detailed track of their accounts, financial movements, expense and income categories, and generate annual reports for comprehensive analysis."
             },
             "WP": {
                 "title": "Wordpress Webs",

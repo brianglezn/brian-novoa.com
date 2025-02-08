@@ -5,7 +5,7 @@ import './ProjectPage.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-import MainProfitLost from '../assets/projects/PL/profit-lost.com.jpg';
+import MainProfitLost from '../assets/projects/PL/profit-lost.com.png';
 import LogoProfitLost from '../assets/projects/PL/logoPL.svg';
 import MainWP from '../assets/projects/WP/labarveria.com.png';
 import LogoWP from '../assets/projects/WP/logoWordpress.svg';
@@ -39,13 +39,13 @@ const projectLogos: { [key: string]: string } = {
 const projectURLs: { [key: string]: string } = {
     ProfitLost: "https://profit-lost.com/",
     WP: "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS",
-    TalentControlHR: "https://talentcontrolhr.brian-novoa.com/",
+    // TalentControlHR: "https://talentcontrolhr.brian-novoa.com/",
     // Calenbry: "https://calenbry-frontend.onrender.com/",
 };
 
 const gitURLs: { [key: string]: string } = {
-    ProfitLost: "https://github.com/brianglezn/profit-lost.com_FrontEnd",
-    TalentControlHR: "https://github.com/brianglezn/TalentControlHR_frontend",
+    ProfitLost: "https://github.com/brianglezn/PL-front-v2",
+    // TalentControlHR: "https://github.com/brianglezn/TalentControlHR_frontend",
     // Calenbry: "https://github.com/brianglezn/calenbry_Frontend",
 };
 
