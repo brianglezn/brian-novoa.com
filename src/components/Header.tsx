@@ -88,7 +88,7 @@ export default function Header() {
                     <div className="headerBtns custom-icons">
                         <a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><IconLinkedin /></a>
                         <a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><IconGitHub /></a>
-                        <a href="https://www.instagram.com/brinovoa_dev" target="_blank" rel="noopener noreferrer"><IconInstagram /></a>
+                        <a href="https://www.instagram.com/dev_brianglezn" target="_blank" rel="noopener noreferrer"><IconInstagram /></a>
                         <img
                             src={i18n.language === 'en' ? ENflag : ESflag}
                             alt={i18n.language === 'en' ? 'English' : 'Español'}
