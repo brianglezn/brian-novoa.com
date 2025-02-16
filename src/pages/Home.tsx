@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './Home.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import LanguageSelector from '../components/LanguageSelector';
 
 import ProjectItem from '../components/ProjectItem';
 import IconLinkedin from '../components/icons/IconLinkedin';
@@ -20,6 +21,7 @@ export default function Home() {
 
     return (
         <>
+            <LanguageSelector />
             <Header />
             <section className='home'>
 

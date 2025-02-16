@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import './Header.scss';
-import ESflag from '../assets/flags/ES_flag.svg'
-import ENflag from '../assets/flags/EN_flag.svg'
 import IconLinkedin from './icons/IconLinkedin';
 import IconGitHub from './icons/IconGitHub';
 import IconInstagram from './icons/IconInstagram';
@@ -11,11 +9,7 @@ import IconBarsSolid from './icons/IconBarsSolid';
 import IconXClose from './icons/IconXClose';
 
 export default function Header() {
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng);
-    };
+    const { t } = useTranslation();
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [activeLink, setActiveLink] = useState(window.location.pathname);
@@ -89,12 +83,6 @@ export default function Header() {
                         <a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><IconLinkedin /></a>
                         <a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><IconGitHub /></a>
                         <a href="https://www.instagram.com/dev_brianglezn" target="_blank" rel="noopener noreferrer"><IconInstagram /></a>
-                        <img
-                            src={i18n.language === 'en' ? ENflag : ESflag}
-                            alt={i18n.language === 'en' ? 'English' : 'Español'}
-                            onClick={() => changeLanguage(i18n.language === 'en' ? 'es' : 'en')}
-                            className="language-icon"
-                        />
                     </div>
 
                     <div className="headerMobile custom-icons" onClick={toggleSidebar}><IconBarsSolid /></div>
@@ -122,12 +110,6 @@ export default function Header() {
                         <a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><IconLinkedin /></a>
                         <a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><IconGitHub /></a>
                         <a href="https://www.instagram.com/brinovoa_dev" target="_blank" rel="noopener noreferrer"><IconInstagram /></a>
-                        <img
-                            src={i18n.language === 'en' ? ENflag : ESflag}
-                            alt={i18n.language === 'en' ? 'English' : 'Español'}
-                            onClick={() => changeLanguage(i18n.language === 'en' ? 'es' : 'en')}
-                            className="language-icon"
-                        />
                     </div>
                 </nav>
 

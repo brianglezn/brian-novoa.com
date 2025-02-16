@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './About.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import LanguageSelector from '../components/LanguageSelector';
 import IconReact from '../components/icons/IconReact';
 import IconJavaScript from '../components/icons/IconJavaScript';
 import IconTypescript from '../components/icons/IconTypescript';
@@ -160,6 +161,7 @@ export default function About() {
 
   return (
     <>
+      <LanguageSelector />
       <Header />
       <section className='about'>
         <section className='aboutMain'>

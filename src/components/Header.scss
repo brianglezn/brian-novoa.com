@@ -36,6 +36,36 @@ header {
         li {
           display: inline-block;
           font-size: 1.3rem;
+
+          a {
+            position: relative;
+            color: $primary_color-900;
+            text-decoration: none;
+            padding: 0.2rem 0;
+            
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: $primary_color-900;
+              transition: width 0.3s ease-in-out;
+            }
+
+            &.active::after {
+              width: 100%;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+
+        &:hover a.active:not(:hover)::after {
+          width: 0;
         }
       }
     }
@@ -128,14 +158,35 @@ header {
       li {
         display: inline-block;
         font-size: 2rem;
-      }
 
-      a {
-        color: $primary_color-900;
-        text-decoration: none;
+        a {
+          position: relative;
+          color: $primary_color-900;
+          text-decoration: none;
+          padding: 0.2rem 0;
+          
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $primary_color-900;
+            transition: width 0.3s ease-in-out;
+          }
 
-        &:hover {
-          text-decoration: underline;
+          &.active::after {
+            width: 100%;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+
+        &:hover a.active:not(:hover)::after {
+          width: 0;
         }
       }
     }

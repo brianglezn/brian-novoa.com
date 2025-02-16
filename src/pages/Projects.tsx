@@ -1,9 +1,12 @@
 import { useTranslation } from 'react-i18next';
 
 import './Projects.scss'
+
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ProjectItem from '../components/ProjectItem'
+import LanguageSelector from '../components/LanguageSelector';
+
 import logoPL from '../assets/projects/PL/logoPL.svg';
 import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
 // import logoTCHR from '../assets/projects/TalentControlHR/logoTCHR.png';
@@ -13,6 +16,7 @@ export default function Projects() {
     const { t } = useTranslation();
     return (
         <>
+            <LanguageSelector />
             <Header />
             <section className='projects'>
                 <div>

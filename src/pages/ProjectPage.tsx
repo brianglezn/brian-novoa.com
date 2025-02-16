@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './ProjectPage.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import LanguageSelector from '../components/LanguageSelector';
 
 import MainProfitLost from '../assets/projects/PL/profit-lost.com.png';
 import LogoProfitLost from '../assets/projects/PL/logoPL.svg';
@@ -148,6 +149,7 @@ export default function ProjectPage() {
 
     return (
         <>
+            <LanguageSelector />
             <Header />
             <section className='projectsPage'>
                 <main className='projectsPageMain'>
