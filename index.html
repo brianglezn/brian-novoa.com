@@ -3,14 +3,90 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/logo.png" />
+
+  <!-- Primary Meta Tags -->
   <title>Brian G. Novoa | Web Developer</title>
+  <meta name="title" content="Brian G. Novoa | Web Developer">
+  <meta name="description"
+    content="I'm Brian, a frontend developer passionate about web design. I love learning and creating new experiences that improve user interaction.">
+  <meta name="keywords"
+    content="React, NodeJS, JavaScript, TypeScript, MongoDB, HTML, Sass, CSS, Web Development, Frontend Developer, UI/UX">
+  <meta name="author" content="Brian González Novoa">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brian-novoa.com/">
+  <meta property="og:title" content="Brian G. Novoa | Web Developer">
+  <meta property="og:description"
+    content="I'm Brian, a frontend developer passionate about web design. I love learning and creating new experiences that improve user interaction.">
+  <meta property="og:image" content="https://brian-novoa.com/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://brian-novoa.com/">
+  <meta property="twitter:title" content="Brian G. Novoa | Web Developer">
+  <meta property="twitter:description"
+    content="I'm Brian, a frontend developer passionate about web design. I love learning and creating new experiences that improve user interaction.">
+  <meta property="twitter:image" content="https://brian-novoa.com/logo.png">
+
+  <!-- Performance & Security -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self';">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Social Media Links -->
+  <link rel="me" href="https://www.linkedin.com/in/brianglezn/">
+  <link rel="me" href="https://github.com/brianglezn/">
+  <link rel="me" href="https://www.instagram.com/dev_brianglezn">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KD9RN9WK');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
   <div id="root"></div>
+
+  <!-- Main Script -->
   <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Brian González Novoa",
+      "url": "https://brian-novoa.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/brianglezn/",
+        "https://github.com/brianglezn/",
+        "https://www.instagram.com/dev_brianglezn"
+      ],
+      "jobTitle": "Web Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      }
+    }
+  </script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD9RN9WK" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
