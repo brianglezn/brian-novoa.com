@@ -15,10 +15,10 @@ export const linktreeUsers = [
         avatar: brianAvatar,
         links: [
             {
-                title: 'Pagina web',
+                title: 'Portafolio Web',
                 url: 'https://brian-novoa.com/',
                 icon: <IconWebsite />,
-                description: 'Pagina web personal'
+                description: 'Pagina web'
             },
             {
                 title: 'LinkedIn',
