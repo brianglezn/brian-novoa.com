@@ -1,86 +1,100 @@
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
+// Importing styles
 import './ProjectPage.scss';
+
+// Importing components
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LanguageSelector from '../components/LanguageSelector';
 
-import MainProfitLost from '../assets/projects/PL/profit-lost.com.png';
-import LogoProfitLost from '../assets/projects/PL/logoPL.svg';
-import MainWP from '../assets/projects/WP/labarveria.com.png';
-import LogoWP from '../assets/projects/WP/logoWordpress.svg';
+// Importing icons
+import { IoClose, IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
-import { FaReact, FaNodeJs, FaSass, FaWordpress } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiExpress } from 'react-icons/si';
+// Importing project data
+import { getProjectById, LinkItem, Technology } from './data/projectsData.tsx';
 
-const projectImages: { [key: string]: string } = {
-    ProfitLost: MainProfitLost,
-    WP: MainWP,
-};
-
-const projectLogos: { [key: string]: string } = {
-    ProfitLost: LogoProfitLost,
-    WP: LogoWP,
-};
-
-const projectURLs: { [key: string]: string } = {
-    ProfitLost: "https://profit-lost.com/",
-    WP: "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS",
-};
-
-const gitURLs: { [key: string]: string } = {
-    ProfitLost: "https://github.com/brianglezn/PL-front-v2",
-};
-
-const projectTechnologies: { [key: string]: { name: string; icon: JSX.Element }[] } = {
-    ProfitLost: [
-        {
-            name: "React",
-            icon: <FaReact />
-        },
-        {
-            name: "TypeScript",
-            icon: <SiTypescript />
-        },
-        {
-            name: "NodeJS",
-            icon: <FaNodeJs />
-        },
-        {
-            name: "MongoDB",
-            icon: <SiMongodb />
-        },
-        {
-            name: "Express",
-            icon: <SiExpress />
-        },
-        {
-            name: "Sass",
-            icon: <FaSass />
-        }
-    ],
-    WP: [
-        {
-            name: "Wordpress",
-            icon: <FaWordpress />
-        }
-    ],
+// Interfaces
+interface TranslatedLink {
+    url: string;
+    name: string;
 }
 
+// Main component for displaying a project's details
 export default function ProjectPage() {
     const { t } = useTranslation();
     const { projectId } = useParams<{ projectId: string }>();
+    const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
+    // Return an empty fragment if no projectId is found
     if (!projectId) {
         return (<></>);
     }
 
+    const project = getProjectById(projectId);
+
+    // Display a message if the project is not found
+    if (!project) {
+        return (<div>Project not found</div>);
+    }
+
+    const { mainImage, logo, galleryImages, projectLinks, gitLinks, technologies } = project;
+
+    // Include the main image in the gallery
+    const allImages = [mainImage, ...galleryImages];
+
+    const translatedProjectLinks: TranslatedLink[] = projectLinks.map((link: LinkItem) => ({
+        url: link.url,
+        name: link.nameKey ? t(link.nameKey) : link.defaultName
+    }));
+
+    const translatedGitLinks: TranslatedLink[] = gitLinks.map((link: LinkItem) => ({
+        url: link.url,
+        name: link.nameKey ? t(link.nameKey) : link.defaultName
+    }));
+
+    const openImageViewer = (index: number) => {
+        setSelectedImageIndex(index);
+        document.body.style.overflow = 'hidden'; // Prevent scrolling in the background
+    };
+
+    const closeImageViewer = () => {
+        setSelectedImageIndex(null);
+        document.body.style.overflow = 'auto'; // Restore scrolling in the background
+    };
+
+    const navigateImage = (direction: 'prev' | 'next') => {
+        if (selectedImageIndex === null || !allImages) return;
+
+        // Navigate to the previous or next image
+        if (direction === 'prev') {
+            setSelectedImageIndex(prev =>
+                prev !== null ? (prev === 0 ? allImages.length - 1 : prev - 1) : 0
+            );
+        } else {
+            setSelectedImageIndex(prev =>
+                prev !== null ? (prev === allImages.length - 1 ? 0 : prev + 1) : 0
+            );
+        }
+    };
+
+    // Handle keyboard navigation for images
+    const handleKeyDown = (e: React.KeyboardEvent) => {
+        if (selectedImageIndex === null) return;
+
+        // Navigate images with arrow keys or close with Escape key
+        if (e.key === 'ArrowLeft') {
+            navigateImage('prev');
+        } else if (e.key === 'ArrowRight') {
+            navigateImage('next');
+        } else if (e.key === 'Escape') {
+            closeImageViewer();
+        }
+    };
+
     const normalizedProjectId = projectId.charAt(0).toUpperCase() + projectId.slice(1);
-    const projectImage = projectImages[normalizedProjectId];
-    const projectLogo = projectLogos[normalizedProjectId];
-    const projectURL = projectURLs[normalizedProjectId];
-    const gitURL = gitURLs[normalizedProjectId];
 
     return (
         <>
@@ -90,33 +104,126 @@ export default function ProjectPage() {
                 <main className='projectsPageMain'>
                     <div className='projectsPageMain-left'>
                         <div className='projectsPageMain-left--header'>
-                            <img src={projectLogo} alt={t(`Projects.projectItems.${normalizedProjectId}.title`)} />
+                            <img src={logo} alt={t(`Projects.projectItems.${normalizedProjectId}.title`)} />
                             <h1>{t(`Projects.projectItems.${normalizedProjectId}.title`)}</h1>
                         </div>
                         <p>{t(`Projects.projectItems.${normalizedProjectId}.description2`)}</p>
                         <div>
                             <ul>
-                                {projectTechnologies[normalizedProjectId].map((tech) => (
+                                {technologies.map((tech: Technology) => (
                                     <li key={tech.name}>
                                         <p>{tech.icon} {tech.name}</p>
                                     </li>
                                 ))}
                             </ul>
                             <div className='projectsPageMain-left--links'>
-                                <a href={projectURL} className='custom-button' target="_blank" rel="noopener noreferrer">{t('Projects.visit')}</a>
-                                {normalizedProjectId !== 'WP' && (
-                                    <a href={gitURL} className='custom-button-sec' target="_blank" rel="noopener noreferrer">GitHub</a>
-                                )}
-                            </div>
+                                {translatedProjectLinks.map((link: TranslatedLink, index: number) => (
+                                    <a
+                                        key={`project-${index}`}
+                                        href={link.url}
+                                        className='custom-button'
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {link.name}
+                                    </a>
+                                ))}
 
+                                {translatedGitLinks.map((link: TranslatedLink, index: number) => (
+                                    <a
+                                        key={`git-${index}`}
+                                        href={link.url}
+                                        className='custom-button-sec'
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {link.name}
+                                    </a>
+                                ))}
+                            </div>
                         </div>
                     </div>
                     <div className='projectsPageMain-right'>
-                        {projectImage && (
-                            <img src={projectImage} alt={t(`Projects.projectItems.${normalizedProjectId}.title`)} />
+                        {mainImage && (
+                            <img
+                                src={mainImage}
+                                alt={t(`Projects.projectItems.${normalizedProjectId}.title`)}
+                                onClick={() => openImageViewer(0)}
+                                className="main-project-image"
+                            />
                         )}
                     </div>
                 </main>
+
+                {galleryImages && galleryImages.length > 0 && (
+                    <div className="project-gallery">
+                        <div className="gallery-container">
+                            {galleryImages.map((img: string, index: number) => (
+                                <div
+                                    key={index}
+                                    className="gallery-item"
+                                    onClick={() => openImageViewer(index + 1)}
+                                >
+                                    <img
+                                        src={img}
+                                        alt={`${t(`Projects.projectItems.${normalizedProjectId}.title`)} - ${index + 1}`}
+                                        loading="lazy"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {/* Image Viewer Modal */}
+                {selectedImageIndex !== null && allImages && (
+                    <div
+                        className="image-viewer-overlay"
+                        onClick={closeImageViewer}
+                        onKeyDown={handleKeyDown}
+                        tabIndex={0}
+                    >
+                        <div
+                            className="image-viewer-content"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button
+                                className="close-button"
+                                onClick={closeImageViewer}
+                                aria-label="Close image viewer"
+                            >
+                                <IoClose />
+                            </button>
+
+                            <button
+                                className="nav-button prev-button"
+                                onClick={() => navigateImage('prev')}
+                                aria-label="Previous image"
+                            >
+                                <IoChevronBack />
+                            </button>
+
+                            <div className="image-container">
+                                <img
+                                    src={allImages[selectedImageIndex]}
+                                    alt={`${t(`Projects.projectItems.${normalizedProjectId}.title`)} - ${selectedImageIndex + 1}`}
+                                />
+                            </div>
+
+                            <button
+                                className="nav-button next-button"
+                                onClick={() => navigateImage('next')}
+                                aria-label="Next image"
+                            >
+                                <IoChevronForward />
+                            </button>
+
+                            <div className="image-counter">
+                                {selectedImageIndex + 1} / {allImages.length}
+                            </div>
+                        </div>
+                    </div>
+                )}
             </section>
             <Footer />
         </>

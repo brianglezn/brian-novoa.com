@@ -1,17 +1,25 @@
 import { useTranslation } from 'react-i18next';
 
+// Importing styles
 import './Home.scss';
+
+// Importing components
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LanguageSelector from '../components/LanguageSelector';
-
 import ProjectItem from '../components/ProjectItem';
+
+// Importing icons
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
-import brianHome from '../assets/img/brian_home.jpg';
-import logoPL from '../assets/projects/PL/logoPL.svg';
-import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
+// Importing images
+const BRIAN_HOME_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741469997/brian-novoa.com/img/brian_home.jpg';
 
+// Importing project logos
+const LOGO_PL_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741470590/brian-novoa.com/Projects/profit-lost/logoPL.png';
+const LOGO_WP_URL =  'https://s.w.org/style/images/about/WordPress-logotype-simplified.png';
+
+// Main component for the home page
 export default function Home() {
     const { t } = useTranslation();
 
@@ -37,7 +45,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='homeMain-right'>
-                        <img src={brianHome} alt="Brian G. Novoa" />
+                        <img src={BRIAN_HOME_URL} alt="Brian G. Novoa" />
                     </div>
                 </main>
 
@@ -47,13 +55,13 @@ export default function Home() {
 
                     <div className="homeProjects-items">
                         <ProjectItem
-                            imgSrc={logoPL}
+                            imgSrc={LOGO_PL_URL}
                             title={t('Projects.projectItems.ProfitLost.title')}
                             description={t('Projects.projectItems.ProfitLost.description')}
                             href="/projects/ProfitLost"
                         />
                         <ProjectItem
-                            imgSrc={logoWordpress}
+                            imgSrc={LOGO_WP_URL}
                             title={t('Projects.projectItems.WP.title')}
                             description={t('Projects.projectItems.WP.description')}
                             href="/projects/WP"

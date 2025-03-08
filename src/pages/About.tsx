@@ -1,24 +1,31 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
+// Importing styles
 import './About.scss';
+
+// Importing components
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LanguageSelector from '../components/LanguageSelector';
 
+// Importing icons
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaSass } from 'react-icons/fa';
 import { SiJavascript, SiTypescript, SiMongodb } from 'react-icons/si';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
-import brianAbout from '../assets/img/brian_about.jpg';
+// Importing images
+const BRIAN_ABOUT_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741470062/brian-novoa.com/img/brian_about.jpg';
 
+// Importing resumes
 import brianResumeEN from '../assets/CV/[EN] Brian Gonzalez Novoa.pdf';
 import brianResumeES from '../assets/CV/[ES] Brian Gonzalez Novoa.pdf';
 
-import logoAccenture from "../assets/experience/accenture_logo.jpg";
-import logoUniversae from "../assets/experience/universae_logo.png";
-import logoI2C from "../assets/experience/i2c_logo.png";
+// Importing logos
+const LOGO_ACCENTURE_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741470062/brian-novoa.com/experience/accenture.jpg';
+const LOGO_UNIVERSAE_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741470062/brian-novoa.com/experience/universae.png';
+const LOGO_I2C_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741470062/brian-novoa.com/experience/i2c.png';
 
 const skills = [
   {
@@ -78,7 +85,7 @@ export default function About() {
           description: t('About.experience.Accenture.roles.1.description')
         }
       ],
-      image: logoAccenture,
+      image: LOGO_ACCENTURE_URL,
       link: "https://es.linkedin.com/company/accenture-espana"
     },
     {
@@ -104,7 +111,7 @@ export default function About() {
           description: t('About.experience.Universae.roles.0.description')
         }
       ],
-      image: logoUniversae,
+      image: LOGO_UNIVERSAE_URL,
       link: "https://www.linkedin.com/school/universae/"
     },
     {
@@ -117,7 +124,7 @@ export default function About() {
           description: t('About.experience.I2C.roles.0.description')
         }
       ],
-      image: logoI2C,
+      image: LOGO_I2C_URL,
       link: "https://www.linkedin.com/company/i2c-bt/"
     }
   ], [t]);
@@ -178,7 +185,7 @@ export default function About() {
             <a href={brianResume} className='custom-button' target="_blank" rel="noopener noreferrer">{t('About.resume')}</a>
           </div>
           <div className='aboutMain-right'>
-            <img src={brianAbout} alt="Brian G. Novoa" />
+            <img src={BRIAN_ABOUT_URL} alt="Brian G. Novoa" />
           </div>
         </section>
 

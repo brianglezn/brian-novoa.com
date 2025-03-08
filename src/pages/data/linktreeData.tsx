@@ -1,10 +1,13 @@
+// Importing icons
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { FaLink } from "react-icons/fa6";
 
+// Importing user avatars
 import brianAvatar from '../../assets/linktree/brian.jpg';
 import xacoAvatar from '../../assets/linktree/xaco.jpeg';
 
+// User data for the linktree
 export const linktreeUsers = [
     {
         path: 'brian',
@@ -15,7 +18,7 @@ export const linktreeUsers = [
             {
                 title: 'Portafolio Web',
                 url: 'https://brian-novoa.com/',
-                icon: <FaLink  />,
+                icon: <FaLink />,
                 description: 'Pagina web'
             },
             {

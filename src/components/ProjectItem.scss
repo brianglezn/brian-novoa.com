@@ -21,6 +21,20 @@
     opacity: 1;
   }
 
+  .icon-container {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background-color: $primary_color-50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #21759b; /* Color oficial de WordPress */
+  }
+
   .projectItem-container {
     display: flex;
     flex-direction: column;

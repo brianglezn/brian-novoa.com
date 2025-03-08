@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
+// Importing styles
 import './Header.scss';
+
+// Importing icons
 import { FaLinkedin, FaGithub, FaInstagram, FaBars } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 
+// Main component
 export default function Header() {
     const { t } = useTranslation();
 
@@ -12,19 +16,23 @@ export default function Header() {
     const [activeLink, setActiveLink] = useState(window.location.pathname);
     const [scrolled, setScrolled] = useState(false);
 
+    // Function to toggle the sidebar visibility
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
     };
 
+    // Function to close the sidebar
     const closeSidebar = () => {
         setSidebarOpen(false);
     };
 
     useEffect(() => {
+        // Function to handle scroll events
         const handleScroll = () => {
             setScrolled(window.scrollY > 0);
         };
 
+        // Function to handle location changes
         const handleLocationChange = () => {
             setActiveLink(window.location.pathname);
         };

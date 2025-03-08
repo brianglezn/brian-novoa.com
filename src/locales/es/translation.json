@@ -71,9 +71,11 @@
         "title": "Proyectos",
         "description": "Estos son los proyectos en los que he trabajado, empecé haciendo webs en wordpress para unas cuantas empresas y ahora di el paso a hacer proyectos de código especialmente con MERN stack: Mongo, Express, React y Node.",
         "visit": "Visitar",
+        "frontend": "Github Frontend",
+        "backend": "Github Backend",
         "projectItems": {
             "ProfitLost": {
-                "title": "Profit & Lost",
+                "title": "Profit&Lost",
                 "description": "Aplicación para la gestión de las finanzas personales.",
                 "description2": "Profit&Lost es una aplicación fullstack desarrollada con React, TypeScript, Node.js, Express, SASS, y MongoDB, diseñada para ayudar a los usuarios a gestionar sus finanzas personales de manera eficiente. La plataforma permite a los usuarios realizar un seguimiento detallado de sus cuentas, movimientos financieros, categorías de gastos e ingresos, y generar informes anuales para un análisis completo."
             },
