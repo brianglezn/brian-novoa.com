@@ -5,57 +5,53 @@ import './About.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LanguageSelector from '../components/LanguageSelector';
-import IconReact from '../components/icons/IconReact';
-import IconJavaScript from '../components/icons/IconJavaScript';
-import IconTypescript from '../components/icons/IconTypescript';
-import IconSass from '../components/icons/IconSass';
-import IconMongo from '../components/icons/IconMongo';
-import IconHTML from '../components/icons/IconHTML';
-import IconCSS from '../components/icons/IconCSS';
-import IconNode from '../components/icons/IconNode';
-import IconLinkedin from '../components/icons/IconLinkedin';
-import IconGitHub from '../components/icons/IconGitHub';
-import IconInstagram from '../components/icons/IconInstagram';
-import IconEmail from '../components/icons/IconEmail';
+
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaSass } from 'react-icons/fa';
+import { SiJavascript, SiTypescript, SiMongodb } from 'react-icons/si';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+
 import brianAbout from '../assets/img/brian_about.jpg';
+
 import brianResumeEN from '../assets/CV/[EN] Brian Gonzalez Novoa.pdf';
 import brianResumeES from '../assets/CV/[ES] Brian Gonzalez Novoa.pdf';
-import logoAccenture from '../assets/experience/accenture_logo.jpg';
-import logoUniversae from '../assets/experience/universae_logo.png';
-import logoI2C from '../assets/experience/i2c_logo.png';
+
+import logoAccenture from "../assets/experience/accenture_logo.jpg";
+import logoUniversae from "../assets/experience/universae_logo.png";
+import logoI2C from "../assets/experience/i2c_logo.png";
 
 const skills = [
   {
     name: "React",
-    icon: <IconReact />
-  },
-  {
-    name: "NodeJS",
-    icon: <IconNode />
-  },
-  {
-    name: "JavaScript",
-    icon: <IconJavaScript />
+    icon: <FaReact />
   },
   {
     name: "TypeScript",
-    icon: <IconTypescript />
+    icon: <SiTypescript />
+  },
+  {
+    name: "JavaScript",
+    icon: <SiJavascript />
+  },
+  {
+    name: "NodeJS",
+    icon: <FaNodeJs />
   },
   {
     name: "MongoDB",
-    icon: <IconMongo />
+    icon: <SiMongodb />
   },
   {
     name: "HTML",
-    icon: <IconHTML />
-  },
-  {
-    name: "Sass",
-    icon: <IconSass />
+    icon: <FaHtml5 />
   },
   {
     name: "CSS",
-    icon: <IconCSS />
+    icon: <FaCss3Alt />
+  },
+  {
+    name: "Sass",
+    icon: <FaSass />
   }
 ];
 
@@ -173,10 +169,10 @@ export default function About() {
             </div>
             <div>
               <ul>
-                <li><a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"> <IconLinkedin /> Linkedin</a></li>
-                <li><a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><IconGitHub /> GitHub</a></li>
-                <li><a href="https://www.instagram.com/brinovoa_dev" target="_blank" rel="noopener noreferrer"><IconInstagram /> Instagram</a></li>
-                <li><a href="mailto:brianglezn@gmail.com" target="_blank" rel="noopener noreferrer"><IconEmail /> Email</a></li>
+                <li><a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"> <FaLinkedin /> Linkedin</a></li>
+                <li><a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a></li>
+                <li><a href="https://www.instagram.com/brinovoa_dev" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a></li>
+                <li><a href="mailto:brianglezn@gmail.com" target="_blank" rel="noopener noreferrer"><MdEmail /> Email</a></li>
               </ul>
             </div>
             <a href={brianResume} className='custom-button' target="_blank" rel="noopener noreferrer">{t('About.resume')}</a>

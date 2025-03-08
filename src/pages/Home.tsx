@@ -6,15 +6,11 @@ import Header from '../components/Header';
 import LanguageSelector from '../components/LanguageSelector';
 
 import ProjectItem from '../components/ProjectItem';
-import IconLinkedin from '../components/icons/IconLinkedin';
-import IconGitHub from '../components/icons/IconGitHub';
-import IconInstagram from '../components/icons/IconInstagram';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 import brianHome from '../assets/img/brian_home.jpg';
 import logoPL from '../assets/projects/PL/logoPL.svg';
 import logoWordpress from '../assets/projects/WP/logoWordpress.svg';
-// import logoTCHR from '../assets/projects/TalentControlHR/logoTCHR.png';
-// import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
 
 export default function Home() {
     const { t } = useTranslation();
@@ -33,9 +29,9 @@ export default function Home() {
                         </div>
                         <div>
                             <ul>
-                                <li><a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><IconLinkedin /> Linkedin</a></li>
-                                <li><a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><IconGitHub /> GitHub</a></li>
-                                <li><a href="https://www.instagram.com/dev_brianglezn" target="_blank" rel="noopener noreferrer"><IconInstagram /> Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> Linkedin</a></li>
+                                <li><a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a></li>
+                                <li><a href="https://www.instagram.com/dev_brianglezn" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a></li>
                             </ul>
                             <a href="mailto:brianglezn@gmail.com" className='custom-button' target="_blank" rel="noopener noreferrer">{t('Home.main.contact')}</a>
                         </div>
@@ -56,18 +52,6 @@ export default function Home() {
                             description={t('Projects.projectItems.ProfitLost.description')}
                             href="/projects/ProfitLost"
                         />
-                        {/* <ProjectItem
-                            imgSrc={logoTCHR}
-                            title={t('Projects.projectItems.TalentControlHR.title')}
-                            description={t('Projects.projectItems.TalentControlHR.description')}
-                            href="/projects/TalentControlHR"
-                        /> */}
-                        {/* <ProjectItem
-                            imgSrc={logoCalenbry}
-                            title={t('Projects.projectItems.Calenbry.title')}
-                            description={t('Projects.projectItems.Calenbry.description')}
-                            href="/projects/Calenbry"
-                        /> */}
                         <ProjectItem
                             imgSrc={logoWordpress}
                             title={t('Projects.projectItems.WP.title')}

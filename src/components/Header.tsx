@@ -2,11 +2,8 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import './Header.scss';
-import IconLinkedin from './icons/IconLinkedin';
-import IconGitHub from './icons/IconGitHub';
-import IconInstagram from './icons/IconInstagram';
-import IconBarsSolid from './icons/IconBarsSolid';
-import IconXClose from './icons/IconXClose';
+import { FaLinkedin, FaGithub, FaInstagram, FaBars } from 'react-icons/fa';
+import { IoClose } from 'react-icons/io5';
 
 export default function Header() {
     const { t } = useTranslation();
@@ -80,18 +77,18 @@ export default function Header() {
                     </nav>
 
                     <div className="headerBtns custom-icons">
-                        <a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><IconLinkedin /></a>
-                        <a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><IconGitHub /></a>
-                        <a href="https://www.instagram.com/dev_brianglezn" target="_blank" rel="noopener noreferrer"><IconInstagram /></a>
+                        <a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                        <a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                        <a href="https://www.instagram.com/dev_brianglezn" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                     </div>
 
-                    <div className="headerMobile custom-icons" onClick={toggleSidebar}><IconBarsSolid /></div>
+                    <div className="headerMobile custom-icons" onClick={toggleSidebar}><FaBars /></div>
                 </div>
 
             </header>
 
             <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
-                <button className="closeBtn custom-icons" onClick={closeSidebar}><IconXClose /></button>
+                <button className="closeBtn custom-icons" onClick={closeSidebar}><IoClose /></button>
 
                 <nav className="sidebarMenu">
                     <ul>
@@ -107,9 +104,9 @@ export default function Header() {
                     </ul>
 
                     <div className="sidebarBtns custom-icons">
-                        <a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><IconLinkedin /></a>
-                        <a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><IconGitHub /></a>
-                        <a href="https://www.instagram.com/brinovoa_dev" target="_blank" rel="noopener noreferrer"><IconInstagram /></a>
+                        <a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                        <a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                        <a href="https://www.instagram.com/brinovoa_dev" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                     </div>
                 </nav>
 

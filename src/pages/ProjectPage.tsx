@@ -10,127 +10,62 @@ import MainProfitLost from '../assets/projects/PL/profit-lost.com.png';
 import LogoProfitLost from '../assets/projects/PL/logoPL.svg';
 import MainWP from '../assets/projects/WP/labarveria.com.png';
 import LogoWP from '../assets/projects/WP/logoWordpress.svg';
-// import MainCalenbry from '../assets/projects/calenbry/calenbry.com.png';
-// import logoCalenbry from '../assets/projects/calenbry/logoCalenbry.png';
-// import MainTHCR from '../assets/projects/TalentControlHR/talentControlHR.brian-novoa.com.png';
-// import logoTHCR from '../assets/projects/TalentControlHR/logoTCHR.png';
 
-import IconReact from '../components/icons/IconReact';
-import IconTypescript from '../components/icons/IconTypescript';
-import IconNode from '../components/icons/IconNode';
-import IconMongo from '../components/icons/IconMongo';
-import IconExpress from '../components/icons/IconExpress';
-import IconSass from '../components/icons/IconSass';
-import IconWordpress from '../components/icons/IconWordpress';
+import { FaReact, FaNodeJs, FaSass, FaWordpress } from 'react-icons/fa';
+import { SiTypescript, SiMongodb, SiExpress } from 'react-icons/si';
 
 const projectImages: { [key: string]: string } = {
     ProfitLost: MainProfitLost,
     WP: MainWP,
-    // TalentControlHR: MainTHCR,
-    // Calenbry: MainCalenbry,
 };
 
 const projectLogos: { [key: string]: string } = {
     ProfitLost: LogoProfitLost,
     WP: LogoWP,
-    // TalentControlHR: logoTHCR,
-    // Calenbry: logoCalenbry,
 };
 
 const projectURLs: { [key: string]: string } = {
     ProfitLost: "https://profit-lost.com/",
     WP: "https://www.behance.net/gallery/180559835/WORDPRESS-WEBS",
-    // TalentControlHR: "https://talentcontrolhr.brian-novoa.com/",
-    // Calenbry: "https://calenbry-frontend.onrender.com/",
 };
 
 const gitURLs: { [key: string]: string } = {
     ProfitLost: "https://github.com/brianglezn/PL-front-v2",
-    // TalentControlHR: "https://github.com/brianglezn/TalentControlHR_frontend",
-    // Calenbry: "https://github.com/brianglezn/calenbry_Frontend",
 };
 
 const projectTechnologies: { [key: string]: { name: string; icon: JSX.Element }[] } = {
     ProfitLost: [
         {
             name: "React",
-            icon: <IconReact />
+            icon: <FaReact />
         },
         {
             name: "TypeScript",
-            icon: <IconTypescript />
+            icon: <SiTypescript />
         },
         {
             name: "NodeJS",
-            icon: <IconNode />
+            icon: <FaNodeJs />
         },
         {
             name: "MongoDB",
-            icon: <IconMongo />
+            icon: <SiMongodb />
         },
         {
             name: "Express",
-            icon: <IconExpress />
+            icon: <SiExpress />
         },
         {
             name: "Sass",
-            icon: <IconSass />
+            icon: <FaSass />
         }
     ],
     WP: [
         {
             name: "Wordpress",
-            icon: <IconWordpress />
+            icon: <FaWordpress />
         }
     ],
-    // TalentControlHR: [
-    //     {
-    //         name: "React",
-    //         icon: <IconReact />
-    //     },
-    //     {
-    //         name: "TypeScript",
-    //         icon: <IconTypescript />
-    //     },
-    //     {
-    //         name: "NodeJS",
-    //         icon: <IconNode />
-    //     },
-    //     {
-    //         name: "MongoDB",
-    //         icon: <IconMongo />
-    //     },
-    //     {
-    //         name: "Express",
-    //         icon: <IconExpress />
-    //     },
-    //     {
-    //         name: "Sass",
-    //         icon: <IconSass />
-    //     }
-    // ],
-    // Calenbry: [
-    //     {
-    //         name: "React",
-    //         icon: <IconReact />
-    //     },
-    //     {
-    //         name: "TypeScript",
-    //         icon: <IconTypescript />
-    //     },
-    //     {
-    //         name: "NodeJS",
-    //         icon: <IconNode />
-    //     },
-    //     {
-    //         name: "MongoDB",
-    //         icon: <IconMongo />
-    //     },
-    //     {
-    //         name: "Sass",
-    //         icon: <IconSass />
-    //     }
-    // ]
 }
 
 export default function ProjectPage() {

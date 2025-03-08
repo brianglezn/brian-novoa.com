@@ -1,3 +1,4 @@
+import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import './i18n';
 
@@ -5,7 +6,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ProjectPage from "./pages/ProjectPage";
 import About from "./pages/About";
-import Linktree from "./pages/Linktree";
+const Linktree = lazy(() => import('./pages/Linktree'));
 
 export default function App() {
 
