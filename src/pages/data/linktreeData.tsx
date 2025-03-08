@@ -1,7 +1,6 @@
-import { FaGithub, FaInstagram } from 'react-icons/fa';
-import { TbBrandLinkedin } from "react-icons/tb";
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import { TbWorld } from 'react-icons/tb';
+import { FaLink } from "react-icons/fa6";
 
 import brianAvatar from '../../assets/linktree/brian.jpg';
 import xacoAvatar from '../../assets/linktree/xaco.jpeg';
@@ -16,13 +15,13 @@ export const linktreeUsers = [
             {
                 title: 'Portafolio Web',
                 url: 'https://brian-novoa.com/',
-                icon: <TbWorld />,
+                icon: <FaLink  />,
                 description: 'Pagina web'
             },
             {
                 title: 'LinkedIn',
                 url: 'https://www.linkedin.com/in/brianglezn/',
-                icon: <TbBrandLinkedin />,
+                icon: <FaLinkedin />,
                 description: 'LinkedIn'
             },
             {
@@ -60,7 +59,7 @@ export const linktreeUsers = [
             {
                 title: 'LinkedIn',
                 url: 'https://www.linkedin.com/in/xacobo-pereira-amaral-51089a317/',
-                icon: <TbBrandLinkedin />,
+                icon: <FaLinkedin />,
                 description: 'LinkedIn'
             },
             {
