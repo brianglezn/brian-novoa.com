@@ -33,4 +33,21 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           server-dir: ${{ secrets.FTP_REMOTE_PATH }}/
           local-dir: ./dist/
+          log-level: verbose
           dangerous-clean-slate: true
+          dry-run: false
+          timeout: 60000
+
+      - name: 🔍 Debug - List dist directory
+        run: |
+          echo "Contenido de la carpeta dist:"
+          ls -la ./dist/
+
+      - name: 🔍 Debug - Print FTP configuration
+        run: |
+          echo "FTP Host: ${{ secrets.FTP_HOST }}"
+          echo "FTP Port: ${{ secrets.FTP_PORT }}"
+          echo "FTP Username: ${{ secrets.FTP_USERNAME }}"
+          echo "FTP Remote Path: ${{ secrets.FTP_REMOTE_PATH }}"
+          echo "Workspace directory:"
+          pwd
