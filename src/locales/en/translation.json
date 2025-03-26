@@ -77,22 +77,12 @@
             "ProfitLost": {
                 "title": "Profit&Lost",
                 "description": "Application for the management of personal finances.",
-                "description2": "Profit&Lost is a fullstack application developed with React, TypeScript, Node.js, Express, SASS, and MongoDB, designed to help users manage their personal finances efficiently. The platform allows users to keep detailed track of their accounts, financial movements, expense and income categories, and generate annual reports for comprehensive analysis."
+                "description2": "Profit&Lost is a full-stack application developed with React, TypeScript, Node.js, Express, and MongoDB, designed to help users manage their personal finances easily and efficiently. The platform allows users to record and categorize income and expenses, track accounts and financial transactions in detail, and generate annual reports for a comprehensive analysis. Additionally, as a Progressive Web App, it can be used on any device without the need for installation. I am currently working on new features to further enhance the user experience."
             },
             "WP": {
                 "title": "Wordpress Webs",
                 "description": "Some of the websites I have done in Wordpress.",
                 "description2": "Set of websites I made for several clients in Wordpress. Each project was custom designed and developed, taking into account the specific needs of each client. From personal blogs to corporate sites, I have worked on a variety of projects that have allowed me to hone my skills in web design and development on the Wordpress platform. My focus has always been to create functional, attractive and easy to navigate websites, ensuring client satisfaction with every delivery."
-            },
-            "Calenbry": {
-                "title": "Calenbry",
-                "description": "Application under development for appointment management.",
-                "description2": "Calenbry is a web application developed with technologies such as React, TypeScript, Node.js, Express, SASS and MongoDB, designed to streamline scheduling and appointment management for professionals and businesses. The platform offers a variety of features, such as custom scheduling links, real-time availability management and integrations with third-party tools such as video conferencing and CRM systems. Calenbry supports team collaboration, enabling seamless coordination of meetings across multiple team members and departments."
-            },
-            "TalentControlHR": {
-                "title": "TalentControl HR",
-                "description": "An application under development for human resources management.",
-                "description2": "TalentControlHR is a web application built with modern technologies like React, Next.js, TypeScript, Node.js, MongoDB, and SASS, aimed at optimizing human resources management for companies of all sizes. The platform features key functionalities such as team creation and assignment, shift management, attendance tracking, absence management, and leave request handling. Additionally, TalentControlHR integrates with third-party tools and is designed to facilitate collaboration across departments. Its intuitive interface and advanced features make it an ideal solution for centralizing and simplifying human resources operations."
             }
         }
     }

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 // Importing icons
-import { FaReact, FaNodeJs, FaSass, FaWordpress } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaWordpress } from 'react-icons/fa';
 import { SiTypescript, SiMongodb, SiExpress } from 'react-icons/si';
 
 // Project logos
@@ -56,10 +56,7 @@ export const projectsData: { [key: string]: Project } = {
         projectLinks: [
             { url: "https://profit-lost.com/", nameKey: "Projects.visit", defaultName: "Visit site" }
         ],
-        gitLinks: [
-            { url: "https://github.com/brianglezn/PL-front-v2", nameKey: "Projects.frontend", defaultName: "Frontend" },
-            { url: "https://github.com/brianglezn/PL-back-v2", nameKey: "Projects.backend", defaultName: "Backend" }
-        ],
+        gitLinks: [],
         technologies: [
             {
                 name: "React",
@@ -80,10 +77,6 @@ export const projectsData: { [key: string]: Project } = {
             {
                 name: "Express",
                 icon: <SiExpress />
-            },
-            {
-                name: "Sass",
-                icon: <FaSass />
             }
         ]
     },
@@ -92,8 +85,8 @@ export const projectsData: { [key: string]: Project } = {
         mainImage: WP_REFRIGERACIONTRANSPORTE_URL,
         logo: LOGO_WP_URL,
         galleryImages: [WP_LABARVERIA_URL, WP_AQUINTADETUIFUTSAL_URL, WP_GLOBALTHERMO_URL, WP_FERROS_URL, WP_VIVALACALACA_URL, WP_I2C_URL],
-        projectLinks: [], // No project links available
-        gitLinks: [], // No GitHub links available
+        projectLinks: [],
+        gitLinks: [],
         technologies: [
             {
                 name: "Wordpress",
