@@ -41,7 +41,7 @@ export const linktreeUsers = [
             },
             {
                 title: 'Instagram',
-                url: 'https://www.instagram.com/dev_brianglezn',
+                url: 'https://www.instagram.com/brian.developer',
                 icon: <FaInstagram />,
                 description: 'Instagram developer'
             },

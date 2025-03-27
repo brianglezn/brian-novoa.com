@@ -39,7 +39,7 @@ export default function Home() {
                             <ul>
                                 <li><a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> Linkedin</a></li>
                                 <li><a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a></li>
-                                <li><a href="https://www.instagram.com/dev_brianglezn" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a></li>
+                                <li><a href="https://www.instagram.com/brian.developer" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a></li>
                             </ul>
                             <a href="mailto:brianglezn@gmail.com" className='custom-button' target="_blank" rel="noopener noreferrer">{t('Home.main.contact')}</a>
                         </div>

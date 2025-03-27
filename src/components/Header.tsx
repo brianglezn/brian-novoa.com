@@ -87,7 +87,7 @@ export default function Header() {
                     <div className="headerBtns custom-icons">
                         <a href="https://www.linkedin.com/in/brianglezn/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                         <a href="https://github.com/brianglezn/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                        <a href="https://www.instagram.com/dev_brianglezn" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                        <a href="https://www.instagram.com/brian.developer" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                     </div>
 
                     <div className="headerMobile custom-icons" onClick={toggleSidebar}><FaBars /></div>
