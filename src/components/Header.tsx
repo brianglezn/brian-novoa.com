@@ -72,15 +72,6 @@ export default function Header() {
                                     {t('Header.projects')}
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    href="/about"
-                                    className={activeLink === "/about" ? "active" : ""}
-                                    onClick={() => setActiveLink("/about")}
-                                >
-                                    {t('Header.about')}
-                                </a>
-                            </li>
                         </ul>
                     </nav>
 
@@ -105,9 +96,6 @@ export default function Header() {
                         </li>
                         <li>
                             <a href="/projects" onClick={closeSidebar} className={activeLink === "/projects" ? "active" : ""}>{t('Header.projects')}</a>
-                        </li>
-                        <li>
-                            <a href="/about" onClick={closeSidebar} className={activeLink === "/about" ? "active" : ""}>{t('Header.about')}</a>
                         </li>
                     </ul>
 

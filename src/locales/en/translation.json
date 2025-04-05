@@ -1,26 +1,25 @@
 {
     "Header": {
         "home": "Home",
-        "projects": "Projects",
-        "about": "About"
+        "projects": "Projects"
     },
     "Home": {
         "main": {
             "title": "Web Developer",
-            "description": "My name is Brian, and I am a web developer. I enjoy learning and crafting new experiences that enhance user interaction.",
-            "contact": "Contact"
+            "description": "My passion is creating innovative and engaging web experiences that enhance user interaction. Always looking to learn and grow professionally.",
+            "contact": "Contact Me"
         },
         "projects": {
             "title": "Projects",
-            "description": "I've worked on lots of projects over the years, here are a few of them.",
-            "all": "--View all"
+            "description": "I've worked on various projects over the years, here are a few of them.",
+            "all": "View all projects"
         },
         "services": {
             "title": "Services"
         }
     },
     "About": {
-        "description1": "I'm a web developer, oriented especially in front-end development. My expertise lies in building interactive web applications. I mainly work with technologies like React.js, JavaScript, TypeScript and Node.js",
+        "description1": "I'm a web developer specialized in front-end development. My expertise lies in building interactive web applications using modern technologies like React.js, JavaScript, TypeScript and Node.js.",
         "description2": "I strongly believe in continuous learning and self-improvement, so I do my best to learn in any possible situation.",
         "resume": "View Resume",
         "skills": "Skills",

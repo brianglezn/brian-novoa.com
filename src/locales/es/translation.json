@@ -1,26 +1,25 @@
 {
     "Header": {
-        "home": "Home",
-        "projects": "Proyectos",
-        "about": "Sobre mí"
+        "home": "Inicio",
+        "projects": "Proyectos"
     },
     "Home": {
         "main": {
             "title": "Desarrollador Web",
-            "description": "Mi nombre es Brian, y soy un desarrollador web. Me encanta aprender y crear nuevas experiencias que mejoren la interacción del usuario.",
-            "contact": "Contacto"
+            "description": "Mi pasión es crear experiencias web innovadoras y atractivas que mejoren la interacción del usuario. Siempre buscando aprender y crecer profesionalmente.",
+            "contact": "Contactar"
         },
         "projects": {
-            "title": "Projects",
-            "description": "He trabajado en muchos proyectos a lo largo de los años, he aquí algunos de ellos.",
-            "all": "--Ver todos"
+            "title": "Proyectos",
+            "description": "He trabajado en diversos proyectos a lo largo de los años, he aquí algunos de ellos.",
+            "all": "Ver todos los proyectos"
         },
         "services": {
-            "title": "Services"
+            "title": "Servicios"
         }
     },
     "About": {
-        "description1": "Soy un desarrollador web, orientado especialmente en el desarrollo front-end. Mi experiencia radica en la construcción de aplicaciones web interactivas. Principalmente trabajo con tecnologías como React.js, JavaScript, TypeScript y Node.js",
+        "description1": "Soy un desarrollador web especializado en front-end. Mi experiencia radica en la construcción de aplicaciones web interactivas utilizando tecnologías modernas como React.js, JavaScript, TypeScript y Node.js.",
         "description2": "Creo firmemente en el aprendizaje continuo y la mejora personal, por lo que hago todo lo posible por aprender en cualquier situación posible.",
         "resume": "Ver CV",
         "skills": "Habilidades",
