@@ -36,6 +36,7 @@ const PL_ANNUAL_REPORT_DARK_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/up
 const PL_TRANSACTIONS_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741468441/brian-novoa.com/Projects/profit-lost/transactions.png';
 const PL_DASHHOME_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741468441/brian-novoa.com/Projects/profit-lost/dashHome.png';
 const PL_ACCOUNTS_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741468441/brian-novoa.com/Projects/profit-lost/accounts.png';
+const PL_MOVIL_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1743846317/brian-novoa.com/Projects/profit-lost/PL-movil.png';
 
 // Wordpress project images
 const WP_LABARVERIA_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710074042/brian-novoa.com/Projects/Wordpress/labarveria.png';
@@ -52,7 +53,7 @@ export const projectsData: { [key: string]: Project } = {
         id: 'ProfitLost',
         mainImage: PL_ANNUAL_REPORT_URL,
         logo: LOGO_PL_URL,
-        galleryImages: [PL_ANNUAL_REPORT_DARK_URL, PL_TRANSACTIONS_URL, PL_DASHHOME_URL, PL_ACCOUNTS_URL],
+        galleryImages: [PL_ANNUAL_REPORT_DARK_URL, PL_MOVIL_URL, PL_TRANSACTIONS_URL, PL_DASHHOME_URL, PL_ACCOUNTS_URL],
         projectLinks: [
             { url: "https://profit-lost.com/", nameKey: "Projects.visit", defaultName: "Visit site" }
         ],
