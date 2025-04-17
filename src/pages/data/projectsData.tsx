@@ -5,8 +5,8 @@ import { FaReact, FaNodeJs, FaWordpress } from 'react-icons/fa';
 import { SiTypescript, SiMongodb, SiExpress } from 'react-icons/si';
 
 // Project logos
-const LOGO_PL_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741470590/brian-novoa.com/Projects/profit-lost/logoPL.png';
-const LOGO_WP_URL = 'https://s.w.org/style/images/about/WordPress-logotype-simplified.png';
+import LOGO_PL_URL from '../../assets/img/projects/profit-lost/logoPL.png';
+import LOGO_WP_URL from '../../assets/img/projects/wordpress/wordpress-logo.png';
 
 // Interfaces for project links and technologies
 export interface LinkItem {
@@ -31,21 +31,21 @@ export interface Project {
 }
 
 // ProfitLost project images
-const PL_ANNUAL_REPORT_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741468441/brian-novoa.com/Projects/profit-lost/annualReport.png ';
-const PL_ANNUAL_REPORT_DARK_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741468441/brian-novoa.com/Projects/profit-lost/annualReportDark.png ';
-const PL_TRANSACTIONS_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741468441/brian-novoa.com/Projects/profit-lost/transactions.png';
-const PL_DASHHOME_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741468441/brian-novoa.com/Projects/profit-lost/dashHome.png';
-const PL_ACCOUNTS_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741468441/brian-novoa.com/Projects/profit-lost/accounts.png';
-const PL_MOVIL_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1743846317/brian-novoa.com/Projects/profit-lost/PL-movil.png';
+import PL_ANNUAL_REPORT_URL from '../../assets/img/projects/profit-lost/annualReport.png';
+import PL_ANNUAL_REPORT_DARK_URL from '../../assets/img/projects/profit-lost/annualReportDark.png';
+import PL_TRANSACTIONS_URL from '../../assets/img/projects/profit-lost/transactions.png';
+import PL_DASHHOME_URL from '../../assets/img/projects/profit-lost/dashHome.png';
+import PL_ACCOUNTS_URL from '../../assets/img/projects/profit-lost/accounts.png';
+import PL_MOVIL_URL from '../../assets/img/projects/profit-lost/PL-movil.png';
 
 // Wordpress project images
-const WP_LABARVERIA_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710074042/brian-novoa.com/Projects/Wordpress/labarveria.png';
-const WP_AQUINTADETUIFUTSAL_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710073696/brian-novoa.com/Projects/Wordpress/aquintadetuifutsal.png';
-const WP_GLOBALTHERMO_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710073696/brian-novoa.com/Projects/Wordpress/globalthermo.png';
-const WP_REFRIGERACIONTRANSPORTE_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710073695/brian-novoa.com/Projects/Wordpress/refrigeraciontransporte.png';
-const WP_VIVALACALACA_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1710073695/brian-novoa.com/Projects/Wordpress/vivalacalaca.png';
-const WP_I2C_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1709661556/brian-novoa.com/Projects/Wordpress/i2c.png';
-const WP_FERROS_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1709661147/brian-novoa.com/Projects/Wordpress/ferros.jpg';
+import WP_LABARVERIA_URL from '../../assets/img/projects/wordpress/labarveria.png';
+import WP_AQUINTADETUIFUTSAL_URL from '../../assets/img/projects/wordpress/aquintadetuifutsal.png';
+import WP_GLOBALTHERMO_URL from '../../assets/img/projects/wordpress/globalthermo.png';
+import WP_REFRIGERACIONTRANSPORTE_URL from '../../assets/img/projects/wordpress/refrigeraciontransporte.png';
+import WP_VIVALACALACA_URL from '../../assets/img/projects/wordpress/vivalacalaca.png';
+import WP_I2C_URL from '../../assets/img/projects/wordpress/i2c.png';
+import WP_FERROS_URL from '../../assets/img/projects/wordpress/ferros.jpg';
 
 // Project data
 export const projectsData: { [key: string]: Project } = {

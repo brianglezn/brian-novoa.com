@@ -19,7 +19,9 @@ html {
   overflow-x: hidden;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -79,6 +81,11 @@ body {
     color: $primary_color-800;
     background-color: $primary_color-200;
     border-radius: .4rem;
+
+    &:hover {
+      background-color: $primary_color-300;
+      text-decoration: none;
+    }
   }
 
   .custom-button-sec {
@@ -90,6 +97,13 @@ body {
     width: 8rem;
     color: $primary_color-200;
     border-radius: .4rem;
+    background-color: transparent;
+    border: 1px solid $primary_color-200;
+
+    &:hover {
+      background-color: rgba($primary_color-200, 0.1);
+      text-decoration: none;
+    }
   }
 
   .active {

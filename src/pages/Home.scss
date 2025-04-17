@@ -74,15 +74,6 @@
         a {
           min-width: 120px;
         }
-        
-        .resume-button {
-          background-color: transparent;
-          border: 1px solid $primary_color-500;
-          
-          &:hover {
-            background-color: rgba($primary_color-500, 0.1);
-          }
-        }
       }
     }
 

@@ -10,8 +10,8 @@ import ProjectItem from '../components/ProjectItem'
 import LanguageSelector from '../components/LanguageSelector';
 
 // Importing project logos  
-const LOGO_PL_URL = 'https://res.cloudinary.com/dz0mwxb0v/image/upload/v1741470062/brian-novoa.com/Projects/profit-lost/logoPL.png';
-const LOGO_WP_URL = 'https://s.w.org/style/images/about/WordPress-logotype-simplified.png';
+import LOGO_PL_URL from '../assets/img/projects/profit-lost/logoPL.png';
+import LOGO_WP_URL from '../assets/img/projects/wordpress/wordpress-logo.png';
 
 // Main component for displaying projects
 export default function Projects() {
