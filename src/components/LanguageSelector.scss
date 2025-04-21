@@ -7,8 +7,13 @@
     z-index: 1100;
 
     button {
-        padding: 12px;
-        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        padding: 10px;
+        border-radius: 12px;
         background-color: white;
         border: none;
         cursor: pointer;
@@ -18,7 +23,7 @@
         &:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-            background-color: $primary_color-light;
+            background-color: $primary_color-500;
         }
 
         img {

@@ -2,11 +2,7 @@ import { ReactNode } from 'react';
 
 // Importing icons
 import { FaReact, FaNodeJs, FaWordpress } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiExpress } from 'react-icons/si';
-
-// Project logos
-import LOGO_PL_URL from '../../assets/img/projects/profit-lost/logoPL.png';
-import LOGO_WP_URL from '../../assets/img/projects/wordpress/wordpress-logo.png';
+import { SiTypescript, SiPostgresql, SiExpress } from 'react-icons/si';
 
 // Interfaces for project links and technologies
 export interface LinkItem {
@@ -31,6 +27,7 @@ export interface Project {
 }
 
 // ProfitLost project images
+import LOGO_PL_URL from '../../assets/img/projects/profit-lost/logoPL.png';
 import PL_ANNUAL_REPORT_URL from '../../assets/img/projects/profit-lost/annualReport.png';
 import PL_ANNUAL_REPORT_DARK_URL from '../../assets/img/projects/profit-lost/annualReportDark.png';
 import PL_TRANSACTIONS_URL from '../../assets/img/projects/profit-lost/transactions.png';
@@ -39,6 +36,7 @@ import PL_ACCOUNTS_URL from '../../assets/img/projects/profit-lost/accounts.png'
 import PL_MOVIL_URL from '../../assets/img/projects/profit-lost/PL-movil.png';
 
 // Wordpress project images
+import LOGO_WP_URL from '../../assets/img/projects/wordpress/wordpress-logo.png';
 import WP_LABARVERIA_URL from '../../assets/img/projects/wordpress/labarveria.png';
 import WP_AQUINTADETUIFUTSAL_URL from '../../assets/img/projects/wordpress/aquintadetuifutsal.png';
 import WP_GLOBALTHERMO_URL from '../../assets/img/projects/wordpress/globalthermo.png';
@@ -72,8 +70,8 @@ export const projectsData: { [key: string]: Project } = {
                 icon: <FaNodeJs />
             },
             {
-                name: "MongoDB",
-                icon: <SiMongodb />
+                name: "PostgreSQL",
+                icon: <SiPostgresql />
             },
             {
                 name: "Express",
@@ -83,9 +81,9 @@ export const projectsData: { [key: string]: Project } = {
     },
     WP: {
         id: 'WP',
-        mainImage: WP_REFRIGERACIONTRANSPORTE_URL,
+        mainImage: WP_LABARVERIA_URL,
         logo: LOGO_WP_URL,
-        galleryImages: [WP_LABARVERIA_URL, WP_AQUINTADETUIFUTSAL_URL, WP_GLOBALTHERMO_URL, WP_FERROS_URL, WP_VIVALACALACA_URL, WP_I2C_URL],
+        galleryImages: [WP_REFRIGERACIONTRANSPORTE_URL, WP_AQUINTADETUIFUTSAL_URL, WP_GLOBALTHERMO_URL, WP_FERROS_URL, WP_VIVALACALACA_URL, WP_I2C_URL],
         projectLinks: [],
         gitLinks: [],
         technologies: [

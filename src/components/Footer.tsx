@@ -5,7 +5,9 @@ import './Footer.scss'
 export default function Footer() {
     return (
         <footer>
-            <img src="/logo.png" alt="logo" className='logo' />
+            <div className="footer-left">
+                <img src="/logo.png" alt="logo" className='logo' />
+            </div>
             <p>© Copyright 2020 - Brian G. Novoa </p>
         </footer>
     )

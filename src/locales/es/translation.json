@@ -1,86 +1,34 @@
 {
     "Header": {
-        "home": "Inicio",
-        "projects": "Proyectos"
+        "contact": "Contacto"
     },
     "Home": {
         "main": {
-            "title": "Desarrollador Web",
-            "description": "Mi pasión es crear experiencias web innovadoras y atractivas que mejoren la interacción del usuario. Siempre buscando aprender y crecer profesionalmente.",
-            "contact": "Contactar"
+            "title": "Hola, soy Brian Novoa.",
+            "job": "Desarrollador Web",
+            "description": "Desarrollador frontend apasionado por crear experiencias de usuario atractivas y dinámicas. Creo aplicaciones web responsivas y dinámicas.",
+            "contact": "Contactame",
+            "resume": "Mi CV"
         },
         "projects": {
             "title": "Proyectos",
-            "description": "He trabajado en diversos proyectos a lo largo de los años, he aquí algunos de ellos.",
-            "all": "Ver todos los proyectos"
-        },
-        "services": {
-            "title": "Servicios"
-        }
-    },
-    "About": {
-        "description1": "Soy un desarrollador web especializado en front-end. Mi experiencia radica en la construcción de aplicaciones web interactivas utilizando tecnologías modernas como React.js, JavaScript, TypeScript y Node.js.",
-        "description2": "Creo firmemente en el aprendizaje continuo y la mejora personal, por lo que hago todo lo posible por aprender en cualquier situación posible.",
-        "resume": "Ver CV",
-        "skills": "Habilidades",
-        "experience": {
-            "title": "Experiencia",
-            "current": "Actualidad",
-            "more": "Ver más",
-            "less": "Ver menos",
-            "Accenture": {
-                "roles": [
-                    {
-                        "title": "Network & Svcs Operation",
-                        "description": "Responsable de la puesta en marcha de infraestructuras y acceso de clientes en proyectos de Grandes Cuentas de Vodafone.<br/> -Configuración de routers (Cisco, Huawei, Teldat) y switches.<br/> -Configuración de servicios de cliente como MPLS, VPLS, INTERNET, IPSEC, SDWAN, TRUNK, ELINE.<br/> -Configuración de accesos basados en tecnologías como Radioenlaces, Fibra PaP, 3G/LTE y Orlas."
-                    },
-                    {
-                        "title": "Network & Svcs Operation",
-                        "description": "Desempeñando las funciones de Network & Svcs Operation para completar el curso ASIR con formación en centros de trabajo.<br/> -Responsable de la puesta en servicio de infraestructuras y acceso de clientes en proyectos de Grandes cuentas de Vodafone. <br/> -Configuración de CPEs (Cisco, Huawei). <br/> -Configuración de servicios de cliente como MPLS e INTERNET. <br/> -Configuración de accesos basados en tecnologías como Radioenlaces, Fibra PaP, 3G/LTE."
-                    }
-                ]
-            },
-            "BrianNovoa": {
-                "roles": [
-                    {
-                        "title": "Desarrollador web Freelance",
-                        "description": "Mi especialización abarca WordPress, CSS, HTML, JavaScript, TypeScript ampliándolo ahora con ReactJS, creando soluciones web avanzadas y dinámicas. NodeJS y MongoDB complementan mi perfil técnico.<br/> Mi foco está en la innovación, la calidad y la adaptabilidad en un entorno tecnológico en constante cambio."
-                    }
-                ]
-            },
-            "Universae": {
-                "roles": [
-                    {
-                        "title": "Desarrollador Full Stack",
-                        "description": "Desempeñando las funciones de Full Stack Developer para completar el curso DAM con la formación en centros de trabajo. <br/>Durante mis prácticas desempeñé un papel activo en el desarrollo de múltiples proyectos, en los que utilicé un conjunto diverso de tecnologías y herramientas de programación, como Java, JavaScript, TypeScript, HTML, CSS, React, VSCode, NetBeans y GitHub. <br/>-Mis responsabilidades iban desde escribir código limpio y eficiente hasta implementar interfaces de usuario receptivas y optimizar la funcionalidad de la aplicación para mejorar la experiencia del usuario. <br/>-Colaboré estrechamente con los equipos de desarrollo para garantizar la entrega puntual de los proyectos siguiendo las mejores prácticas de codificación y diseño."
-                    }
-                ]
-            },
-            "I2C": {
-                "roles": [
-                    {
-                        "title": "Desarrollador Frontend",
-                        "description": "Desarrollando tareas de Frontend Web Developer para completar el curso DAW con la Formación en Centros de Trabajo. Durante mi contrato de prácticas en I2C, tengo la oportunidad de trabajar en el desarrollo de la página web principal de la empresa y las páginas web de varios proyectos internos. <br/>Mi enfoque principal es la programación y el diseño web, asegurando su funcionalidad y usabilidad. <br/>Esta experiencia me está permitiendo adquirir nuevas habilidades y conocimientos en el campo del desarrollo web, y estoy entusiasmado por seguir aprendiendo, especialmente sobre Front End."
-                    }
-                ]
-            }
+            "visit": "Visitar →"
         }
     },
     "Projects": {
         "title": "Proyectos",
-        "description": "Estos son los proyectos en los que he trabajado, empecé haciendo webs en wordpress para unas cuantas empresas y ahora di el paso a hacer proyectos de código especialmente con MERN stack: Mongo, Express, React y Node.",
+        "backToHome": "Volver a Home",
         "visit": "Visitar",
-        "frontend": "Github Frontend",
-        "backend": "Github Backend",
+        "notFound": "Proyecto no encontrado",
         "projectItems": {
             "ProfitLost": {
                 "title": "Profit&Lost",
-                "description": "Aplicación para la gestión de las finanzas personales.",
-                "description2": "Profit&Lost es una aplicación fullstack desarrollada con React, TypeScript, Node.js, Express y MongoDB, diseñada para ayudar a los usuarios a gestionar sus finanzas personales de manera sencilla y eficiente. La plataforma permite registrar y categorizar ingresos y gastos, realizar un seguimiento detallado de las cuentas y movimientos financieros, y generar informes anuales para un análisis completo. Además, al estar desarrollada como una Progressive Web App, puede utilizarse desde cualquier dispositivo sin necesidad de instalación. Actualmente, sigo trabajando en nuevas funcionalidades para mejorar la experiencia del usuario."
+                "description": "Aplicación para gestión de finanzas.",
+                "description2": "Profit&Lost es una aplicación fullstack desarrollada con React, TypeScript, Node.js, Express y PostgreSQL, diseñada para ayudar a los usuarios a gestionar sus finanzas personales de manera sencilla y eficiente. La plataforma permite registrar y categorizar ingresos y gastos, realizar un seguimiento detallado de las cuentas y movimientos financieros, y generar informes anuales para un análisis completo. Actualmente, sigo trabajando en nuevas funcionalidades para mejorar la experiencia del usuario."
             },
             "WP": {
                 "title": "Webs Wordpress",
-                "description": "Algunos de los sitios web que he hecho en Wordpress.",
+                "description": "Algunos de los sitios web que he hecho.",
                 "description2": "Conjunto de webs que hice para diversos clientes en Wordpress. Cada proyecto fue diseñado y desarrollado a medida, teniendo en cuenta las necesidades específicas de cada cliente. Desde blogs personales hasta sitios corporativos, he trabajado en una variedad de proyectos que me han permitido perfeccionar mis habilidades en diseño web y desarrollo en la plataforma Wordpress. Mi enfoque ha sido siempre crear sitios web funcionales, atractivos y fáciles de navegar, asegurando la satisfacción del cliente en cada entrega."
             }
         }

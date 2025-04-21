@@ -1,29 +1,36 @@
-import { ReactNode } from 'react';
-
 // Importing styles
 import './ProjectItem.scss';
 
 // Interfaces for ProjectItem properties
 interface ProjectItemProps {
-    imgSrc: string | ReactNode; // Source of the image or icon
+    mainImage: string; // Main image of the project
     title: string; // Title of the project
     description: string; // Description of the project
-    href: string; // Link to the project
+    href?: string; // Link to the project
 }
 
 // Main component for displaying a project item
-export default function ProjectItem({ imgSrc, title, description, href }: ProjectItemProps) {
-    return (
-        <a className="projectItem" href={href}>
-            {typeof imgSrc === 'string' ? (
-                <img src={imgSrc} alt={title} /> // Render image if imgSrc is a string
-            ) : (
-                <div className="icon-container">{imgSrc}</div> // Render icon if imgSrc is a ReactNode
-            )}
-            <div className='projectItem-container'>
+export default function ProjectItem({ mainImage, title, description, href }: ProjectItemProps) {
+    
+    const itemContent = (
+        <>
+            <div className="projectItem-image">
+                <img src={mainImage} alt={title} />
                 <h3>{title}</h3>
+            </div>
+            <div className='projectItem-content'>
                 <p>{description}</p>
             </div>
+        </>
+    );
+    
+    return href ? (
+        <a href={href} className="projectItem">
+            {itemContent}
         </a>
+    ) : (
+        <div className="projectItem">
+            {itemContent}
+        </div>
     );
 }

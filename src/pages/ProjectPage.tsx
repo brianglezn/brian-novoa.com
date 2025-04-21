@@ -1,17 +1,16 @@
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 // Importing styles
 import './ProjectPage.scss';
 
 // Importing components
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import LanguageSelector from '../components/LanguageSelector';
+import Layout from '../components/Layout';
 
 // Importing icons
-import { IoClose, IoChevronBack, IoChevronForward } from 'react-icons/io5';
+import { IoClose, IoChevronBack, IoChevronForward, IoArrowBack } from 'react-icons/io5';
 
 // Importing project data
 import { getProjectById, LinkItem, Technology } from './data/projectsData.tsx';
@@ -27,6 +26,11 @@ export default function ProjectPage() {
     const { t } = useTranslation();
     const { projectId } = useParams<{ projectId: string }>();
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+    
+    useEffect(() => {
+        // Scroll to top when component mounts
+        window.scrollTo(0, 0);
+    }, []);
 
     // Return an empty fragment if no projectId is found
     if (!projectId) {
@@ -37,7 +41,18 @@ export default function ProjectPage() {
 
     // Display a message if the project is not found
     if (!project) {
-        return (<div>Project not found</div>);
+        return (
+            <Layout>
+                <div className="projectsPage">
+                    <div className="project-not-found">
+                        <h2>{t('Projects.notFound')}</h2>
+                        <Link to="/" className="custom-button">
+                            <IoArrowBack /> {t('Projects.backToHome')}
+                        </Link>
+                    </div>
+                </div>
+            </Layout>
+        );
     }
 
     const { mainImage, logo, galleryImages, projectLinks, gitLinks, technologies } = project;
@@ -97,17 +112,23 @@ export default function ProjectPage() {
     const normalizedProjectId = projectId.charAt(0).toUpperCase() + projectId.slice(1);
 
     return (
-        <>
-            <LanguageSelector />
-            <Header />
+        <Layout>
             <section className='projectsPage'>
+                <Link to="/" className="back-to-home">
+                    <IoArrowBack /> {t('Projects.backToHome')}
+                </Link>
+                
                 <main className='projectsPageMain'>
                     <div className='projectsPageMain-left'>
                         <div className='projectsPageMain-left--header'>
                             <img src={logo} alt={t(`Projects.projectItems.${normalizedProjectId}.title`)} />
                             <h1>{t(`Projects.projectItems.${normalizedProjectId}.title`)}</h1>
                         </div>
-                        <p>{t(`Projects.projectItems.${normalizedProjectId}.description2`)}</p>
+                        
+                        <p>
+                            {t(`Projects.projectItems.${normalizedProjectId}.description2`)}
+                        </p>
+                        
                         <div>
                             <ul>
                                 {technologies.map((tech: Technology) => (
@@ -116,6 +137,7 @@ export default function ProjectPage() {
                                     </li>
                                 ))}
                             </ul>
+                            
                             <div className='projectsPageMain-left--links'>
                                 {translatedProjectLinks.map((link: TranslatedLink, index: number) => (
                                     <a
@@ -143,6 +165,7 @@ export default function ProjectPage() {
                             </div>
                         </div>
                     </div>
+                    
                     <div className='projectsPageMain-right'>
                         {mainImage && (
                             <img
@@ -157,6 +180,7 @@ export default function ProjectPage() {
 
                 {galleryImages && galleryImages.length > 0 && (
                     <div className="project-gallery">
+                        
                         <div className="gallery-container">
                             {galleryImages.map((img: string, index: number) => (
                                 <div
@@ -185,7 +209,7 @@ export default function ProjectPage() {
                     >
                         <div
                             className="image-viewer-content"
-                            onClick={(e) => e.stopPropagation()}
+                            onClick={(e: React.MouseEvent) => e.stopPropagation()}
                         >
                             <button
                                 className="close-button"
@@ -225,7 +249,6 @@ export default function ProjectPage() {
                     </div>
                 )}
             </section>
-            <Footer />
-        </>
+        </Layout>
     );
 }

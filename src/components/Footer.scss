@@ -6,6 +6,24 @@ footer {
     justify-content: space-between;
     padding: 1.5rem 2.5rem;
 
+    .footer-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: $primary_color-100;
+        background-color: $primary_color-700;
+        border-radius: .5rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        
+        .logo {
+          height: 2.4rem;
+          width: 2.4rem;
+        }
+    }
+
     p {
         color: $text_color-grey;
     }

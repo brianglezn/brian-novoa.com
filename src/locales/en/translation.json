@@ -1,86 +1,34 @@
 {
     "Header": {
-        "home": "Home",
-        "projects": "Projects"
+        "contact": "Contact"
     },
     "Home": {
         "main": {
-            "title": "Web Developer",
-            "description": "My passion is creating innovative and engaging web experiences that enhance user interaction. Always looking to learn and grow professionally.",
-            "contact": "Contact Me"
+            "title": "Hey, I'm Brian Novoa.",
+            "job": "Web Developer",
+            "description": "Frontend developer passionate about creating engaging user experiences. I craft responsive and dynamic web applications.",
+            "contact": "Contact Me",
+            "resume": "My Resume"
         },
         "projects": {
             "title": "Projects",
-            "description": "I've worked on various projects over the years, here are a few of them.",
-            "all": "View all projects"
-        },
-        "services": {
-            "title": "Services"
-        }
-    },
-    "About": {
-        "description1": "I'm a web developer specialized in front-end development. My expertise lies in building interactive web applications using modern technologies like React.js, JavaScript, TypeScript and Node.js.",
-        "description2": "I strongly believe in continuous learning and self-improvement, so I do my best to learn in any possible situation.",
-        "resume": "View Resume",
-        "skills": "Skills",
-        "experience": {
-            "title": "Experience",
-            "current": "Current",
-            "more": "Read more",
-            "less": "Read less",
-            "Accenture": {
-                "roles": [
-                    {
-                        "title": "Network & Svcs Operation",
-                        "description": "Responsible for the commissioning of infrastructure and customer access in Vodafone Key Account projects.<br/> -Router (Cisco, Huawei, Teldat) and Switch Configuration.<br/> -Configuration of customer services such as MPLS, VPLS, INTERNET, IPSEC, SDWAN, TRUNK, ELINE.<br/> -Configuration of accesses based on technologies such as Radio links, PaP Fiber, 3G/LTE and Orlas."
-                    },
-                    {
-                        "title": "Network & Svcs Operation",
-                        "description": "Performing the duties of Network & Svcs Operation Associate to complete the ASIR course with on-site training. Responsible for infrastructure commissioning and customer access in Vodafone Key Account projects. <br/> -Configuration of CPEs (Cisco, Huawei). <br/> -Configuration of customer services such as MPLS and INTERNET. <br/> -Configuration of accesses based on technologies such as Radio links, PaP Fiber, 3G/LTE."
-                    }
-                ]
-            },
-            "BrianNovoa": {
-                "roles": [
-                    {
-                        "title": "Freelance Web Developer",
-                        "description": "My specialization covers WordPress, CSS, HTML, JavaScript, TypeScript extending it now with ReactJS, creating advanced and dynamic web solutions. NodeJS and MongoDB complement my technical profile. <br/>My focus is on innovation, quality, and adaptability in a constantly changing technological environment."
-                    }
-                ]
-            },
-            "Universae": {
-                "roles": [
-                    {
-                        "title": "Full Stack Developer",
-                        "description": "Performing the duties of Full Stack Developer to complete the DAM course with Workplace Training. During my internship I played an active role in the development of multiple projects, where I used a diverse set of technologies and programming tools, including Java, JavaScript, TypeScript, HTML, CSS, React, VSCode, NetBeans and GitHub. <br/> -My responsibilities ranged from writing clean and efficient code to implementing responsive user interfaces and optimizing application functionality to enhance the user experience. <br/> -I collaborated closely with development teams to ensure timely delivery of projects following coding and design best practices."
-                    }
-                ]
-            },
-            "I2C": {
-                "roles": [
-                    {
-                        "title": "Frontend Developer",
-                        "description": "Developing Frontend Web Developer tasks to complete the DAW course with the Workplace Training. During my internship contract at I2C, I have the opportunity to work on the development of the company's main website and the websites of various internal projects.<br/> My main focus is programming and web design, ensuring its functionality and usability. <br/>This experience is allowing me to acquire new skills and knowledge in the field of web development, and I am excited to continue learning, especially about Front End."
-                    }
-                ]
-            }
+            "visit": "Visit →"
         }
     },
     "Projects": {
         "title": "Projects",
-        "description": "These are the projects in which I have worked, I started making wordpress websites for a few companies and now I took the step to make code projects especially with MERN stack: Mongo, Express, React and Node.",
+        "backToHome": "Back to Home",
         "visit": "Visit",
-        "frontend": "Github Frontend",
-        "backend": "Github Backend",
+        "notFound": "Project not found",
         "projectItems": {
             "ProfitLost": {
                 "title": "Profit&Lost",
-                "description": "Application for the management of personal finances.",
-                "description2": "Profit&Lost is a full-stack application developed with React, TypeScript, Node.js, Express, and MongoDB, designed to help users manage their personal finances easily and efficiently. The platform allows users to record and categorize income and expenses, track accounts and financial transactions in detail, and generate annual reports for a comprehensive analysis. Additionally, as a Progressive Web App, it can be used on any device without the need for installation. I am currently working on new features to further enhance the user experience."
+                "description": "Application for finance management.",
+                "description2": "Profit&Lost is a full-stack application developed with React, TypeScript, Node.js, Express, and PostgreSQL, designed to help users manage their personal finances easily and efficiently. The platform allows users to record and categorize income and expenses, track accounts and financial transactions in detail, and generate annual reports for a comprehensive analysis. I am currently working on new features to further enhance the user experience."
             },
             "WP": {
                 "title": "Wordpress Webs",
-                "description": "Some of the websites I have done in Wordpress.",
+                "description": "Some of the websites I have done.",
                 "description2": "Set of websites I made for several clients in Wordpress. Each project was custom designed and developed, taking into account the specific needs of each client. From personal blogs to corporate sites, I have worked on a variety of projects that have allowed me to hone my skills in web design and development on the Wordpress platform. My focus has always been to create functional, attractive and easy to navigate websites, ensuring client satisfaction with every delivery."
             }
         }

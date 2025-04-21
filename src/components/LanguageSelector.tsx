@@ -31,14 +31,17 @@ export default function LanguageSelector() {
         i18n.changeLanguage(newLang);
     };
 
+    const nextLanguage = currentLanguage === 'en' ? 'es' : 'en';
+
     return (
         <div className="language-selector">
             <button 
                 onClick={toggleLanguage}
-                title={t(`home.header.language.${currentLanguage === 'en' ? 'es' : 'en'}`)}
+                title={t(`home.header.language.${nextLanguage}`)}
+                aria-label={t(`home.header.language.${nextLanguage}`)}
             >
                 <img
-                    src={`https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/${currentLanguage === 'en' ? 'us' : 'es'}.svg`}
+                    src={`/assets/flags/${currentLanguage === 'en' ? 'us' : 'es'}.svg`}
                     alt={t(`home.header.language.${currentLanguage}`)}
                 />
             </button>
