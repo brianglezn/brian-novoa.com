@@ -180,7 +180,6 @@ export default function ProjectPage() {
 
                 {galleryImages && galleryImages.length > 0 && (
                     <div className="project-gallery">
-                        
                         <div className="gallery-container">
                             {galleryImages.map((img: string, index: number) => (
                                 <div

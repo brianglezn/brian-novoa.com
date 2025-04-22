@@ -1,7 +1,7 @@
 @import "../../variables";
 
 header {
-  max-width: 900px;
+  max-width: 1200px;
   padding: 1rem 0;
   margin: auto;
   position: fixed;
@@ -56,7 +56,7 @@ header {
     .social-icons {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 1rem;
 
       a {
         display: flex;
@@ -92,7 +92,7 @@ header {
       }
 
       .social-icons {
-        gap: 0.3rem;
+        gap: 0.8rem;
 
         a svg {
           height: 1.6rem;
@@ -118,7 +118,7 @@ header {
       }
 
       .social-icons {
-        gap: 0.2rem;
+        gap: 0.5rem;
 
         a svg {
           height: 1.4rem;

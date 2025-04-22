@@ -73,7 +73,6 @@ body {
   }
 
   .custom-button {
-    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +89,6 @@ body {
   }
 
   .custom-button-sec {
-    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,11 +113,6 @@ body {
   @media (max-width: 768px) {
     .custom-icons {
       width: 1.5rem;
-    }
-
-    .custom-button,
-    .custom-button-sec {
-      margin-bottom: 2rem;
     }
   }
 

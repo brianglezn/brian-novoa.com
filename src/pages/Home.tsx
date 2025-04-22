@@ -65,23 +65,27 @@ export default function Home() {
     <Layout>
       <section className='home'>
         <main className='homeMain'>
-          <div className='homeMain-profile'>
-            <img src={BRIAN_HOME_URL} alt="Brian G. Novoa" />
-          </div>
-          <div className='homeMain-content'>
-            <h1>{t('Home.main.title')}</h1>
-            <h2>{t('Home.main.job')}</h2>
-            <p>{t('Home.main.description')}</p>
-            <div className='homeMain-skills'>
-              {skills.map((skill, index) => (
-                <div className='skillItem' key={index}>
-                  {skill.icon}
-                </div>
-              ))}
+          <div className='homeMain-container'>
+            <div className='homeMain-content'>
+              <h1>{t('Home.main.title')}</h1>
+              <h2>{t('Home.main.job')}</h2>
+              <p>{t('Home.main.description')}</p>
+              <div className='homeMain-skills'>
+                {skills.map((skill, index) => (
+                  <div className='skillItem' key={index}>
+                    {skill.icon}
+                  </div>
+                ))}
+              </div>
+              <div className="button-group">
+                <a href="mailto:brianglezn@gmail.com" className='custom-button' target="_blank" rel="noopener noreferrer">{t('Home.main.contact')}</a>
+                <a href={brianResume} className='custom-button-sec resume-button' target="_blank" rel="noopener noreferrer">{t('Home.main.resume')}</a>
+              </div>
             </div>
-            <div className="button-group">
-              <a href="mailto:brianglezn@gmail.com" className='custom-button' target="_blank" rel="noopener noreferrer">{t('Home.main.contact')}</a>
-              <a href={brianResume} className='custom-button-sec resume-button' target="_blank" rel="noopener noreferrer">{t('Home.main.resume')}</a>
+            <div className='homeMain-profile'>
+              <div className="profile-image-container">
+                <img src={BRIAN_HOME_URL} alt="Brian G. Novoa" />
+              </div>
             </div>
           </div>
         </main>
