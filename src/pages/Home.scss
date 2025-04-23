@@ -9,7 +9,7 @@
   .homeMain {
     width: 100%;
     padding: 4rem 1rem;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 $border-radius-xl $border-radius-xl;
     position: relative;
     overflow: hidden;
 
@@ -115,7 +115,7 @@
         position: relative;
         width: 350px;
         height: 350px;
-        border-radius: 20px;
+        border-radius: $border-radius-lg;
         overflow: hidden;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         transform: rotate(3deg);
@@ -176,25 +176,32 @@
       
       .swiper {
         padding-bottom: 50px; // Space for pagination
+        padding-top: 10px; // Add some top padding
       }
       
       .swiper-slide {
         height: auto;
         display: flex;
         justify-content: center;
+        padding: 5px; // Add some padding for better spacing
       }
       
       // Navigation arrows
       .swiper-button-next,
       .swiper-button-prev {
         color: $primary_color-600;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
         
         &:hover {
           color: $primary_color-800;
+          background-color: rgba(255, 255, 255, 0.2);
         }
         
         &:after {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           font-weight: bold;
         }
       }
@@ -203,10 +210,15 @@
       .swiper-pagination-bullet {
         background: $primary_color-300;
         opacity: 0.5;
+        width: 8px;
+        height: 8px;
+        transition: all 0.3s ease;
         
         &-active {
           opacity: 1;
           background: $primary_color-600;
+          width: 20px;
+          border-radius: 4px;
         }
       }
     }
@@ -282,7 +294,7 @@
       .companyBadge {
         display: inline-block;
         padding: 0.35rem 0.8rem;
-        border-radius: 20px;
+        border-radius: $border-radius-xl;
         font-size: 0.8rem;
         font-weight: 500;
         

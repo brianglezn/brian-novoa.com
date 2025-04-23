@@ -17,6 +17,7 @@ export default function ProjectItem({ mainImage, title, description, href }: Pro
             <div className="projectItem-image">
                 <img src={mainImage} alt={title} />
                 <h3>{title}</h3>
+                <div className="projectItem-overlay"></div>
             </div>
             <div className='projectItem-content'>
                 <p>{description}</p>

@@ -18,7 +18,7 @@
         padding: 0.6rem 1.2rem;
         background: rgba($primary_color-800, 0.3);
         border: 1px solid rgba($primary_color-500, 0.2);
-        border-radius: 1.5rem;
+        border-radius: $border-radius-lg;
         text-decoration: none;
         transition: all 0.3s ease;
         
@@ -43,7 +43,7 @@
         padding: 3rem;
         background: rgba($primary_color-800, 0.3);
         border: 1px solid rgba($primary_color-500, 0.2);
-        border-radius: 1rem;
+        border-radius: $border-radius-md;
         text-align: center;
         
         h2 {
@@ -82,7 +82,7 @@
                 img {
                     width: 5rem;
                     height: 5rem;
-                    border-radius: 1.2rem;
+                    border-radius: $border-radius-md;
                     padding: 0.3rem;
                     background-color: rgba($primary_color-50, 0.90);
                     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -125,7 +125,7 @@
                     display: inline-block;
                     background: rgba($primary_color-800, 0.5);
                     backdrop-filter: blur(5px);
-                    border-radius: 0.8rem;
+                    border-radius: $border-radius-sm;
                     padding: 0.6rem 1rem;
                     border: 1px solid rgba($primary_color-500, 0.2);
                     transition: all 0.3s ease;
@@ -171,7 +171,7 @@
                     white-space: nowrap;
                     font-size: clamp(0.95rem, 1.5vw, 1.1rem);
                     padding: 0.8rem 1.5rem;
-                    border-radius: 0.8rem;
+                    border-radius: $border-radius-sm;
                     font-weight: 500;
                     letter-spacing: 0.02em;
                     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -235,7 +235,7 @@
                 min-width: 280px;
                 height: 400px;
                 min-height: 250px;
-                border-radius: 1.2rem;
+                border-radius: $border-radius-md;
                 opacity: 0.95;
                 transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease, box-shadow 0.4s ease;
                 cursor: pointer;
@@ -280,7 +280,7 @@
             width: 100%;
 
             .gallery-item {
-                border-radius: 1.2rem;
+                border-radius: $border-radius-md;
                 overflow: hidden;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05);
                 aspect-ratio: 16 / 10;
@@ -361,7 +361,7 @@
                     max-width: 100%;
                     max-height: 100%;
                     object-fit: contain;
-                    border-radius: 8px;
+                    border-radius: $border-radius-sm;
                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
                     animation: fadeIn 0.4s ease;
                 }
@@ -381,7 +381,7 @@
                 align-items: center;
                 justify-content: center;
                 padding: 0.5rem;
-                border-radius: 50%;
+                border-radius: $border-radius-full;
                 width: 3rem;
                 height: 3rem;
                 transition: all 0.3s ease;
@@ -413,7 +413,7 @@
                 justify-content: center;
                 width: 3.5rem;
                 height: 3.5rem;
-                border-radius: 50%;
+                border-radius: $border-radius-full;
                 transition: all 0.3s ease;
 
                 &:hover {
@@ -445,7 +445,7 @@
                 background: rgba($primary_color-900, 0.7);
                 border: 1px solid rgba($primary_color-500, 0.2);
                 padding: 0.5rem 1.2rem;
-                border-radius: 2rem;
+                border-radius: $border-radius-xl;
                 letter-spacing: 0.05em;
             }
         }

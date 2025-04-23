@@ -16,3 +16,11 @@ $text_color-grey: #383d46;
 
 $bg_color-white: #E5F2F6;
 $bg_color-black: #10313c;
+
+// Border radius variables
+$border-radius-xs: 0.25rem;    // Small UI elements
+$border-radius-sm: 0.5rem;     // Buttons, icons
+$border-radius-md: 1rem;       // Cards, containers
+$border-radius-lg: 1.5rem;     // Featured elements
+$border-radius-xl: 2rem;       // Large elements
+$border-radius-full: 50%;      // Circular elements
