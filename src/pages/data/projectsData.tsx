@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 // Importing icons
-import { FaReact, FaNodeJs, FaWordpress } from 'react-icons/fa';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiTypescript, SiPostgresql, SiExpress } from 'react-icons/si';
 
 // Interfaces for project links and technologies
@@ -79,18 +79,14 @@ export const projectsData: { [key: string]: Project } = {
             }
         ]
     },
-    WP: {
-        id: 'WP',
+    WD: {
+        id: 'WD',
         mainImage: WP_LABARVERIA_URL,
         logo: LOGO_WP_URL,
         galleryImages: [WP_REFRIGERACIONTRANSPORTE_URL, WP_AQUINTADETUIFUTSAL_URL, WP_GLOBALTHERMO_URL, WP_FERROS_URL, WP_VIVALACALACA_URL, WP_I2C_URL],
         projectLinks: [],
         gitLinks: [],
         technologies: [
-            {
-                name: "Wordpress",
-                icon: <FaWordpress />
-            }
         ]
     }
 };

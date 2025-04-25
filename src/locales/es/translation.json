@@ -26,10 +26,10 @@
                 "description": "Aplicación para gestión de finanzas.",
                 "description2": "Profit&Lost es una aplicación fullstack desarrollada con React, TypeScript, Node.js, Express y PostgreSQL, diseñada para ayudar a los usuarios a gestionar sus finanzas personales de manera sencilla y eficiente. La plataforma permite registrar y categorizar ingresos y gastos, realizar un seguimiento detallado de las cuentas y movimientos financieros, y generar informes anuales para un análisis completo. Actualmente, sigo trabajando en nuevas funcionalidades para mejorar la experiencia del usuario."
             },
-            "WP": {
-                "title": "Webs Wordpress",
+            "WD": {
+                "title": "Diseño Web",
                 "description": "Algunos de los sitios web que he hecho.",
-                "description2": "Conjunto de webs que hice para diversos clientes en Wordpress. Cada proyecto fue diseñado y desarrollado a medida, teniendo en cuenta las necesidades específicas de cada cliente. Desde blogs personales hasta sitios corporativos, he trabajado en una variedad de proyectos que me han permitido perfeccionar mis habilidades en diseño web y desarrollo en la plataforma Wordpress. Mi enfoque ha sido siempre crear sitios web funcionales, atractivos y fáciles de navegar, asegurando la satisfacción del cliente en cada entrega."
+                "description2": "Conjunto de webs que hice para diversos clientes. Cada proyecto fue diseñado y desarrollado a medida, teniendo en cuenta las necesidades específicas de cada cliente. Desde blogs personales hasta sitios corporativos, he trabajado en una variedad de proyectos que me han permitido perfeccionar mis habilidades en diseño web. Mi enfoque ha sido siempre crear sitios web funcionales, atractivos y fáciles de navegar, asegurando la satisfacción del cliente en cada entrega."
             }
         }
     }

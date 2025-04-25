@@ -26,10 +26,10 @@
                 "description": "Application for finance management.",
                 "description2": "Profit&Lost is a full-stack application developed with React, TypeScript, Node.js, Express, and PostgreSQL, designed to help users manage their personal finances easily and efficiently. The platform allows users to record and categorize income and expenses, track accounts and financial transactions in detail, and generate annual reports for a comprehensive analysis. I am currently working on new features to further enhance the user experience."
             },
-            "WP": {
-                "title": "Wordpress Webs",
+            "WD": {
+                "title": "Web Design",
                 "description": "Some of the websites I have done.",
-                "description2": "Set of websites I made for several clients in Wordpress. Each project was custom designed and developed, taking into account the specific needs of each client. From personal blogs to corporate sites, I have worked on a variety of projects that have allowed me to hone my skills in web design and development on the Wordpress platform. My focus has always been to create functional, attractive and easy to navigate websites, ensuring client satisfaction with every delivery."
+                "description2": "Collection of websites I've created for various clients. Each project was custom designed and developed, taking into account the specific needs of each client. From personal blogs to corporate sites, I've worked on a variety of projects that have allowed me to perfect my web design skills. My focus has always been to create functional, attractive, and easy-to-navigate websites, ensuring client satisfaction with every delivery."
             }
         }
     }
