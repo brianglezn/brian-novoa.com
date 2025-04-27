@@ -35,15 +35,21 @@ import PL_DASHHOME_URL from '../../assets/img/projects/profit-lost/dashHome.png'
 import PL_ACCOUNTS_URL from '../../assets/img/projects/profit-lost/accounts.png';
 import PL_MOVIL_URL from '../../assets/img/projects/profit-lost/PL-movil.png';
 
-// Wordpress project images
-import LOGO_WP_URL from '../../assets/img/projects/wordpress/wordpress-logo.png';
-import WP_LABARVERIA_URL from '../../assets/img/projects/wordpress/labarveria.png';
-import WP_AQUINTADETUIFUTSAL_URL from '../../assets/img/projects/wordpress/aquintadetuifutsal.png';
-import WP_GLOBALTHERMO_URL from '../../assets/img/projects/wordpress/globalthermo.png';
-import WP_REFRIGERACIONTRANSPORTE_URL from '../../assets/img/projects/wordpress/refrigeraciontransporte.png';
-import WP_VIVALACALACA_URL from '../../assets/img/projects/wordpress/vivalacalaca.png';
-import WP_I2C_URL from '../../assets/img/projects/wordpress/i2c.png';
-import WP_FERROS_URL from '../../assets/img/projects/wordpress/ferros.jpg';
+// Web Design project images
+import LOGO_WD_URL from '../../assets/img/projects/web-design/logoWD.svg';
+import WP_LABARVERIA_URL from '../../assets/img/projects/web-design/labarveria.png';
+import WP_AQUINTADETUIFUTSAL_URL from '../../assets/img/projects/web-design/aquintadetuifutsal.png';
+import WP_GLOBALTHERMO_URL from '../../assets/img/projects/web-design/globalthermo.png';
+import WP_REFRIGERACIONTRANSPORTE_URL from '../../assets/img/projects/web-design/refrigeraciontransporte.png';
+import WP_VIVALACALACA_URL from '../../assets/img/projects/web-design/vivalacalaca.png';
+import WP_I2C_URL from '../../assets/img/projects/web-design/i2c.png';
+import WP_FERROS_URL from '../../assets/img/projects/web-design/ferros.jpg';
+
+// CartaHub project images
+import LOGO_CH_URL from '../../assets/img/projects/cartahub/logoCH.svg';
+import CH_MAIN_URL from '../../assets/img/projects/cartahub/home.png';
+import CH_STEPS_URL from '../../assets/img/projects/cartahub/steps.png';
+import CH_MENU_URL from '../../assets/img/projects/cartahub/restaurant.png';
 
 // Project data
 export const projectsData: { [key: string]: Project } = {
@@ -79,10 +85,30 @@ export const projectsData: { [key: string]: Project } = {
             }
         ]
     },
+    CartaHub: {
+        id: 'CartaHub',
+        mainImage: CH_MAIN_URL,
+        logo: LOGO_CH_URL,
+        galleryImages: [CH_STEPS_URL, CH_MENU_URL],
+        projectLinks: [
+            { url: "https://cartahub.com/", nameKey: "Projects.visit", defaultName: "Visit site" }
+        ],
+        gitLinks: [],
+        technologies: [
+            {
+                name: "React",
+                icon: <FaReact />
+            },
+            {
+                name: "TypeScript",
+                icon: <SiTypescript />
+            }
+        ]
+    },
     WD: {
         id: 'WD',
         mainImage: WP_LABARVERIA_URL,
-        logo: LOGO_WP_URL,
+        logo: LOGO_WD_URL,
         galleryImages: [WP_REFRIGERACIONTRANSPORTE_URL, WP_AQUINTADETUIFUTSAL_URL, WP_GLOBALTHERMO_URL, WP_FERROS_URL, WP_VIVALACALACA_URL, WP_I2C_URL],
         projectLinks: [],
         gitLinks: [],

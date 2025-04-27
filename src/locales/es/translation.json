@@ -26,6 +26,11 @@
                 "description": "Aplicación para gestión de finanzas.",
                 "description2": "Profit&Lost es una aplicación fullstack desarrollada con React, TypeScript, Node.js, Express y PostgreSQL, diseñada para ayudar a los usuarios a gestionar sus finanzas personales de manera sencilla y eficiente. La plataforma permite registrar y categorizar ingresos y gastos, realizar un seguimiento detallado de las cuentas y movimientos financieros, y generar informes anuales para un análisis completo. Actualmente, sigo trabajando en nuevas funcionalidades para mejorar la experiencia del usuario."
             },
+            "CartaHub": {
+                "title": "CartaHub",
+                "description": "Plataforma de cartas digitales para restaurantes.",
+                "description2": "CartaHub es una aplicación frontend desarrollada con React y TypeScript que permite a los restaurantes crear y gestionar menús online personalizados en rutas dinámicas bajo cartahub.com/:restaurantSlug. Implementa React Router v6 para el enrutamiento dinámico, un hook personalizado para cargar los datos de la carta desde JSON."
+            },
             "WD": {
                 "title": "Diseño Web",
                 "description": "Algunos de los sitios web que he hecho.",

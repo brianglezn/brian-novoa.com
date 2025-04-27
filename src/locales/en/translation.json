@@ -26,6 +26,11 @@
                 "description": "Application for finance management.",
                 "description2": "Profit&Lost is a full-stack application developed with React, TypeScript, Node.js, Express, and PostgreSQL, designed to help users manage their personal finances easily and efficiently. The platform allows users to record and categorize income and expenses, track accounts and financial transactions in detail, and generate annual reports for a comprehensive analysis. I am currently working on new features to further enhance the user experience."
             },
+            "CartaHub": {
+                "title": "CartaHub",
+                "description": "Digital menu platform for restaurants.",
+                "description2": "CartaHub is a frontend application developed with React and TypeScript that allows restaurants to create and manage online personalized menus on dynamic routes under cartahub.com/:restaurantSlug. It implements React Router v6 for dynamic routing, a custom hook to load the menu data from JSON."
+            },
             "WD": {
                 "title": "Web Design",
                 "description": "Some of the websites I have done.",
