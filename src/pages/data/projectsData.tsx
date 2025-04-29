@@ -109,7 +109,7 @@ export const projectsData: { [key: string]: Project } = {
         id: 'WD',
         mainImage: WP_LABARVERIA_URL,
         logo: LOGO_WD_URL,
-        galleryImages: [WP_REFRIGERACIONTRANSPORTE_URL, WP_AQUINTADETUIFUTSAL_URL, WP_GLOBALTHERMO_URL, WP_FERROS_URL, WP_VIVALACALACA_URL, WP_I2C_URL],
+        galleryImages: [CH_MAIN_URL, WP_REFRIGERACIONTRANSPORTE_URL,WP_AQUINTADETUIFUTSAL_URL, WP_GLOBALTHERMO_URL, WP_FERROS_URL, WP_VIVALACALACA_URL, WP_I2C_URL],
         projectLinks: [],
         gitLinks: [],
         technologies: [
