@@ -41,7 +41,7 @@ export default function Header() {
                     <a href="https://www.instagram.com/brian.developer" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </div>
 
-                <a href="mailto:brianglezn@gmail.com" className="icon-button contact-button" title={t('Header.contact')}>
+                <a href="mailto:brian@brian-novoa.com" className="icon-button contact-button" title={t('Header.contact')}>
                     <FaComment />
                 </a>
             </div>

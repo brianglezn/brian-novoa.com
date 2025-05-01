@@ -78,7 +78,7 @@ export default function Home() {
                 ))}
               </div>
               <div className="button-group">
-                <a href="mailto:brianglezn@gmail.com" className='custom-button' target="_blank" rel="noopener noreferrer">{t('Home.main.contact')}</a>
+                <a href="mailto:brian@brian-novoa.com" className='custom-button' target="_blank" rel="noopener noreferrer">{t('Home.main.contact')}</a>
                 <a href={brianResume} className='custom-button-sec resume-button' target="_blank" rel="noopener noreferrer">{t('Home.main.resume')}</a>
               </div>
             </div>

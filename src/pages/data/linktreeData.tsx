@@ -47,9 +47,9 @@ export const linktreeUsers = [
             },
             {
                 title: 'Email',
-                url: 'mailto:brianglezn@gmail.com',
+                url: 'mailto:brian@brian-novoa.com',
                 icon: <MdEmail />,
-                description: 'brianglezn@gmail.com'
+                description: 'brian@brian-novoa.com'
             }
         ]
     },
