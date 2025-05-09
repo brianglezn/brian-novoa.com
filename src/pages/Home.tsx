@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 
 // Importing styles
 import './Home.scss';
@@ -58,6 +59,16 @@ const skills = [
 // Main component for the home page
 export default function Home() {
   const { t, i18n } = useTranslation();
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const brianResume = i18n.language === 'en' ? brianResumeEN : brianResumeES;
 
@@ -93,41 +104,51 @@ export default function Home() {
         <section className="homeProjects">
           <h2>{t('Home.projects.title')}</h2>
 
-          <div className="homeProjects-carousel">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={30}
-              slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 5000, disableOnInteraction: false }}
-              breakpoints={{
-                640: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-              }}
-            >
+          {isDesktop ? (
+            <div className="homeProjects-grid">
               {Object.values(projectsData).map((project) => (
-                <SwiperSlide key={project.id}>
-                  <ProjectItem
-                    mainImage={project.mainImage}
-                    title={t(`Projects.projectItems.${project.id}.title`)}
-                    description={t(`Projects.projectItems.${project.id}.description`)}
-                    href={`/projects/${project.id}`}
-                  />
-                </SwiperSlide>
+                <ProjectItem
+                  key={project.id}
+                  mainImage={project.mainImage}
+                  title={t(`Projects.projectItems.${project.id}.title`)}
+                  description={t(`Projects.projectItems.${project.id}.description`)}
+                  href={`/projects/${project.id}`}
+                />
               ))}
-            </Swiper>
-          </div>
+            </div>
+          ) : (
+            <div className="homeProjects-carousel">
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 5000, disableOnInteraction: false }}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                }}
+              >
+                {Object.values(projectsData).map((project) => (
+                  <SwiperSlide key={project.id}>
+                    <ProjectItem
+                      mainImage={project.mainImage}
+                      title={t(`Projects.projectItems.${project.id}.title`)}
+                      description={t(`Projects.projectItems.${project.id}.description`)}
+                      href={`/projects/${project.id}`}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )}
         </section>
         
       </section>

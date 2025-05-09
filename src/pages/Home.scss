@@ -169,6 +169,14 @@
       text-transform: uppercase;
     }
 
+    .homeProjects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
     .homeProjects-carousel {
       width: 100%;
       position: relative;
@@ -333,6 +341,13 @@
         gap: 2rem;
       }
     }
+
+    .homeProjects {
+      .homeProjects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+    }
   }
 
   @media (max-width: 768px) {
@@ -382,6 +397,11 @@
 
     .homeProjects {
       padding: 2.5rem 1rem;
+      
+      .homeProjects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.2rem;
+      }
     }
   }
 
