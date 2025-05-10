@@ -91,7 +91,7 @@ export const projectsData: { [key: string]: Project } = {
         logo: LOGO_CH_URL,
         galleryImages: [CH_STEPS_URL, CH_MENU_URL],
         projectLinks: [
-            { url: "https://cartahub.com/", nameKey: "Projects.visit", defaultName: "Visit site" }
+            { url: "https://cartahub.es/", nameKey: "Projects.visit", defaultName: "Visit site" }
         ],
         gitLinks: [],
         technologies: [
