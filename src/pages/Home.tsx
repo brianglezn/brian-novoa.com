@@ -26,7 +26,6 @@ import BRIAN_HOME_URL from '../assets/img/brian_home.jpg';
 import { projectsData } from './data/projectsData';
 
 // Importing resumes
-import brianResumeEN from '../assets/CV/[EN] Brian Gonzalez Novoa.pdf';
 import brianResumeES from '../assets/CV/[ES] Brian Gonzalez Novoa.pdf';
 
 const skills = [
@@ -58,7 +57,7 @@ const skills = [
 
 // Main component for the home page
 export default function Home() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
 
   useEffect(() => {
@@ -69,8 +68,6 @@ export default function Home() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  const brianResume = i18n.language === 'en' ? brianResumeEN : brianResumeES;
 
   return (
     <Layout>
@@ -90,7 +87,7 @@ export default function Home() {
               </div>
               <div className="button-group">
                 <a href="mailto:brian@brian-novoa.com" className='custom-button' target="_blank" rel="noopener noreferrer">{t('Home.main.contact')}</a>
-                <a href={brianResume} className='custom-button-sec resume-button' target="_blank" rel="noopener noreferrer">{t('Home.main.resume')}</a>
+                <a href={brianResumeES} className='custom-button-sec resume-button' target="_blank" rel="noopener noreferrer">{t('Home.main.resume')}</a>
               </div>
             </div>
             <div className='homeMain-profile'>
