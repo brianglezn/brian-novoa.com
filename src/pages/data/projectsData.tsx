@@ -107,7 +107,7 @@ export const projectsData: { [key: string]: Project } = {
         id: 'WD',
         mainImage: WD_LABARVERIA_URL,
         logo: LOGO_WD_URL,
-        galleryImages: [WD_LABARVERIA_URL, WD_PROFITLOST_URL, WD_CARTHUB_URL, WD_GLOBALTHERMO_URL, WD_REFRIGERACIONTRANSPORTE_URL],
+        galleryImages: [WD_PROFITLOST_URL, WD_CARTHUB_URL, WD_GLOBALTHERMO_URL, WD_REFRIGERACIONTRANSPORTE_URL],
         projectLinks: [],
         gitLinks: [],
         technologies: [
