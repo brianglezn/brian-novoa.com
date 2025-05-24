@@ -37,13 +37,11 @@ import PL_MOVIL_URL from '../../assets/img/projects/profit-lost/PL-movil.png';
 
 // Web Design project images
 import LOGO_WD_URL from '../../assets/img/projects/web-design/logoWD.svg';
-import WP_LABARVERIA_URL from '../../assets/img/projects/web-design/labarveria.png';
-import WP_AQUINTADETUIFUTSAL_URL from '../../assets/img/projects/web-design/aquintadetuifutsal.png';
-import WP_GLOBALTHERMO_URL from '../../assets/img/projects/web-design/globalthermo.png';
-import WP_REFRIGERACIONTRANSPORTE_URL from '../../assets/img/projects/web-design/refrigeraciontransporte.png';
-import WP_VIVALACALACA_URL from '../../assets/img/projects/web-design/vivalacalaca.png';
-import WP_I2C_URL from '../../assets/img/projects/web-design/i2c.png';
-import WP_FERROS_URL from '../../assets/img/projects/web-design/ferros.jpg';
+import WD_LABARVERIA_URL from '../../assets/img/projects/web-design/labarveria.png';
+import WD_PROFITLOST_URL from '../../assets/img/projects/web-design/profit-lost.png';
+import WD_CARTHUB_URL from '../../assets/img/projects/web-design/cartahub.png';
+import WD_GLOBALTHERMO_URL from '../../assets/img/projects/web-design/globalthermo.png';
+import WD_REFRIGERACIONTRANSPORTE_URL from '../../assets/img/projects/web-design/refrigeraciontransporte.png';
 
 // CartaHub project images
 import LOGO_CH_URL from '../../assets/img/projects/cartahub/logoCH.svg';
@@ -107,9 +105,9 @@ export const projectsData: { [key: string]: Project } = {
     },
     WD: {
         id: 'WD',
-        mainImage: WP_LABARVERIA_URL,
+        mainImage: WD_LABARVERIA_URL,
         logo: LOGO_WD_URL,
-        galleryImages: [CH_MAIN_URL, WP_REFRIGERACIONTRANSPORTE_URL,WP_AQUINTADETUIFUTSAL_URL, WP_GLOBALTHERMO_URL, WP_FERROS_URL, WP_VIVALACALACA_URL, WP_I2C_URL],
+        galleryImages: [WD_LABARVERIA_URL, WD_PROFITLOST_URL, WD_CARTHUB_URL, WD_GLOBALTHERMO_URL, WD_REFRIGERACIONTRANSPORTE_URL],
         projectLinks: [],
         gitLinks: [],
         technologies: [
