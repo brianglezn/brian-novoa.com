@@ -1,15 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
 
 // Importing styles
 import './Home.scss';
-
-// Importing Swiper
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 // Importing components
 import Layout from '../components/Layout';
@@ -58,16 +50,6 @@ const skills = [
 // Main component for the home page
 export default function Home() {
   const { t } = useTranslation();
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   return (
     <Layout>
@@ -100,54 +82,18 @@ export default function Home() {
 
         <section className="homeProjects">
           <h2>{t('Home.projects.title')}</h2>
-
-          {isDesktop ? (
-            <div className="homeProjects-grid">
-              {Object.values(projectsData).map((project) => (
-                <ProjectItem
-                  key={project.id}
-                  mainImage={project.mainImage}
-                  title={t(`Projects.projectItems.${project.id}.title`)}
-                  description={t(`Projects.projectItems.${project.id}.description`)}
-                  href={`/projects/${project.id}`}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="homeProjects-carousel">
-              <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                spaceBetween={30}
-                slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
-                autoplay={{ delay: 5000, disableOnInteraction: false }}
-                breakpoints={{
-                  640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                  },
-                }}
-              >
-                {Object.values(projectsData).map((project) => (
-                  <SwiperSlide key={project.id}>
-                    <ProjectItem
-                      mainImage={project.mainImage}
-                      title={t(`Projects.projectItems.${project.id}.title`)}
-                      description={t(`Projects.projectItems.${project.id}.description`)}
-                      href={`/projects/${project.id}`}
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          )}
+          <div className="homeProjects-grid">
+            {Object.values(projectsData).map((project) => (
+              <ProjectItem
+                key={project.id}
+                mainImage={project.mainImage}
+                title={t(`Projects.projectItems.${project.id}.title`)}
+                description={t(`Projects.projectItems.${project.id}.description`)}
+                href={`/projects/${project.id}`}
+              />
+            ))}
+          </div>
         </section>
-        
       </section>
     </Layout>
   );

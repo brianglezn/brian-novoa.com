@@ -18,7 +18,7 @@ header {
     padding: 0.5rem 1rem;
     margin: 0 1rem;
     border-radius: $border-radius-md;
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     &.scrolled {
       background-color: #e5f2f6cb;
@@ -35,16 +35,19 @@ header {
       background-color: $primary_color-700;
       border-radius: $border-radius-sm;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform, background-color;
 
       &:hover {
         background-color: $primary_color-800;
-        transform: translateY(-2px);
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
       svg {
         height: 1.3rem;
         width: 1.3rem;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       .logo {
@@ -62,16 +65,18 @@ header {
         display: flex;
         align-items: center;
         color: $primary_color-700;
-        transition: color 0.3s ease, transform 0.3s ease;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform, color;
 
         &:hover {
           color: $primary_color-800;
-          transform: translateY(-2px);
+          transform: scale(1.05);
         }
 
         svg {
           height: 1.8rem;
           width: 1.8rem;
+          transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
       }
     }

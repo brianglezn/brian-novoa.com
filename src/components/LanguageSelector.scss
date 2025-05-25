@@ -18,10 +18,11 @@
         border: none;
         cursor: pointer;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        transition: all 0.3s ease;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform, background-color, box-shadow;
 
         &:hover {
-            transform: translateY(-2px);
+            transform: scale(1.05);
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
             background-color: $primary_color-500;
         }
@@ -31,6 +32,7 @@
             height: auto;
             border-radius: $border-radius-xs;
             display: block;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
 
