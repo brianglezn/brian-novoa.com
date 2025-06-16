@@ -42,6 +42,7 @@ import WD_PROFITLOST_URL from '../../assets/img/projects/web-design/profit-lost.
 import WD_CARTHUB_URL from '../../assets/img/projects/web-design/cartahub.png';
 import WD_GLOBALTHERMO_URL from '../../assets/img/projects/web-design/globalthermo.png';
 import WD_REFRIGERACIONTRANSPORTE_URL from '../../assets/img/projects/web-design/refrigeraciontransporte.png';
+import WD_ELHABITODEHABITARNOS_URL from '../../assets/img/projects/web-design/elhabitodehabitarnos.png';
 
 // CartaHub project images
 import LOGO_CH_URL from '../../assets/img/projects/cartahub/logoCH.svg';
@@ -107,7 +108,7 @@ export const projectsData: { [key: string]: Project } = {
         id: 'WD',
         mainImage: WD_LABARVERIA_URL,
         logo: LOGO_WD_URL,
-        galleryImages: [WD_PROFITLOST_URL, WD_CARTHUB_URL, WD_GLOBALTHERMO_URL, WD_REFRIGERACIONTRANSPORTE_URL],
+        galleryImages: [WD_PROFITLOST_URL, WD_CARTHUB_URL, WD_GLOBALTHERMO_URL, WD_REFRIGERACIONTRANSPORTE_URL, WD_ELHABITODEHABITARNOS_URL],
         projectLinks: [],
         gitLinks: [],
         technologies: [
