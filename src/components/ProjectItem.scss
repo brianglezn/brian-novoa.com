@@ -9,17 +9,19 @@
   overflow: hidden;
   background-color: $bg_color-white;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease, border 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    border 0.3s ease;
   margin: 0 auto;
   text-decoration: none;
   color: inherit;
   border: 1px solid transparent;
-  
+
   &:hover {
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
     border-color: rgba($primary_color-500, 0.3);
     cursor: pointer;
-    
+
     .projectItem-overlay {
       opacity: 0.3;
     }
@@ -37,7 +39,7 @@
       object-fit: cover;
       transition: transform 0.5s ease;
     }
-    
+
     h3 {
       position: absolute;
       bottom: 0;
@@ -52,7 +54,7 @@
       transition: background 0.3s ease;
       z-index: 2;
     }
-    
+
     .projectItem-overlay {
       position: absolute;
       top: 0;
@@ -64,7 +66,7 @@
       transition: opacity 0.3s ease;
       z-index: 1;
     }
-    
+
     &:hover img {
       transform: scale(1.05);
     }
@@ -76,7 +78,7 @@
     flex-direction: column;
     flex: 1;
     position: relative;
-    
+
     p {
       margin: 0;
       font-size: 1rem;
@@ -87,34 +89,32 @@
 
   @media (max-width: 830px) {
     max-width: 100%;
-    
+
     .projectItem-image {
       height: 200px;
-      
+
       h3 {
         padding: 12px;
         font-size: 1.3rem;
       }
     }
-    
+
     .projectItem-content p {
       font-size: 0.9rem;
     }
   }
 
   @media (max-width: 480px) {
-    
     .projectItem-image {
-      
       h3 {
         padding: 10px;
         font-size: 1.2rem;
       }
     }
-    
+
     .projectItem-content {
       padding: 12px;
-      
+
       p {
         font-size: 0.85rem;
       }

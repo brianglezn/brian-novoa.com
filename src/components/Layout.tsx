@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import LanguageSelector from './LanguageSelector';
+import { ReactNode } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import LanguageSelector from "./LanguageSelector";
 
-import './Layout.scss';
+import "./Layout.scss";
 
 interface LayoutProps {
   children: ReactNode;
@@ -14,10 +14,8 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <LanguageSelector />
       <Header />
-      <div className="layout-container">
-        {children}
-      </div>
+      <div className="layout-container">{children}</div>
       <Footer />
     </>
   );
-} 
+}

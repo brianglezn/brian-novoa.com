@@ -1,41 +1,41 @@
 {
-    "Header": {
-        "contact": "Contact"
+  "Header": {
+    "contact": "Contact"
+  },
+  "Home": {
+    "main": {
+      "title": "Hey, I'm Brian Novoa",
+      "job": "Web Developer",
+      "description": "Frontend developer passionate about creating engaging user experiences. I craft responsive and dynamic web applications.",
+      "contact": "Contact Me",
+      "resume": "My Resume"
     },
-    "Home": {
-        "main": {
-            "title": "Hey, I'm Brian Novoa",
-            "job": "Web Developer",
-            "description": "Frontend developer passionate about creating engaging user experiences. I craft responsive and dynamic web applications.",
-            "contact": "Contact Me",
-            "resume": "My Resume"
-        },
-        "projects": {
-            "title": "Projects",
-            "visit": "Visit →"
-        }
-    },
-    "Projects": {
-        "title": "Projects",
-        "backToHome": "Back to Home",
-        "visit": "Visit",
-        "notFound": "Project not found",
-        "projectItems": {
-            "ProfitLost": {
-                "title": "Profit&Lost",
-                "description": "Application for finance management.",
-                "description2": "Profit&Lost is a full-stack application developed with React, TypeScript, Node.js, Express, and PostgreSQL, designed to help users manage their personal finances easily and efficiently. The platform allows users to record and categorize income and expenses, track accounts and financial transactions in detail, and generate annual reports for a comprehensive analysis. I am currently working on new features to further enhance the user experience."
-            },
-            "CartaHub": {
-                "title": "CartaHub",
-                "description": "Digital menu platform for restaurants.",
-                "description2": "CartaHub is a frontend application developed with React and TypeScript that allows restaurants to create and manage online personalized menus on dynamic routes under cartahub.com/:restaurantSlug. It implements React Router v6 for dynamic routing, a custom hook to load the menu data from JSON."
-            },
-            "WD": {
-                "title": "Web Design",
-                "description": "Some of the websites I have done.",
-                "description2": "Collection of websites I've created for various clients. Each project was custom designed and developed, taking into account the specific needs of each client. From personal blogs to corporate sites, I've worked on a variety of projects that have allowed me to perfect my web design skills. My focus has always been to create functional, attractive, and easy-to-navigate websites, ensuring client satisfaction with every delivery."
-            }
-        }
+    "projects": {
+      "title": "Projects",
+      "visit": "Visit →"
     }
+  },
+  "Projects": {
+    "title": "Projects",
+    "backToHome": "Back to Home",
+    "visit": "Visit",
+    "notFound": "Project not found",
+    "projectItems": {
+      "ProfitLost": {
+        "title": "Profit&Lost",
+        "description": "Application for finance management.",
+        "description2": "Profit&Lost is a full-stack application developed with React, TypeScript, Node.js, Express, and PostgreSQL, designed to help users manage their personal finances easily and efficiently. The platform allows users to record and categorize income and expenses, track accounts and financial transactions in detail, and generate annual reports for a comprehensive analysis. I am currently working on new features to further enhance the user experience."
+      },
+      "CartaHub": {
+        "title": "CartaHub",
+        "description": "Digital menu platform for restaurants.",
+        "description2": "CartaHub is a full-stack application in React/TypeScript with a Node.js backend that allows restaurants to create customizable digital menus with their own design, manage categories and dishes, generate QR codes, process payments through Stripe, handle allergen information, and offer multiple visual themes, all accessible through custom URLs (cartahub.es/:restaurantSlug)."
+      },
+      "WD": {
+        "title": "Web Design",
+        "description": "Some of the websites I have done.",
+        "description2": "Collection of websites I've created for various clients. Each project was custom designed and developed, taking into account the specific needs of each client. From personal blogs to corporate sites, I've worked on a variety of projects that have allowed me to perfect my web design skills. My focus has always been to create functional, attractive, and easy-to-navigate websites, ensuring client satisfaction with every delivery."
+      }
+    }
+  }
 }

@@ -1,4 +1,4 @@
-@import '../variables';
+@import "../variables";
 
 :root {
   background-color: $bg_color-black;
@@ -109,12 +109,12 @@ body {
     text-decoration: underline;
   }
 
-
   @media (max-width: 768px) {
     .custom-icons {
       width: 1.5rem;
     }
   }
 
-  @media (max-width: 480px) {}
+  @media (max-width: 480px) {
+  }
 }

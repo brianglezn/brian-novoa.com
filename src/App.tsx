@@ -1,10 +1,10 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import './i18n';
+import "./i18n";
 
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
-const Linktree = lazy(() => import('./pages/Linktree'));
+const Linktree = lazy(() => import("./pages/Linktree"));
 
 export default function App() {
   return (
@@ -14,4 +14,4 @@ export default function App() {
       <Route path="/:userId" element={<Linktree />} />
     </Routes>
   );
-} 
+}

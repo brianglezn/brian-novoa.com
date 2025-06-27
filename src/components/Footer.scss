@@ -1,38 +1,39 @@
-@import '../../variables';
+@import "../../variables";
 
 footer {
-    background-color: $bg_color-white;
+  background-color: $bg_color-white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+
+  .footer-left {
     display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 2.5rem;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: $primary_color-100;
+    background-color: $primary_color-700;
+    border-radius: $border-radius-sm;
+    text-decoration: none;
+    transition: all 0.3s ease;
 
-    .footer-left {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 2.5rem;
-        width: 2.5rem;
-        color: $primary_color-100;
-        background-color: $primary_color-700;
-        border-radius: $border-radius-sm;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        
-        .logo {
-          height: 2.4rem;
-          width: 2.4rem;
-        }
+    .logo {
+      height: 2.4rem;
+      width: 2.4rem;
     }
+  }
 
-    p {
-        color: $text_color-grey;
-    }
+  p {
+    color: $text_color-grey;
+  }
 
-    @media (max-width: 768px) {}
+  @media (max-width: 768px) {
+  }
 
-    @media (max-width: 480px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
