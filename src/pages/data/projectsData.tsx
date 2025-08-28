@@ -61,11 +61,7 @@ export const projectsData: { [key: string]: Project } = {
     id: "ProfitLost",
     mainImage: PL_ANNUAL_REPORT_URL,
     logo: LOGO_PL_URL,
-    galleryImages: [
-      PL_MOVIL_URL,
-      PL_TRANSACTIONS_URL,
-      PL_DASHHOME_URL,
-    ],
+    galleryImages: [PL_MOVIL_URL, PL_TRANSACTIONS_URL, PL_DASHHOME_URL],
     projectLinks: [
       {
         url: "https://profit-lost.com/",
