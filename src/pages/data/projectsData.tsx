@@ -34,10 +34,8 @@ export interface Project {
 // ProfitLost project images
 import LOGO_PL_URL from "../../assets/img/projects/profit-lost/logoPL.png";
 import PL_ANNUAL_REPORT_URL from "../../assets/img/projects/profit-lost/annualReport.png";
-import PL_ANNUAL_REPORT_DARK_URL from "../../assets/img/projects/profit-lost/annualReportDark.png";
 import PL_TRANSACTIONS_URL from "../../assets/img/projects/profit-lost/transactions.png";
 import PL_DASHHOME_URL from "../../assets/img/projects/profit-lost/dashHome.png";
-import PL_ACCOUNTS_URL from "../../assets/img/projects/profit-lost/accounts.png";
 import PL_MOVIL_URL from "../../assets/img/projects/profit-lost/PL-movil.png";
 
 // Web Design project images
@@ -64,11 +62,9 @@ export const projectsData: { [key: string]: Project } = {
     mainImage: PL_ANNUAL_REPORT_URL,
     logo: LOGO_PL_URL,
     galleryImages: [
-      PL_ANNUAL_REPORT_DARK_URL,
       PL_MOVIL_URL,
       PL_TRANSACTIONS_URL,
       PL_DASHHOME_URL,
-      PL_ACCOUNTS_URL,
     ],
     projectLinks: [
       {
