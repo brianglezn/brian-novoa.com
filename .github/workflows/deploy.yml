@@ -29,11 +29,11 @@ jobs:
         run: pnpm run build
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
-          server-dir: ${{ secrets.FTP_REMOTE_PATH }}/
-          local-dir: ./dist/
+          remote_path: ${{ secrets.FTP_REMOTE_PATH }}/
+          local_path: ./dist/
