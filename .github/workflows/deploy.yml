@@ -36,5 +36,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
           remote_path: ${{ secrets.FTP_REMOTE_PATH }}/
-          local_path: ./dist/
-          strip_components: 1
+          local_path: ./dist/*
