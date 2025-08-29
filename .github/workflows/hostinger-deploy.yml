@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 📦 Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -28,12 +28,15 @@ jobs:
       - name: 🏗️ Build project
         run: pnpm run build
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: 📂 Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
-          server-dir: ${{ secrets.FTP_REMOTE_PATH }}/
-          local-dir: ./dist/
+          username: ${{ secrets.SFTP_USERNAME }}
+          server: ${{ secrets.SFTP_HOST }}
+          ssh_private_key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          local_path: './dist/*'
+          remote_path: ${{ secrets.SFTP_REMOTE_PATH }}
+          delete_remote_files: false
+          exclude: |
+            **/.DS_Store
+            **/node_modules
