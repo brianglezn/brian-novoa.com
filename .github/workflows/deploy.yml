@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 📦 Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -37,3 +37,11 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           server-dir: domains/brian-novoa.com/public_html/
           local-dir: ./dist/
+          dangerous-clean-slate: true
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.env*
+            **/README.md
+            **/.github/**
