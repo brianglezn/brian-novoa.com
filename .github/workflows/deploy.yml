@@ -35,7 +35,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
-          server-dir: domains/brian-novoa.com/public_html/
+          server-dir: public_html
           local-dir: ./dist/
           dangerous-clean-slate: true
           exclude: |
